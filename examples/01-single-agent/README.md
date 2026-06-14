@@ -1,5 +1,7 @@
 # Example 01 — Single Agent
 
+[繁體中文](README_zh.md)
+
 This example demonstrates how to build a simple single-purpose AI agent.
 
 The goal is not to build a fully autonomous agent. The goal is to learn the smallest reliable unit of Agent Engineering:
@@ -28,6 +30,7 @@ The agent produces:
 ```text
 01-single-agent/
 ├── README.md
+├── README_zh.md
 ├── main.py
 ├── agent_config.yaml
 ├── requirements.txt
