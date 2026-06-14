@@ -6,6 +6,26 @@
 
 ---
 
+```mermaid
+flowchart LR
+    User((User)) --> Agent[AI Agent]
+    Agent --> Tools[Tool Use]
+    Tools --> MCP[MCP Layer]
+    MCP --> Memory[Memory System]
+    Memory --> Workflow[Agent Workflow]
+    Workflow --> MultiAgent[Multi-Agent Team]
+    MultiAgent --> Colony[Agent Colony]
+    Colony --> Production[Production AI App]
+
+    MCP -. connects .-> Plugins[Plugin Ecosystem]
+    Plugins --> Data[Data Sources]
+    Plugins --> APIs[External APIs]
+    Plugins --> Apps[Apps & Services]
+    Plugins --> Observability[Tracing & Evaluation]
+```
+
+---
+
 ## Why this roadmap exists
 
 Most AI tutorials stop at prompts, RAG, or simple tool calling.
@@ -63,6 +83,24 @@ Production, Evaluation & Safety
 
 ---
 
+## Plugin ecosystem
+
+Agent Engineering is not only about prompts. A production agent needs a plugin ecosystem around it.
+
+| Category | Purpose | Example Plugins / Tools |
+|---|---|---|
+| MCP Servers | Standardized access to tools and data | filesystem, database, browser, GitHub, Slack, Google Drive |
+| Memory | Persistent context and retrieval | Qdrant, LanceDB, Chroma, PostgreSQL, Redis |
+| Orchestration | Workflow and multi-agent control | LangGraph, CrewAI, AutoGen, OpenAI Agents SDK |
+| RAG | Knowledge retrieval and grounding | LlamaIndex, LangChain, Haystack |
+| Observability | Tracing, debugging, monitoring | Langfuse, OpenTelemetry, Helicone, Phoenix |
+| Evaluation | Quality and safety testing | DeepEval, RAGAS, promptfoo, custom eval suites |
+| Guardrails | Safety and structured validation | Guardrails AI, Pydantic, JSON Schema, policy checkers |
+| UI / App Layer | User-facing agent applications | Streamlit, Gradio, Next.js, FastAPI |
+| Domain Tools | Industry-specific integrations | healthcare records, finance data, CRM, ERP, ticketing systems |
+
+---
+
 ## Core architecture
 
 ```mermaid
@@ -77,6 +115,11 @@ graph TD
     ToolAgent --> MCP[MCP Servers]
     DomainAgent --> MCP
     ResearchAgent --> MCP
+    MCP --> PluginLayer[Plugin Ecosystem]
+    PluginLayer --> Databases[Databases]
+    PluginLayer --> Documents[Documents]
+    PluginLayer --> APIs[External APIs]
+    PluginLayer --> SaaS[SaaS Apps]
     Supervisor --> Evaluator[Evaluator Agent]
     Evaluator --> Final[Final Response]
     Final --> User
@@ -157,6 +200,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add Level 0-8 roadmap skeleton
 - [x] Add architecture documents
 - [x] Add healthcare and finance tracks
+- [x] Add hero diagram and plugin ecosystem
 - [ ] Expand each roadmap level into a full handbook chapter
 - [ ] Add minimal runnable examples
 - [ ] Add MCP server templates
