@@ -22,6 +22,8 @@ Chatbot 主要是回應訊息；Agent 則是為了完成某個目標而設計，
 
 理解這個差異，可以避免做出看起來很炫，但無法在真實工作流程中穩定運作的系統。
 
+有用的 Agent 不應只看回答是否流暢，而要看它是否能安全、可靠地完成任務。
+
 ---
 
 ## Chatbot vs Agent
@@ -57,6 +59,13 @@ Chatbot 主要是回應訊息；Agent 則是為了完成某個目標而設計，
 
 這個 loop 看起來簡單，但每一步在生產環境中都會變成工程決策。
 
+例如：
+
+- goal understanding 決定 Agent 是否解對問題
+- context gathering 決定 Agent 是否擁有足夠資訊
+- action decision 決定是否需要工具
+- review 決定輸出是否安全且有用
+
 ---
 
 ## 核心概念
@@ -77,6 +86,13 @@ Agent 需要明確目標。
 將使用者的會議筆記整理成決策、待辦事項、風險與下一步。
 ```
 
+好的 goal 應該具備：
+
+- specific
+- observable
+- bounded
+- evaluable
+
 ### Context 上下文
 
 Context 是 Agent 用來做判斷的資訊。
@@ -91,11 +107,23 @@ Context 是 Agent 用來做判斷的資訊。
 - 使用者偏好
 - workflow state
 
+初學者常見錯誤是把 context 當成無限資源。實際系統中，context 有成本、有限制，也可能包含無關或不安全資訊。
+
 ### Reasoning 推理
 
 Reasoning 是 Agent 判斷輸入意圖與下一步行動的過程。
 
 在生產環境中，推理通常應該被 workflow、schema 與 policy 約束。
+
+Reasoning 應該回答：
+
+```text
+使用者真正想做什麼？
+缺少哪些資訊？
+是否需要工具？
+這個行動安全嗎？
+預期輸出格式是什麼？
+```
 
 ### Action 行動
 
@@ -110,6 +138,8 @@ Action 是任何超出文字生成的動作。
 - 寫入記憶
 - 請求人類審核
 
+Action 會提高實用性，但也會提高風險。文字錯誤通常可逆；工具錯誤可能影響真實資料、金錢、使用者或營運流程。
+
 ### Feedback 回饋
 
 Feedback 幫助系統修正或改善結果。
@@ -121,6 +151,8 @@ Feedback 幫助系統修正或改善結果。
 - validation error
 - tool failure
 - human review
+
+Feedback 可以是即時的，例如 schema validation；也可以是延遲的，例如使用者滿意度與任務成功率。
 
 ---
 
@@ -158,6 +190,75 @@ flowchart TD
 
 ---
 
+## Agent Specification Template
+
+寫程式前，先用這個格式描述 Agent：
+
+```text
+Agent name:
+Goal:
+Primary user:
+Input:
+Output:
+Allowed actions:
+Not allowed:
+Tools:
+Memory:
+Human approval needed:
+Failure behavior:
+Evaluation criteria:
+```
+
+這個模板會強迫你在加入 model call 前先定義系統邊界。
+
+---
+
+## Example Specification
+
+```text
+Agent name: Research Summary Agent
+Goal: Convert messy notes into structured summaries.
+Primary user: Researcher, founder, or student.
+Input: Raw notes, meeting notes, copied text.
+Output: Key points, action items, risks, next steps.
+Allowed actions: Summarize, organize, identify uncertainty.
+Not allowed: Invent facts or cite sources not provided.
+Tools: None in the first version.
+Memory: None in the first version.
+Human approval needed: Not required for low-risk summaries.
+Failure behavior: Ask for clearer input or mark uncertainty.
+Evaluation criteria: Completeness, faithfulness, clarity, actionability.
+```
+
+---
+
+## Evaluation
+
+初學者可以先建立 10 到 20 個任務作為 evaluation set。
+
+每個任務記錄：
+
+```text
+Input:
+Expected behavior:
+Must include:
+Must not include:
+Failure cases:
+Score:
+```
+
+建議評分維度：
+
+| 維度 | 問題 |
+|---|---|
+| Task success | Agent 是否完成要求任務？ |
+| Faithfulness | 是否避免編造未被支持的事實？ |
+| Format | 是否遵守要求輸出格式？ |
+| Safety | 是否避免不安全或禁止行為？ |
+| Usefulness | 輸出是否能幫助使用者採取下一步？ |
+
+---
+
 ## Hands-on Exercise
 
 使用這個模板設計三個 Agent：
@@ -179,6 +280,8 @@ Evaluation criteria:
 2. Customer Support Triage Agent
 3. Personal Health Note Organizer
 
+接著為其中一個 Agent 建立 5 個 evaluation tasks。
+
 ---
 
 ## Checklist
@@ -191,6 +294,8 @@ Evaluation criteria:
 - 設計一個範圍清楚的 Agent role
 - 判斷什麼時候 Agent 需要工具或 workflow
 - 解釋為什麼 Production Agent 需要 evaluation
+- 建立簡單 agent specification
+- 建立基本 evaluation tasks
 
 ---
 
@@ -202,6 +307,15 @@ Evaluation criteria:
 - 以為自主就等於可靠
 - 忽略 fallback behavior
 - 只看回答品質，不看任務是否成功
+- 還沒定義哪些內容應該被記住，就加入 memory
+
+---
+
+## References
+
+- Yao et al. (2022), ReAct: Synergizing Reasoning and Acting in Language Models.
+- Valmeekam et al. (2024), On the Brittle Foundations of ReAct Prompting for Agentic Large Language Models.
+- See also: [References](../references/README.md)
 
 ---
 
