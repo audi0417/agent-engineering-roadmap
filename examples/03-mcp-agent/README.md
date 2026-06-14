@@ -21,7 +21,7 @@ The tool server exposes:
 
 ## Why MCP-style first?
 
-MCP introduces a clean separation between the agent and external capabilities.
+MCP-style architecture introduces a clean separation between the agent and external capabilities.
 
 Instead of hard-coding tools directly inside the agent, we place tools behind a server-like boundary:
 
@@ -29,7 +29,26 @@ Instead of hard-coding tools directly inside the agent, we place tools behind a 
 Agent → MCP Client → Tool Server → Tool Result
 ```
 
-This makes tools easier to replace, audit, and reuse.
+This makes tools easier to replace, audit, reuse, and secure.
+
+The key engineering idea is not the protocol name itself. The key idea is the boundary:
+
+```text
+The agent reasons.
+The client translates.
+The server owns tools.
+The tool returns observations.
+```
+
+---
+
+## Direct tools vs MCP-style tools
+
+| Design | Description | Tradeoff |
+|---|---|---|
+| Direct tool import | Agent code imports and calls tool functions directly | Simple, but hard to reuse across agents |
+| Tool registry | Agent runtime calls tools from a local registry | Better organization, still coupled to the app |
+| MCP-style boundary | Agent uses a client to call tools owned by a server | More modular, easier to audit and replace |
 
 ---
 
@@ -81,6 +100,66 @@ flowchart TD
 
 ---
 
+## Implementation walkthrough
+
+### `tools.py`
+
+Contains the actual tool implementations.
+
+In this example, tools are intentionally simple:
+
+- local knowledge search
+- demo user profile lookup
+- explanation of the server boundary
+
+### `mcp_server.py`
+
+Owns the tool registry and exposes two server-like methods:
+
+```python
+list_tools()
+call_tool(name, arguments)
+```
+
+The agent does not import tool functions directly.
+
+### `mcp_client.py`
+
+Acts as the boundary between the agent runtime and the server.
+
+In a real MCP implementation, this layer would communicate with an external MCP server.
+
+### `main.py`
+
+Runs the agent loop:
+
+```text
+Load server tools
+Send tool schemas to model
+Receive tool call
+Call tool through client
+Return observation to model
+Generate final answer
+```
+
+---
+
+## Safety notes
+
+MCP-style systems make integration easier, but they also increase the importance of tool security.
+
+For real systems, consider:
+
+- tool permission boundaries
+- input validation
+- command allowlists
+- audit logs
+- human approval for risky actions
+- protection against prompt injection
+- least-privilege server design
+
+---
+
 ## Learning objectives
 
 After completing this example, you should understand:
@@ -90,6 +169,7 @@ After completing this example, you should understand:
 - how to call tools through a client boundary
 - how MCP-style design differs from direct tool imports
 - how this pattern prepares for real MCP servers
+- why MCP-style integration needs security controls
 
 ---
 
@@ -106,6 +186,14 @@ Get the profile for user_001 and summarize the care context.
 ```text
 Use available tools to explain what MCP-style separation means.
 ```
+
+---
+
+## References
+
+- Anthropic, Model Context Protocol public documentation and ecosystem materials.
+- Yao et al. (2022), ReAct: Synergizing Reasoning and Acting in Language Models.
+- Public MCP security reports and discussions on tool permission risks.
 
 ---
 
