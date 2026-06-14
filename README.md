@@ -1,8 +1,38 @@
 # Agent Engineering Roadmap
 
-> A hands-on roadmap for building production-ready AI Agents, MCP Servers, Memory Systems, Multi-Agent Workflows, and Agent Colonies.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:8B5CF6&height=180&section=header&text=Agent%20Engineering%20Roadmap&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=MCP%20%7C%20Memory%20%7C%20Multi-Agent%20%7C%20Agent%20Colony&descAlignY=55&descSize=18" alt="Agent Engineering Roadmap" />
+</p>
 
-[繁體中文](README_zh.md) · Roadmap · Examples · Architecture · Healthcare · Finance
+<p align="center">
+  <a href="README_zh.md"><img src="https://img.shields.io/badge/Language-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-red?style=for-the-badge" alt="Traditional Chinese" /></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English" /></a>
+  <img src="https://img.shields.io/github/stars/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/forks/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/last-commit/audi0417/agent-engineering-roadmap?style=for-the-badge" alt="Last Commit" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Agent-Engineering-8B5CF6?style=flat-square" alt="Agent Engineering" />
+  <img src="https://img.shields.io/badge/MCP-Ready-0EA5E9?style=flat-square" alt="MCP Ready" />
+  <img src="https://img.shields.io/badge/Memory-Systems-10B981?style=flat-square" alt="Memory Systems" />
+  <img src="https://img.shields.io/badge/Multi--Agent-Workflow-F59E0B?style=flat-square" alt="Multi-Agent Workflow" />
+  <img src="https://img.shields.io/badge/Agent-Colony-EF4444?style=flat-square" alt="Agent Colony" />
+  <img src="https://img.shields.io/badge/Status-V0.1-informational?style=flat-square" alt="Status" />
+</p>
+
+<p align="center">
+  <b>A hands-on roadmap for building production-ready AI Agents, MCP Servers, Memory Systems, Multi-Agent Workflows, and Agent Colonies.</b>
+</p>
+
+<p align="center">
+  <a href="README_zh.md">繁體中文</a> ·
+  <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
+  <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="architecture/colony-architecture.md">Architecture</a> ·
+  <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
+  <a href="finance/finance-agent-colony.md">Finance</a>
+</p>
 
 ---
 
@@ -16,12 +46,6 @@ flowchart LR
     Workflow --> MultiAgent[Multi-Agent Team]
     MultiAgent --> Colony[Agent Colony]
     Colony --> Production[Production AI App]
-
-    MCP -. connects .-> Plugins[Plugin Ecosystem]
-    Plugins --> Data[Data Sources]
-    Plugins --> APIs[External APIs]
-    Plugins --> Apps[Apps & Services]
-    Plugins --> Observability[Tracing & Evaluation]
 ```
 
 ---
@@ -80,6 +104,16 @@ Agent Colony
       ↓
 Production, Evaluation & Safety
 ```
+
+---
+
+## README widgets used
+
+This README uses lightweight visual widgets commonly seen in popular GitHub projects:
+
+- `capsule-render` for the top hero banner
+- `shields.io` for stars, forks, language, status, and topic badges
+- Mermaid for architecture diagrams
 
 ---
 
@@ -200,7 +234,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add Level 0-8 roadmap skeleton
 - [x] Add architecture documents
 - [x] Add healthcare and finance tracks
-- [x] Add hero diagram and plugin ecosystem
+- [x] Add README badges and hero banner
 - [ ] Expand each roadmap level into a full handbook chapter
 - [ ] Add minimal runnable examples
 - [ ] Add MCP server templates
