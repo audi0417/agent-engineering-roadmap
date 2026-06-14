@@ -1,5 +1,7 @@
 # Example 01 — Single Agent
 
+[English](README.md)
+
 這個範例示範如何建立一個簡單、單一任務導向的 AI Agent。
 
 這裡的目標不是打造完全自主的 Agent，而是學會 Agent Engineering 中最小、最可靠的基本單位：
