@@ -1,8 +1,52 @@
 # Agent Engineering Roadmap
 
-> 一份實作導向的學習地圖，帶你打造生產級 AI Agent、MCP Server、Memory System、Multi-Agent Workflow 與 Agent Colony。
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:8B5CF6&height=180&section=header&text=Agent%20Engineering%20Roadmap&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=MCP%20%7C%20Memory%20%7C%20Multi-Agent%20%7C%20Agent%20Colony&descAlignY=55&descSize=18" alt="Agent Engineering Roadmap" />
+</p>
 
-[English](README.md) · Roadmap · Examples · Architecture · Healthcare · Finance
+<p align="center">
+  <a href="README_zh.md"><img src="https://img.shields.io/badge/Language-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-red?style=for-the-badge" alt="Traditional Chinese" /></a>
+  <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English" /></a>
+  <img src="https://img.shields.io/github/stars/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/forks/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/last-commit/audi0417/agent-engineering-roadmap?style=for-the-badge" alt="Last Commit" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Agent-Engineering-8B5CF6?style=flat-square" alt="Agent Engineering" />
+  <img src="https://img.shields.io/badge/MCP-Ready-0EA5E9?style=flat-square" alt="MCP Ready" />
+  <img src="https://img.shields.io/badge/Memory-Systems-10B981?style=flat-square" alt="Memory Systems" />
+  <img src="https://img.shields.io/badge/Multi--Agent-Workflow-F59E0B?style=flat-square" alt="Multi-Agent Workflow" />
+  <img src="https://img.shields.io/badge/Agent-Colony-EF4444?style=flat-square" alt="Agent Colony" />
+  <img src="https://img.shields.io/badge/Status-V0.1-informational?style=flat-square" alt="Status" />
+</p>
+
+<p align="center">
+  <b>一份實作導向的學習地圖，帶你打造生產級 AI Agent、MCP Server、Memory System、Multi-Agent Workflow 與 Agent Colony。</b>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a> ·
+  <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
+  <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="architecture/colony-architecture.md">Architecture</a> ·
+  <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
+  <a href="finance/finance-agent-colony.md">Finance</a>
+</p>
+
+---
+
+```mermaid
+flowchart LR
+    User((User)) --> Agent[AI Agent]
+    Agent --> Tools[Tool Use]
+    Tools --> MCP[MCP Layer]
+    MCP --> Memory[Memory System]
+    Memory --> Workflow[Agent Workflow]
+    Workflow --> MultiAgent[Multi-Agent Team]
+    MultiAgent --> Colony[Agent Colony]
+    Colony --> Production[Production AI App]
+```
 
 ---
 
@@ -63,6 +107,34 @@ Production, Evaluation & Safety
 
 ---
 
+## README 小組件
+
+這份 README 使用熱門 GitHub 專案常見的輕量視覺小組件：
+
+- `capsule-render`：頂部 Hero Banner
+- `shields.io`：Stars、Forks、Language、Status 與主題徽章
+- Mermaid：架構圖與流程圖
+
+---
+
+## Plugin Ecosystem
+
+Agent Engineering 不只是 Prompt。生產級 Agent 需要一整套外部工具與插件生態。
+
+| 類別 | 用途 | 範例 Plugins / Tools |
+|---|---|---|
+| MCP Servers | 標準化存取工具與資料 | filesystem, database, browser, GitHub, Slack, Google Drive |
+| Memory | 長期記憶與檢索 | Qdrant, LanceDB, Chroma, PostgreSQL, Redis |
+| Orchestration | Workflow 與 Multi-Agent 控制 | LangGraph, CrewAI, AutoGen, OpenAI Agents SDK |
+| RAG | 知識檢索與 grounding | LlamaIndex, LangChain, Haystack |
+| Observability | Trace、Debug、監控 | Langfuse, OpenTelemetry, Helicone, Phoenix |
+| Evaluation | 品質與安全測試 | DeepEval, RAGAS, promptfoo, custom eval suites |
+| Guardrails | 安全防護與結構化驗證 | Guardrails AI, Pydantic, JSON Schema, policy checkers |
+| UI / App Layer | 使用者介面與應用層 | Streamlit, Gradio, Next.js, FastAPI |
+| Domain Tools | 產業專用整合 | healthcare records, finance data, CRM, ERP, ticketing systems |
+
+---
+
 ## 核心架構
 
 ```mermaid
@@ -77,6 +149,11 @@ graph TD
     ToolAgent --> MCP[MCP Servers]
     DomainAgent --> MCP
     ResearchAgent --> MCP
+    MCP --> PluginLayer[Plugin Ecosystem]
+    PluginLayer --> Databases[Databases]
+    PluginLayer --> Documents[Documents]
+    PluginLayer --> APIs[External APIs]
+    PluginLayer --> SaaS[SaaS Apps]
     Supervisor --> Evaluator[Evaluator Agent]
     Evaluator --> Final[Final Response]
     Final --> User
@@ -157,6 +234,7 @@ Research Agent
 - [x] 加入 Level 0-8 Roadmap Skeleton
 - [x] 加入 Architecture Documents
 - [x] 加入 Healthcare 與 Finance Tracks
+- [x] 加入 README badges 與 Hero Banner
 - [ ] 將每個 Roadmap Level 擴充成完整 Handbook Chapter
 - [ ] 加入最小可執行範例
 - [ ] 加入 MCP Server Templates
