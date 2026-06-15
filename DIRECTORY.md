@@ -26,6 +26,15 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 ---
 
+## Course
+
+| File | Description |
+|---|---|
+| [Course](COURSE.md) | Complete syllabus, tracks, and graduation criteria |
+| [Course zh](COURSE_zh.md) | 完整課綱、學習 track 與完課標準 |
+
+---
+
 ## Examples
 
 | Example | Description |
@@ -36,6 +45,26 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [04 Memory Agent](examples/04-memory-agent/README.md) | Add memory to an agent. |
 | [05 Multi-Agent Workflow](examples/05-multi-agent-workflow/README.md) | Coordinate multiple agents in a workflow. |
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Build a colony-style multi-agent system. |
+| [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Run regression checks against agent behavior. |
+
+---
+
+## Labs
+
+| Lab | Topic |
+|---|---|
+| [Labs Index](labs/README.md) | Guided lab sequence |
+| [Lab 00](labs/lab-00-agent-spec.md) | Agent specification |
+| [Lab 01](labs/lab-01-single-agent.md) | Single agent |
+| [Lab 02](labs/lab-02-tool-calling.md) | Tool calling |
+| [Lab 03](labs/lab-03-memory.md) | Memory |
+| [Lab 04](labs/lab-04-rag.md) | RAG |
+| [Lab 05](labs/lab-05-workflow.md) | Workflow |
+| [Lab 06](labs/lab-06-graph-agent.md) | Graph agent |
+| [Lab 07](labs/lab-07-multi-agent.md) | Multi-agent systems |
+| [Lab 08](labs/lab-08-human-in-the-loop.md) | Human-in-the-loop |
+| [Lab 09](labs/lab-09-evaluation.md) | Evaluation |
+| [Lab 10](labs/lab-10-capstone-prep.md) | Capstone prep |
 
 ---
 
@@ -75,6 +104,42 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Evaluation Suite](templates/evaluation-suite-template.yaml) | Create regression cases and scoring dimensions |
 | [Safety Gate](templates/safety-gate-template.md) | Define approval, refusal, and logging rules |
 | [MCP Server Template](templates/mcp-server-template.py) | Minimal MCP-style tool registry |
+
+---
+
+## Patterns
+
+| File | Topic |
+|---|---|
+| [Patterns](patterns/README.md) | Agent architecture pattern catalog |
+| [Patterns zh](patterns/README_zh.md) | Agent architecture pattern catalog 繁中版 |
+
+---
+
+## Assessments
+
+| File | Topic |
+|---|---|
+| [Quiz Bank](assessments/quiz-bank.md) | Module review questions |
+| [Rubrics](assessments/rubrics.md) | Specification, example, and production readiness rubrics |
+
+---
+
+## Projects
+
+| File | Topic |
+|---|---|
+| [Capstone Agent Colony](projects/capstone-agent-colony.md) | Final course project |
+| [Portfolio Projects](projects/portfolio-projects.md) | Suggested project ideas |
+
+---
+
+## Glossary
+
+| File | Topic |
+|---|---|
+| [Glossary](glossary/agent-engineering-glossary.md) | Agent engineering terms |
+| [Glossary zh](glossary/agent-engineering-glossary_zh.md) | Agent engineering terms 繁中版 |
 
 ---
 

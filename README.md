@@ -27,8 +27,10 @@
 
 <p align="center">
   <a href="README_zh.md">繁體中文</a> ·
+  <a href="COURSE.md">Course</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="labs/README.md">Labs</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
@@ -97,6 +99,23 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | 6 | Multi-Agent Systems | Coordinate specialized agents using supervisor, debate, and reflection patterns |
 | 7 | Agent Colony | Build shared-memory colonies with domain agents and evaluation loops |
 | 8 | Production & Safety | Deploy agents with observability, evaluation, security, and cost control |
+
+---
+
+## Course materials
+
+| Section | Purpose |
+|---|---|
+| [Course](COURSE.md) | Complete syllabus and graduation criteria |
+| [Curriculum](curriculum/README.md) | Concept chapters from foundations to production |
+| [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
+| [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
+| [Labs](labs/README.md) | Guided exercises for each stage |
+| [Patterns](patterns/README.md) | Reusable agent architecture patterns |
+| [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
+| [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
+| [Capstone](projects/capstone-agent-colony.md) | Final project for building a production-aware colony |
+| [Glossary](glossary/agent-engineering-glossary.md) | Core terms and definitions |
 
 ---
 
@@ -185,10 +204,17 @@ graph TD
 agent-engineering-roadmap/
 ├── README.md
 ├── README_zh.md
+├── COURSE.md
 ├── roadmap/          # Level 0-8 learning path
+├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples
+├── labs/             # Guided exercises
+├── patterns/         # Architecture pattern catalog
 ├── architecture/     # System design patterns
 ├── templates/        # Reusable agent and MCP templates
+├── assessments/      # Quiz bank and rubrics
+├── projects/         # Capstone and portfolio projects
+├── glossary/         # Agent engineering terms
 ├── healthcare/       # Healthcare agent engineering track
 ├── finance/          # Finance and quantitative research track
 └── resources/        # Curated learning resources
@@ -258,6 +284,10 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add memory system examples
 - [x] Add agent colony demo
 - [x] Add evaluation and safety templates
+- [x] Add full course syllabus
+- [x] Add guided labs
+- [x] Add pattern catalog
+- [x] Add quiz bank, rubrics, glossary, and capstone
 - [ ] Add full healthcare agent colony application
 - [ ] Add full finance research agent application
 

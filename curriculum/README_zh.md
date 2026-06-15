@@ -84,4 +84,40 @@ Domain Applications
 
 ## 狀態
 
-這份課程仍在持續開發中。
+課程目前包含概念章節、可執行 examples、guided labs、patterns、templates、assessments、glossary 與 capstone project。
+
+---
+
+## Module 與實作對照
+
+| Module | Read | Run | Practice | Assess |
+|---|---|---|---|---|
+| 00 | `00-agent-foundations_zh.md` | - | `labs/lab-00-agent-spec.md` | `assessments/quiz-bank.md` |
+| 01 | `01-agent-architecture_zh.md` | `examples/01-single-agent` | `labs/lab-01-single-agent.md` | `assessments/rubrics.md` |
+| 02 | `02-tool-calling_zh.md` | `examples/02-tool-using-agent` | `labs/lab-02-tool-calling.md` | `assessments/quiz-bank.md` |
+| 03 | `03-memory-systems_zh.md` | `examples/04-memory-agent` | `labs/lab-03-memory.md` | `templates/memory-policy-template.md` |
+| 04 | `04-rag-and-embeddings_zh.md` | - | `labs/lab-04-rag.md` | retrieval eval cases |
+| 05 | `05-workflow-orchestration_zh.md` | `examples/05-multi-agent-workflow` | `labs/lab-05-workflow.md` | workflow review rubric |
+| 06 | `06-graph-based-agents_zh.md` | - | `labs/lab-06-graph-agent.md` | graph design review |
+| 07 | `07-multi-agent-systems_zh.md` | `examples/06-agent-colony` | `labs/lab-07-multi-agent.md` | routing tests |
+| 08 | `08-human-in-the-loop_zh.md` | - | `labs/lab-08-human-in-the-loop.md` | approval policy review |
+| 09 | `09-production-agent-systems_zh.md` | `examples/07-evaluation-harness` | `labs/lab-09-evaluation.md` | regression suite |
+| 10 | `10-domain-agent-healthcare_zh.md` | `examples/06-agent-colony` | domain safety plan | production rubric |
+| 11 | `11-domain-agent-finance_zh.md` | `examples/06-agent-colony` | domain risk plan | production rubric |
+| 12 | `12-agent-frameworks-comparison_zh.md` | framework spike | `labs/lab-10-capstone-prep.md` | architecture review |
+
+---
+
+## 完成路線
+
+```text
+讀一個 module
+   ↓
+跑最接近的 example
+   ↓
+完成 lab
+   ↓
+回答 review questions
+   ↓
+更新你的 capstone design
+```

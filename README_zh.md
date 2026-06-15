@@ -27,8 +27,10 @@
 
 <p align="center">
   <a href="README.md">English</a> ·
+  <a href="COURSE_zh.md">Course</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="labs/README.md">Labs</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
@@ -97,6 +99,23 @@ flowchart LR
 | 6 | Multi-Agent Systems | 使用 Supervisor、Debate、Reflection 等模式協調多個 Agent |
 | 7 | Agent Colony | 建立具備共享記憶、Domain Agent 與 Evaluation Loop 的 Agent Colony |
 | 8 | Production & Safety | 部署具備觀測、評估、安全與成本控制的 Agent 系統 |
+
+---
+
+## 課程材料
+
+| 區塊 | 用途 |
+|---|---|
+| [Course](COURSE_zh.md) | 完整課綱與完課標準 |
+| [Curriculum](curriculum/README_zh.md) | 從基礎到 production 的概念章節 |
+| [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
+| [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
+| [Labs](labs/README.md) | 每個階段的引導式練習 |
+| [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
+| [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
+| [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
+| [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
+| [Glossary](glossary/agent-engineering-glossary_zh.md) | 核心術語與定義 |
 
 ---
 
@@ -185,10 +204,17 @@ graph TD
 agent-engineering-roadmap/
 ├── README.md
 ├── README_zh.md
+├── COURSE.md
 ├── roadmap/          # Level 0-8 學習地圖
+├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例
+├── labs/             # 引導式練習
+├── patterns/         # 架構 pattern catalog
 ├── architecture/     # 系統設計模式
 ├── templates/        # 可重用的 Agent 與 MCP Template
+├── assessments/      # 題庫與 rubrics
+├── projects/         # Capstone 與 portfolio projects
+├── glossary/         # Agent Engineering 術語
 ├── healthcare/       # Healthcare Agent Engineering Track
 ├── finance/          # Finance / Quantitative Research Track
 └── resources/        # 精選學習資源
@@ -258,6 +284,10 @@ Research Agent
 - [x] 加入 Memory System Examples
 - [x] 加入 Agent Colony Demo
 - [x] 加入 Evaluation and Safety Templates
+- [x] 加入完整 Course Syllabus
+- [x] 加入 Guided Labs
+- [x] 加入 Pattern Catalog
+- [x] 加入 Quiz Bank、Rubrics、Glossary 與 Capstone
 - [ ] 加入完整 Healthcare Agent Colony Application
 - [ ] 加入完整 Finance Research Agent Application
 

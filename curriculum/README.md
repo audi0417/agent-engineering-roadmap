@@ -84,4 +84,40 @@ Each module should contain:
 
 ## Status
 
-This curriculum is under active development.
+The curriculum now includes concept chapters, runnable examples, guided labs, patterns, templates, assessments, glossary, and a capstone project.
+
+---
+
+## Module-To-Practice Map
+
+| Module | Read | Run | Practice | Assess |
+|---|---|---|---|---|
+| 00 | `00-agent-foundations.md` | - | `labs/lab-00-agent-spec.md` | `assessments/quiz-bank.md` |
+| 01 | `01-agent-architecture.md` | `examples/01-single-agent` | `labs/lab-01-single-agent.md` | `assessments/rubrics.md` |
+| 02 | `02-tool-calling.md` | `examples/02-tool-using-agent` | `labs/lab-02-tool-calling.md` | `assessments/quiz-bank.md` |
+| 03 | `03-memory-systems.md` | `examples/04-memory-agent` | `labs/lab-03-memory.md` | `templates/memory-policy-template.md` |
+| 04 | `04-rag-and-embeddings.md` | - | `labs/lab-04-rag.md` | retrieval eval cases |
+| 05 | `05-workflow-orchestration.md` | `examples/05-multi-agent-workflow` | `labs/lab-05-workflow.md` | workflow review rubric |
+| 06 | `06-graph-based-agents.md` | - | `labs/lab-06-graph-agent.md` | graph design review |
+| 07 | `07-multi-agent-systems.md` | `examples/06-agent-colony` | `labs/lab-07-multi-agent.md` | routing tests |
+| 08 | `08-human-in-the-loop.md` | - | `labs/lab-08-human-in-the-loop.md` | approval policy review |
+| 09 | `09-production-agent-systems.md` | `examples/07-evaluation-harness` | `labs/lab-09-evaluation.md` | regression suite |
+| 10 | `10-domain-agent-healthcare.md` | `examples/06-agent-colony` | domain safety plan | production rubric |
+| 11 | `11-domain-agent-finance.md` | `examples/06-agent-colony` | domain risk plan | production rubric |
+| 12 | `12-agent-frameworks-comparison.md` | framework spike | `labs/lab-10-capstone-prep.md` | architecture review |
+
+---
+
+## Completion Path
+
+```text
+Read a module
+   ↓
+Run the closest example
+   ↓
+Complete the lab
+   ↓
+Answer review questions
+   ↓
+Update your capstone design
+```
