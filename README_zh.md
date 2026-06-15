@@ -111,6 +111,7 @@ flowchart LR
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
+| [Lesson Plans](lesson-plans/README.md) | 每個 module 可直接上課的教案 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
@@ -209,6 +210,7 @@ agent-engineering-roadmap/
 ├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例
 ├── labs/             # 引導式練習
+├── lesson-plans/     # 可直接上課的教案
 ├── patterns/         # 架構 pattern catalog
 ├── architecture/     # 系統設計模式
 ├── templates/        # 可重用的 Agent 與 MCP Template
@@ -286,6 +288,7 @@ Research Agent
 - [x] 加入 Evaluation and Safety Templates
 - [x] 加入完整 Course Syllabus
 - [x] 加入 Guided Labs
+- [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog
 - [x] 加入 Quiz Bank、Rubrics、Glossary 與 Capstone
 - [ ] 加入完整 Healthcare Agent Colony Application

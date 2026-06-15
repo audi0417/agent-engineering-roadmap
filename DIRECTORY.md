@@ -68,6 +68,26 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 ---
 
+## Lesson Plans
+
+| Module | Lesson Plan |
+|---|---|
+| 00 | [Agent Foundations](lesson-plans/module-00-agent-foundations.md) |
+| 01 | [Agent Architecture](lesson-plans/module-01-agent-architecture.md) |
+| 02 | [Tool Calling](lesson-plans/module-02-tool-calling.md) |
+| 03 | [Memory Systems](lesson-plans/module-03-memory-systems.md) |
+| 04 | [RAG And Embeddings](lesson-plans/module-04-rag-and-embeddings.md) |
+| 05 | [Workflow Orchestration](lesson-plans/module-05-workflow-orchestration.md) |
+| 06 | [Graph-Based Agents](lesson-plans/module-06-graph-based-agents.md) |
+| 07 | [Multi-Agent Systems](lesson-plans/module-07-multi-agent-systems.md) |
+| 08 | [Human-In-The-Loop](lesson-plans/module-08-human-in-the-loop.md) |
+| 09 | [Production Agent Systems](lesson-plans/module-09-production-agent-systems.md) |
+| 10 | [Healthcare Agents](lesson-plans/module-10-healthcare-agents.md) |
+| 11 | [Finance Agents](lesson-plans/module-11-finance-agents.md) |
+| 12 | [Frameworks Comparison](lesson-plans/module-12-frameworks-comparison.md) |
+
+---
+
 ## Roadmap
 
 | Level | Topic |

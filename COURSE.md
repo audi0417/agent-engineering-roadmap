@@ -96,6 +96,7 @@ You have completed the course when you can:
 | `roadmap/` | Level-by-level learning milestones |
 | `examples/` | Runnable minimal implementations |
 | `labs/` | Guided hands-on exercises |
+| `lesson-plans/` | Instructor-ready 90-minute teaching plans |
 | `patterns/` | Reusable architecture patterns |
 | `templates/` | Project templates and safety/eval documents |
 | `assessments/` | Quiz bank and review questions |

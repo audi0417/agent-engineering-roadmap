@@ -111,6 +111,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
 | [Labs](labs/README.md) | Guided exercises for each stage |
+| [Lesson Plans](lesson-plans/README.md) | Instructor-ready teaching plans for each module |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
@@ -209,6 +210,7 @@ agent-engineering-roadmap/
 ├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples
 ├── labs/             # Guided exercises
+├── lesson-plans/     # Instructor-ready lesson plans
 ├── patterns/         # Architecture pattern catalog
 ├── architecture/     # System design patterns
 ├── templates/        # Reusable agent and MCP templates
@@ -286,6 +288,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add evaluation and safety templates
 - [x] Add full course syllabus
 - [x] Add guided labs
+- [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog
 - [x] Add quiz bank, rubrics, glossary, and capstone
 - [ ] Add full healthcare agent colony application

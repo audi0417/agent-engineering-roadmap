@@ -96,6 +96,7 @@ Part 5: Domain Systems
 | `roadmap/` | Level-by-level 學習里程碑 |
 | `examples/` | 可執行最小實作 |
 | `labs/` | 引導式實作練習 |
+| `lesson-plans/` | 每堂 90 分鐘、可直接上課的教案 |
 | `patterns/` | 可重用架構模式 |
 | `templates/` | 專案模板、安全模板、評估模板 |
 | `assessments/` | 題庫與複習問題 |
