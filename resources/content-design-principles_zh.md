@@ -91,6 +91,38 @@ Outcome
 - 重視安全
 - 重視生產環境
 
+## 教學節奏
+
+每一篇原創 lesson 都應該先讓讀者感覺到問題，再引入方法名稱。
+
+建議節奏：
+
+```text
+問題
+   ↓
+直覺
+   ↓
+黑盒子的 input/output
+   ↓
+內部機制
+   ↓
+最小可執行範例
+   ↓
+常見失敗模式
+   ↓
+Checklist
+```
+
+比如說，不要一開始就定義「memory architecture」。先讓問題出現：Agent 忘記了使用者穩定偏好。接著問：什麼應該被記住？什麼應該被取回？什麼永遠不應該存？到這裡，再介紹 short-term memory、semantic memory、episodic memory 和 shared memory。
+
+每個主要概念都應該包含：
+
+- 一句白話解釋
+- 一個具體例子
+- 必要時加入一張 architecture 或 flow diagram
+- 一個常見錯誤
+- 一個可以立刻做的下一步
+
 ---
 
 ## Repository Policy

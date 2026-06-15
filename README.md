@@ -29,6 +29,7 @@
   <a href="README_zh.md">繁體中文</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
   <a href="finance/finance-agent-colony.md">Finance</a>
@@ -64,6 +65,22 @@ Real agentic products require more than that:
 - evaluation, security, and production guardrails
 
 This repository is a practical learning path for builders who want to move from chatbot demos to real agent engineering.
+
+---
+
+## Teaching approach
+
+This roadmap teaches agents like an engineering course, not a tool catalog.
+
+Each major topic follows the same pattern:
+
+1. Start with the problem: what breaks if you only use a chatbot?
+2. Build the intuition: what is the simplest mental model?
+3. Open the box: what components are actually involved?
+4. Run a minimal example: what can you inspect locally?
+5. Add production judgment: what needs evaluation, observability, approval, or safety gates?
+
+In one sentence: an agent is not magic. It is context, tools, memory, workflow, evaluation, and human judgment arranged around a useful task.
 
 ---
 
@@ -235,13 +252,14 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add architecture documents
 - [x] Add healthcare and finance tracks
 - [x] Add README badges and hero banner
-- [ ] Expand each roadmap level into a full handbook chapter
-- [ ] Add minimal runnable examples
-- [ ] Add MCP server templates
-- [ ] Add memory system examples
-- [ ] Add healthcare agent colony demo
-- [ ] Add finance research agent demo
-- [ ] Add evaluation and safety templates
+- [x] Expand each roadmap level into handbook chapters
+- [x] Add minimal runnable examples
+- [x] Add MCP server templates
+- [x] Add memory system examples
+- [x] Add agent colony demo
+- [x] Add evaluation and safety templates
+- [ ] Add full healthcare agent colony application
+- [ ] Add full finance research agent application
 
 ---
 
@@ -258,4 +276,4 @@ Build customer support agents, internal knowledge agents, document agents, workf
 
 ## License
 
-To be decided.
+No license has been selected yet. Choose a license before allowing reuse outside this repository.

@@ -29,6 +29,7 @@
   <a href="README.md">English</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
   <a href="finance/finance-agent-colony.md">Finance</a>
@@ -64,6 +65,22 @@ flowchart LR
 - 生產環境需要 Evaluation、Security、Cost Control 與 Human Approval Gate
 
 這份 Roadmap 是為了想從 Chatbot Demo 走向真實 Agent Engineering 的開發者與產品團隊而設計。
+
+---
+
+## 教學方式
+
+這份 Roadmap 不是工具清單，而是一門工程課。
+
+每個主題都會照著同一個節奏走：
+
+1. 先講問題：如果只有 Chatbot，哪裡會壞掉？
+2. 再講直覺：最小心智模型是什麼？
+3. 打開黑盒子：裡面到底有哪些元件？
+4. 跑最小範例：什麼東西可以在本機看得到？
+5. 補生產判斷：什麼地方需要 evaluation、observability、approval 或 safety gate？
+
+一言以蔽之：Agent 不是魔法。Agent 其實就是把 context、tools、memory、workflow、evaluation 和 human judgment，圍繞著一個有用任務組起來而已。
 
 ---
 
@@ -235,13 +252,14 @@ Research Agent
 - [x] 加入 Architecture Documents
 - [x] 加入 Healthcare 與 Finance Tracks
 - [x] 加入 README badges 與 Hero Banner
-- [ ] 將每個 Roadmap Level 擴充成完整 Handbook Chapter
-- [ ] 加入最小可執行範例
-- [ ] 加入 MCP Server Templates
-- [ ] 加入 Memory System Examples
-- [ ] 加入 Healthcare Agent Colony Demo
-- [ ] 加入 Finance Research Agent Demo
-- [ ] 加入 Evaluation and Safety Templates
+- [x] 將每個 Roadmap Level 擴充成 Handbook Chapter
+- [x] 加入最小可執行範例
+- [x] 加入 MCP Server Templates
+- [x] 加入 Memory System Examples
+- [x] 加入 Agent Colony Demo
+- [x] 加入 Evaluation and Safety Templates
+- [ ] 加入完整 Healthcare Agent Colony Application
+- [ ] 加入完整 Finance Research Agent Application
 
 ---
 
@@ -258,4 +276,4 @@ Research Agent
 
 ## License
 
-To be decided.
+尚未指定授權條款。若要允許他人重用本專案內容，請先選擇並加入正式 License。

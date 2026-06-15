@@ -65,6 +65,19 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 ---
 
+## Templates
+
+| File | Topic |
+|---|---|
+| [Templates](templates/README.md) | How to use the reusable templates |
+| [Agent Spec](templates/agent-spec-template.md) | Define agent scope, tools, outputs, and evaluation |
+| [Memory Policy](templates/memory-policy-template.md) | Decide what memory can be written, retrieved, and deleted |
+| [Evaluation Suite](templates/evaluation-suite-template.yaml) | Create regression cases and scoring dimensions |
+| [Safety Gate](templates/safety-gate-template.md) | Define approval, refusal, and logging rules |
+| [MCP Server Template](templates/mcp-server-template.py) | Minimal MCP-style tool registry |
+
+---
+
 ## Domain Tracks
 
 | Track | File |

@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Demo runtime data
+examples/04-memory-agent/memory.json
+
+# OS/editor files
+.DS_Store

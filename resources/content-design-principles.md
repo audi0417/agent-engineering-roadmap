@@ -92,6 +92,38 @@ Good teaching content should be:
 - safety-aware
 - production-aware
 
+## Teaching Pattern
+
+Each original lesson should make the learner feel the problem before naming the method.
+
+Use this pattern:
+
+```text
+Problem
+   ↓
+Intuition
+   ↓
+Black-box input/output
+   ↓
+Internal mechanism
+   ↓
+Minimal runnable example
+   ↓
+Common failure mode
+   ↓
+Checklist
+```
+
+For example, do not introduce "memory architecture" as a definition first. Start with the failure: the agent forgets a stable user preference. Then ask what should be remembered, what should be retrieved, and what should never be stored. Only after that should the lesson name short-term memory, semantic memory, episodic memory, and shared memory.
+
+Every major concept should include:
+
+- one plain-language sentence
+- one concrete example
+- one architecture or flow diagram when useful
+- one common mistake
+- one practical next step
+
 ---
 
 ## Repository Policy

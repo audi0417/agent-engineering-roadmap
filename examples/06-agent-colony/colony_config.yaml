@@ -1,0 +1,17 @@
+domains:
+  healthcare:
+    keywords: [health, healthcare, medical, patient, nutrition, medication]
+    disclaimer: Educational workflow only. Not medical advice.
+  finance:
+    keywords: [finance, stock, portfolio, market, company, risk]
+    disclaimer: Research workflow only. Not investment advice.
+  enterprise:
+    keywords: [enterprise, support, crm, ticket, document, workflow]
+    disclaimer: Internal automation workflow. Verify before taking action.
+
+evaluation:
+  required:
+    - routed_domain
+    - disclaimer
+    - recommended_workflow
+    - human_review_gate
