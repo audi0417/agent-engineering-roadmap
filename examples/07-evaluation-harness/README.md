@@ -20,7 +20,7 @@ This example uses a deterministic mock agent so the evaluation logic is easy to 
 | `main.py` | Runs the evaluation suite |
 | `evaluator.py` | Scoring logic |
 | `mock_agent.py` | Deterministic agent used for tests |
-| `eval_cases.yaml` | Test cases |
+| `eval_cases.json` | Test cases |
 
 ## Run
 

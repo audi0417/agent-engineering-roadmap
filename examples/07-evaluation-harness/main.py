@@ -6,21 +6,20 @@ Run:
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
-
-import yaml
 
 from evaluator import evaluate_case, summarize
 from mock_agent import run_agent
 
 
 BASE_DIR = Path(__file__).resolve().parent
-EVAL_PATH = BASE_DIR / "eval_cases.yaml"
+EVAL_PATH = BASE_DIR / "eval_cases.json"
 
 
 def load_cases() -> list[dict]:
     with EVAL_PATH.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)["cases"]
+        return json.load(file)["cases"]
 
 
 def main() -> None:

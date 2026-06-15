@@ -1,0 +1,26 @@
+name: Content gap
+description: Suggest a missing lesson, example, diagram, or template.
+title: "[Content Gap]: "
+labels: ["content", "good first issue"]
+body:
+  - type: textarea
+    id: gap
+    attributes:
+      label: What is missing?
+      description: Describe the lesson, example, diagram, or template that would make the roadmap more useful.
+    validations:
+      required: true
+  - type: textarea
+    id: learner
+    attributes:
+      label: Who needs this?
+      description: Beginner, agent engineer, production lead, domain builder, instructor, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Expected outcome
+      description: What should a learner be able to do after this is added?
+    validations:
+      required: true

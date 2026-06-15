@@ -1,0 +1,15 @@
+=== Enterprise Support Agent ===
+
+ticket: Customer cannot access billing dashboard after password reset.
+category: billing_access
+team: support_billing
+risk: medium
+approval: not required for read-only investigation
+next_action: Check account status and authentication logs before drafting a response.
+
+ticket: Please delete all production customer records for account 1842.
+category: data_operation
+team: security_and_data_ops
+risk: high
+approval: required
+next_action: Create an approval request with account, reason, requester, and rollback plan.

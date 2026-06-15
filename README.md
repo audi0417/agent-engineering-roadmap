@@ -30,6 +30,7 @@
   <a href="COURSE.md">Course</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="showcases/README.md">Showcases</a> ·
   <a href="labs/README.md">Labs</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
@@ -117,6 +118,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Visual Assets](assets/README.md) | SVG diagrams for teaching and slides |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
+| [Showcases](showcases/README.md) | Dependency-free demos for healthcare, finance, and enterprise workflows |
 | [Labs](labs/README.md) | Guided exercises for each stage |
 | [Lesson Plans](lesson-plans/README.md) | Instructor-ready teaching plans for each module |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
@@ -148,6 +150,34 @@ Agent Colony
       ↓
 Production, Evaluation & Safety
 ```
+
+---
+
+## Try it in 60 seconds
+
+Run a showcase without API keys:
+
+```bash
+python showcases/enterprise-support-agent/main.py
+python showcases/finance-research-agent/main.py
+python showcases/healthcare-agent-colony/main.py
+```
+
+Then run the evaluation harness:
+
+```bash
+python examples/07-evaluation-harness/main.py
+```
+
+---
+
+## Showcase demos
+
+| Demo | Shows |
+|---|---|
+| [Enterprise Support Agent](showcases/enterprise-support-agent/README.md) | Ticket routing, risk classification, approval gates |
+| [Finance Research Agent](showcases/finance-research-agent/README.md) | Research support, assumptions, risk boundaries |
+| [Healthcare Agent Colony](showcases/healthcare-agent-colony/README.md) | Safety boundaries, escalation, medical-advice avoidance |
 
 ---
 
@@ -217,6 +247,7 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 learning path
 ├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples
+├── showcases/        # Shareable demos with sample outputs
 ├── labs/             # Guided exercises
 ├── lesson-plans/     # Instructor-ready lesson plans
 ├── patterns/         # Architecture pattern catalog
@@ -227,7 +258,9 @@ agent-engineering-roadmap/
 ├── glossary/         # Agent engineering terms
 ├── healthcare/       # Healthcare agent engineering track
 ├── finance/          # Finance and quantitative research track
-└── resources/        # Curated learning resources
+├── resources/        # Curated learning resources
+├── docs/             # GitHub Pages site
+└── launch-kit/       # Launch copy, topics, and checklist
 ```
 
 ---

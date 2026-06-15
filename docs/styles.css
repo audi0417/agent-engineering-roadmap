@@ -1,0 +1,166 @@
+:root {
+  color-scheme: light;
+  --ink: #102033;
+  --muted: #5c6b7a;
+  --line: #d7dee8;
+  --panel: #ffffff;
+  --bg: #f6f8fb;
+  --blue: #0ea5e9;
+  --violet: #7c3aed;
+  --green: #16a34a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.55;
+}
+
+a {
+  color: #0369a1;
+  text-decoration: none;
+}
+
+.hero {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 24px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1160px;
+}
+
+.nav a {
+  color: #dbeafe;
+  margin-left: 18px;
+}
+
+.hero-grid {
+  align-items: center;
+  display: grid;
+  gap: 42px;
+  grid-template-columns: 0.82fr 1.18fr;
+  margin: 56px auto 26px;
+  max-width: 1160px;
+}
+
+.hero img,
+.split img {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: block;
+  max-width: 100%;
+}
+
+.eyebrow {
+  color: #7dd3fc;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: 0;
+  line-height: 1.02;
+  margin: 0 0 22px;
+}
+
+h2 {
+  font-size: 34px;
+  letter-spacing: 0;
+  margin: 0 0 20px;
+}
+
+h3 {
+  margin: 0 0 10px;
+}
+
+.lead {
+  color: #cbd5e1;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  border: 1px solid #93c5fd;
+  color: #e0f2fe;
+  display: inline-block;
+  font-weight: 700;
+  padding: 11px 16px;
+}
+
+.button.primary {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: white;
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 54px 24px;
+}
+
+.cards {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 20px;
+}
+
+article p,
+.section p {
+  color: var(--muted);
+}
+
+.split {
+  align-items: center;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 0.72fr 1.28fr;
+}
+
+@media (max-width: 850px) {
+  .hero-grid,
+  .split,
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav a {
+    margin: 0 14px 0 0;
+  }
+}

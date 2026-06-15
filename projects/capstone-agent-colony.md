@@ -133,7 +133,7 @@ Submit:
 - `agent_specs/`
 - `tools/`
 - `memory_policy.md`
-- `eval_cases.yaml`
+- `eval_cases.json`
 - `run_eval.py`
 - `safety_review.md`
 

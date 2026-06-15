@@ -64,6 +64,27 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 ---
 
+## Showcases
+
+| Demo | Description |
+|---|---|
+| [Showcases](showcases/README.md) | Index of shareable demos |
+| [Enterprise Support Agent](showcases/enterprise-support-agent/README.md) | Ticket routing and approval gates |
+| [Finance Research Agent](showcases/finance-research-agent/README.md) | Finance research support with safety boundary |
+| [Healthcare Agent Colony](showcases/healthcare-agent-colony/README.md) | Healthcare education boundary and escalation |
+
+---
+
+## Website And Launch
+
+| File | Description |
+|---|---|
+| [Docs Site](docs/index.html) | Static GitHub Pages landing page |
+| [Launch Kit](launch-kit/README.md) | Launch copy, topics, and checklist |
+| [Social Card](assets/social/agent-engineering-roadmap-2026.svg) | Share image for social posts |
+
+---
+
 ## Labs
 
 | Lab | Topic |

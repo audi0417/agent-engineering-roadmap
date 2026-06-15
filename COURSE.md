@@ -98,6 +98,7 @@ You have completed the course when you can:
 | `assets/` | Visual diagrams and teaching images |
 | `roadmap/` | Level-by-level learning milestones |
 | `examples/` | Runnable minimal implementations |
+| `showcases/` | First-run demos with sample outputs |
 | `labs/` | Guided hands-on exercises |
 | `lesson-plans/` | Instructor-ready 90-minute teaching plans |
 | `patterns/` | Reusable architecture patterns |

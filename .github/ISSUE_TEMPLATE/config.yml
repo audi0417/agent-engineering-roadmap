@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Start with the course
+    url: https://github.com/audi0417/agent-engineering-roadmap/blob/main/COURSE.md
+    about: Read the course map before opening a broad question.

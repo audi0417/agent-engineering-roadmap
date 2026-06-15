@@ -98,6 +98,7 @@ Part 5: Domain Systems
 | `assets/` | 視覺圖表與教學圖片 |
 | `roadmap/` | Level-by-level 學習里程碑 |
 | `examples/` | 可執行最小實作 |
+| `showcases/` | 第一次進 repo 就能跑的展示 demo |
 | `labs/` | 引導式實作練習 |
 | `lesson-plans/` | 每堂 90 分鐘、可直接上課的教案 |
 | `patterns/` | 可重用架構模式 |

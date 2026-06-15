@@ -1,0 +1,26 @@
+name: Demo request
+description: Request a new runnable showcase demo.
+title: "[Demo]: "
+labels: ["demo", "good first issue"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: "healthcare, finance, enterprise, education, developer tools..."
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What should the demo show?
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety or evaluation needs
+      description: What should the demo avoid, evaluate, or escalate?
+    validations:
+      required: true

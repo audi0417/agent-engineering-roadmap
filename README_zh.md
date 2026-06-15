@@ -30,6 +30,7 @@
   <a href="COURSE_zh.md">Course</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
+  <a href="showcases/README.md">Showcases</a> ·
   <a href="labs/README.md">Labs</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
@@ -117,6 +118,7 @@ flowchart LR
 | [Visual Assets](assets/README.md) | 可放進教學與投影片的 SVG diagrams |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
+| [Showcases](showcases/README.md) | Healthcare、Finance、Enterprise 的免依賴展示 demo |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
 | [Lesson Plans](lesson-plans/README.md) | 每個 module 可直接上課的教案 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
@@ -148,6 +150,34 @@ Agent Colony
       ↓
 Production, Evaluation & Safety
 ```
+
+---
+
+## 60 秒試跑
+
+不用 API key，直接跑 showcase：
+
+```bash
+python showcases/enterprise-support-agent/main.py
+python showcases/finance-research-agent/main.py
+python showcases/healthcare-agent-colony/main.py
+```
+
+再跑 evaluation harness：
+
+```bash
+python examples/07-evaluation-harness/main.py
+```
+
+---
+
+## Showcase demos
+
+| Demo | 展示重點 |
+|---|---|
+| [Enterprise Support Agent](showcases/enterprise-support-agent/README.md) | Ticket routing、risk classification、approval gates |
+| [Finance Research Agent](showcases/finance-research-agent/README.md) | Research support、assumptions、risk boundaries |
+| [Healthcare Agent Colony](showcases/healthcare-agent-colony/README.md) | Safety boundaries、escalation、避免醫療建議 |
 
 ---
 
@@ -217,6 +247,7 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 學習地圖
 ├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例
+├── showcases/        # 可分享 demo 與 sample outputs
 ├── labs/             # 引導式練習
 ├── lesson-plans/     # 可直接上課的教案
 ├── patterns/         # 架構 pattern catalog
@@ -227,7 +258,9 @@ agent-engineering-roadmap/
 ├── glossary/         # Agent Engineering 術語
 ├── healthcare/       # Healthcare Agent Engineering Track
 ├── finance/          # Finance / Quantitative Research Track
-└── resources/        # 精選學習資源
+├── resources/        # 精選學習資源
+├── docs/             # GitHub Pages site
+└── launch-kit/       # Launch 文案、topics 與 checklist
 ```
 
 ---
