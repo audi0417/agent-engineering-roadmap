@@ -39,6 +39,12 @@
 
 ---
 
+<p align="center">
+  <img src="assets/diagrams/course-map.svg" alt="Agent Engineering Course Map" />
+</p>
+
+---
+
 ```mermaid
 flowchart LR
     User((User)) --> Agent[AI Agent]
@@ -108,6 +114,7 @@ flowchart LR
 |---|---|
 | [Course](COURSE_zh.md) | 完整課綱與完課標準 |
 | [Curriculum](curriculum/README_zh.md) | 從基礎到 production 的概念章節 |
+| [Visual Assets](assets/README.md) | 可放進教學與投影片的 SVG diagrams |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
@@ -206,6 +213,7 @@ agent-engineering-roadmap/
 ├── README.md
 ├── README_zh.md
 ├── COURSE.md
+├── assets/           # 視覺圖表與教學圖片
 ├── roadmap/          # Level 0-8 學習地圖
 ├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例

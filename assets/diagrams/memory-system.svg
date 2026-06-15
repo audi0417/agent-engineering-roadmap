@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="580" viewBox="0 0 1100 580" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Memory System</title>
+  <desc id="desc">Memory is governed by write, retrieve, audit, update, and delete policies.</desc>
+  <rect width="1100" height="580" fill="#f0fdf4"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#052e16">Agent Memory System</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#166534">Memory is a policy problem first, and a database problem second.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="220" width="150" height="80" rx="14" fill="#14532d"/>
+    <text x="104" y="267" font-size="18" font-weight="700" fill="#f0fdf4">User Event</text>
+    <rect x="285" y="205" width="170" height="110" rx="14" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+    <text x="318" y="248" font-size="20" font-weight="700" fill="#14532d">Write Policy</text>
+    <text x="318" y="278" font-size="14" fill="#166534">Should store?</text>
+    <rect x="520" y="205" width="170" height="110" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="558" y="248" font-size="20" font-weight="700" fill="#14532d">Memory DB</text>
+    <text x="552" y="278" font-size="14" fill="#166534">Facts + reasons</text>
+    <rect x="755" y="205" width="170" height="110" rx="14" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+    <text x="785" y="248" font-size="20" font-weight="700" fill="#14532d">Retrieve</text>
+    <text x="790" y="278" font-size="14" fill="#166534">Relevant + safe?</text>
+    <rect x="480" y="400" width="250" height="90" rx="14" fill="#064e3b"/>
+    <text x="530" y="438" font-size="20" font-weight="700" fill="#ecfdf5">Audit / Update / Delete</text>
+    <text x="530" y="468" font-size="14" fill="#bbf7d0">Who, why, when, source</text>
+    <rect x="970" y="220" width="90" height="80" rx="14" fill="#14532d"/>
+    <text x="996" y="252" font-size="18" font-weight="700" fill="#f0fdf4">Agent</text>
+    <text x="991" y="278" font-size="14" fill="#bbf7d0">Context</text>
+    <path d="M220 260 H285" stroke="#15803d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M455 260 H520" stroke="#15803d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M690 260 H755" stroke="#15803d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M925 260 H970" stroke="#15803d" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M605 315 V400" stroke="#15803d" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#15803d"/>
+    </marker>
+  </defs>
+</svg>

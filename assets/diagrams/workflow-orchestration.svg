@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow Orchestration</title>
+  <desc id="desc">A planner, executor, reviewer, and retry loop control an agent workflow.</desc>
+  <rect width="1100" height="560" fill="#fefce8"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#422006">Workflow Orchestration</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#854d0e">Workflow turns model behavior into inspectable stages.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="70" y="230" width="130" height="80" rx="14" fill="#713f12"/>
+    <text x="111" y="277" font-size="18" font-weight="700" fill="#fefce8">Task</text>
+    <rect x="260" y="210" width="150" height="120" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="298" y="260" font-size="20" font-weight="700" fill="#78350f">Planner</text>
+    <text x="292" y="290" font-size="14" fill="#92400e">Steps + criteria</text>
+    <rect x="470" y="210" width="150" height="120" rx="14" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+    <text x="503" y="260" font-size="20" font-weight="700" fill="#7c2d12">Executor</text>
+    <text x="502" y="290" font-size="14" fill="#9a3412">Tools + actions</text>
+    <rect x="680" y="210" width="150" height="120" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="719" y="260" font-size="20" font-weight="700" fill="#7f1d1d">Reviewer</text>
+    <text x="716" y="290" font-size="14" fill="#991b1b">Rubric check</text>
+    <rect x="900" y="230" width="130" height="80" rx="14" fill="#14532d"/>
+    <text x="945" y="277" font-size="18" font-weight="700" fill="#f0fdf4">Final</text>
+    <path d="M200 270 H260" stroke="#a16207" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M410 270 H470" stroke="#a16207" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M620 270 H680" stroke="#a16207" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M830 270 H900" stroke="#16a34a" stroke-width="4" marker-end="url(#arrowGreen)"/>
+    <path d="M755 330 C755 430 545 430 545 330" stroke="#dc2626" stroke-width="4" fill="none" marker-end="url(#arrowRed)"/>
+    <text x="610" y="458" font-size="16" font-weight="700" fill="#991b1b">Fail: revise or stop</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#a16207"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#16a34a"/></marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#dc2626"/></marker>
+  </defs>
+</svg>

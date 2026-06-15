@@ -35,6 +35,21 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 ---
 
+## Visual Assets
+
+| File | Description |
+|---|---|
+| [Visual Assets](assets/README.md) | Diagram index |
+| [Course Map](assets/diagrams/course-map.svg) | Full course map |
+| [Agent Loop](assets/diagrams/agent-loop.svg) | Minimal agent loop |
+| [Tool And MCP Layer](assets/diagrams/tool-mcp-layer.svg) | Tool and MCP integration |
+| [Memory System](assets/diagrams/memory-system.svg) | Agent memory policy flow |
+| [Workflow Orchestration](assets/diagrams/workflow-orchestration.svg) | Planner, executor, reviewer, retry |
+| [Agent Colony](assets/diagrams/agent-colony.svg) | Supervisor and specialists |
+| [Production Stack](assets/diagrams/production-stack.svg) | Production evaluation and safety |
+
+---
+
 ## Examples
 
 | Example | Description |

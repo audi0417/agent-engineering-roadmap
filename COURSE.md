@@ -36,6 +36,8 @@ You do not need to know every agent framework before starting. Frameworks come a
 
 ## Course Map
 
+![Agent Engineering Course Map](assets/diagrams/course-map.svg)
+
 ```text
 Part 1: Foundations
   00 Agent Foundations
@@ -93,6 +95,7 @@ You have completed the course when you can:
 | Section | Purpose |
 |---|---|
 | `curriculum/` | Concept chapters |
+| `assets/` | Visual diagrams and teaching images |
 | `roadmap/` | Level-by-level learning milestones |
 | `examples/` | Runnable minimal implementations |
 | `labs/` | Guided hands-on exercises |

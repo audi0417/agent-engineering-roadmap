@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="560" viewBox="0 0 1100 560" role="img" aria-labelledby="title desc">
+  <title id="title">Tool Calling And MCP Layer</title>
+  <desc id="desc">A model requests tools through validation, policy, MCP, and external systems.</desc>
+  <rect width="1100" height="560" fill="#fff7ed"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Tool Calling And MCP Layer</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#57534e">Tools make agents useful. Policy and validation keep them bounded.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="60" y="210" width="150" height="90" rx="14" fill="#1e293b"/>
+    <text x="100" y="250" font-size="18" font-weight="700" fill="#f8fafc">Agent</text>
+    <text x="88" y="276" font-size="14" fill="#cbd5e1">Tool request</text>
+    <rect x="270" y="190" width="170" height="130" rx="14" fill="#fed7aa" stroke="#f97316" stroke-width="2"/>
+    <text x="305" y="240" font-size="20" font-weight="700" fill="#7c2d12">Schema</text>
+    <text x="302" y="270" font-size="15" fill="#9a3412">Validate args</text>
+    <rect x="500" y="190" width="170" height="130" rx="14" fill="#fde68a" stroke="#d97706" stroke-width="2"/>
+    <text x="548" y="240" font-size="20" font-weight="700" fill="#78350f">Policy</text>
+    <text x="526" y="270" font-size="15" fill="#92400e">Risk + approval</text>
+    <rect x="730" y="190" width="170" height="130" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="784" y="240" font-size="20" font-weight="700" fill="#1e3a8a">MCP</text>
+    <text x="760" y="270" font-size="15" fill="#1d4ed8">Tool gateway</text>
+    <rect x="950" y="165" width="110" height="70" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="972" y="208" font-size="16" font-weight="700" fill="#14532d">Database</text>
+    <rect x="950" y="255" width="110" height="70" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="978" y="298" font-size="16" font-weight="700" fill="#14532d">Browser</text>
+    <rect x="950" y="345" width="110" height="70" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="983" y="388" font-size="16" font-weight="700" fill="#14532d">SaaS</text>
+    <path d="M210 255 H270" stroke="#78716c" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M440 255 H500" stroke="#78716c" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M670 255 H730" stroke="#78716c" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M900 255 C925 255 925 200 950 200" stroke="#78716c" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M900 255 H950" stroke="#78716c" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M900 255 C925 255 925 380 950 380" stroke="#78716c" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#78716c"/>
+    </marker>
+  </defs>
+</svg>

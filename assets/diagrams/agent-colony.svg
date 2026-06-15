@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Colony Architecture</title>
+  <desc id="desc">A supervisor routes tasks to specialist agents that share memory and pass evaluation.</desc>
+  <rect width="1100" height="620" fill="#f5f3ff"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#2e1065">Agent Colony Architecture</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#5b21b6">A colony needs routing, shared memory, evaluation, and final ownership.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="460" y="150" width="180" height="80" rx="16" fill="#4c1d95"/>
+    <text x="505" y="197" font-size="20" font-weight="700" fill="#f5f3ff">Supervisor</text>
+    <rect x="110" y="310" width="190" height="85" rx="16" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="142" y="348" font-size="18" font-weight="700" fill="#3b0764">Healthcare</text>
+    <text x="148" y="374" font-size="14" fill="#5b21b6">Safety boundary</text>
+    <rect x="355" y="310" width="190" height="85" rx="16" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="397" y="348" font-size="18" font-weight="700" fill="#3b0764">Finance</text>
+    <text x="394" y="374" font-size="14" fill="#5b21b6">Research support</text>
+    <rect x="600" y="310" width="190" height="85" rx="16" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="635" y="348" font-size="18" font-weight="700" fill="#3b0764">Enterprise</text>
+    <text x="638" y="374" font-size="14" fill="#5b21b6">Workflow ops</text>
+    <rect x="845" y="310" width="190" height="85" rx="16" fill="#ddd6fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="888" y="348" font-size="18" font-weight="700" fill="#3b0764">Education</text>
+    <text x="886" y="374" font-size="14" fill="#5b21b6">Learning coach</text>
+    <rect x="335" y="475" width="210" height="80" rx="16" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="377" y="522" font-size="19" font-weight="700" fill="#3b0764">Shared Memory</text>
+    <rect x="610" y="475" width="210" height="80" rx="16" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="655" y="522" font-size="19" font-weight="700" fill="#3b0764">Evaluator</text>
+    <path d="M550 230 C550 270 205 270 205 310" stroke="#7c3aed" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M550 230 C550 270 450 270 450 310" stroke="#7c3aed" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M550 230 C550 270 695 270 695 310" stroke="#7c3aed" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M550 230 C550 270 940 270 940 310" stroke="#7c3aed" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+    <path d="M450 395 V475" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M695 395 V475" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M545 515 H610" stroke="#7c3aed" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+</svg>

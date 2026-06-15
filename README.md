@@ -39,6 +39,12 @@
 
 ---
 
+<p align="center">
+  <img src="assets/diagrams/course-map.svg" alt="Agent Engineering Course Map" />
+</p>
+
+---
+
 ```mermaid
 flowchart LR
     User((User)) --> Agent[AI Agent]
@@ -108,6 +114,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 |---|---|
 | [Course](COURSE.md) | Complete syllabus and graduation criteria |
 | [Curriculum](curriculum/README.md) | Concept chapters from foundations to production |
+| [Visual Assets](assets/README.md) | SVG diagrams for teaching and slides |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
 | [Labs](labs/README.md) | Guided exercises for each stage |
@@ -206,6 +213,7 @@ agent-engineering-roadmap/
 ├── README.md
 ├── README_zh.md
 ├── COURSE.md
+├── assets/           # Visual diagrams and teaching images
 ├── roadmap/          # Level 0-8 learning path
 ├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples

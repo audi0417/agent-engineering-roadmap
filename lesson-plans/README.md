@@ -35,6 +35,18 @@
 | 11 | [Finance Agents](module-11-finance-agents.md) | research vs recommendation, risk controls |
 | 12 | [Frameworks Comparison](module-12-frameworks-comparison.md) | choosing frameworks by system need |
 
+## 視覺教具
+
+| 圖表 | 建議使用時機 |
+|---|---|
+| [Course Map](../assets/diagrams/course-map.svg) | 第一堂課開場，說明整體路線 |
+| [Agent Loop](../assets/diagrams/agent-loop.svg) | Module 00-01，說明 agent 最小迴圈 |
+| [Tool And MCP Layer](../assets/diagrams/tool-mcp-layer.svg) | Module 02-03，說明 tool 與 MCP |
+| [Memory System](../assets/diagrams/memory-system.svg) | Module 03，說明 memory policy |
+| [Workflow Orchestration](../assets/diagrams/workflow-orchestration.svg) | Module 05-06，說明 workflow 與 graph |
+| [Agent Colony](../assets/diagrams/agent-colony.svg) | Module 07、10、11，說明 multi-agent colony |
+| [Production Stack](../assets/diagrams/production-stack.svg) | Module 08-09，說明 evaluation、safety、observability |
+
 ## 教學檢核
 
 一堂課算完成，不是因為老師講完了，而是學生能做出以下事情：

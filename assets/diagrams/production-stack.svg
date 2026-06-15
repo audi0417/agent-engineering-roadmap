@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+  <title id="title">Production Agent Stack</title>
+  <desc id="desc">Production agents need evaluation, observability, safety, cost control, and rollback.</desc>
+  <rect width="1000" height="620" fill="#f8fafc"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" fill="#111827">Production Agent Stack</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">A production agent is measured, monitored, bounded, and recoverable.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">
+    <rect x="210" y="145" width="580" height="62" rx="12" fill="#1e293b"/>
+    <text x="420" y="184" fill="#f8fafc">Agent Application</text>
+    <rect x="210" y="230" width="580" height="62" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="428" y="269" fill="#1e3a8a">Evaluation Suite</text>
+    <rect x="210" y="315" width="580" height="62" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="430" y="354" fill="#14532d">Observability</text>
+    <rect x="210" y="400" width="580" height="62" rx="12" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="430" y="439" fill="#7f1d1d">Safety Gates</text>
+    <rect x="210" y="485" width="275" height="62" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="282" y="524" fill="#78350f">Cost Control</text>
+    <rect x="515" y="485" width="275" height="62" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="598" y="524" fill="#4c1d95">Rollback</text>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+  <title id="title">Minimal Agent Loop</title>
+  <desc id="desc">Goal, context, reasoning, action, and feedback form the minimal agent loop.</desc>
+  <rect width="1000" height="560" fill="#f8fafc"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700" fill="#0f172a">Minimal Agent Loop</text>
+  <text x="60" y="105" font-family="Inter, Arial, sans-serif" font-size="17" fill="#475569">An agent is a goal-directed loop, not just a chat response.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">
+    <circle cx="500" cy="275" r="72" fill="#1e293b"/>
+    <text x="462" y="268" fill="#f8fafc">Agent</text>
+    <text x="442" y="294" fill="#f8fafc">Runtime</text>
+    <rect x="410" y="145" width="180" height="70" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="466" y="188" fill="#1e3a8a">Goal</text>
+    <rect x="670" y="240" width="190" height="70" rx="14" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="724" y="283" fill="#14532d">Context</text>
+    <rect x="405" y="395" width="190" height="70" rx="14" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+    <text x="455" y="438" fill="#78350f">Reasoning</text>
+    <rect x="140" y="240" width="190" height="70" rx="14" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+    <text x="203" y="283" fill="#7f1d1d">Action</text>
+    <rect x="405" y="255" width="190" height="50" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+    <text x="456" y="288" fill="#4c1d95">Feedback</text>
+    <path d="M500 215 V235" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M670 275 H595" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M500 395 V347" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M330 275 H405" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M500 305 V395" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>

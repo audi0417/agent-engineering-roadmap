@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Engineering Course Map</title>
+  <desc id="desc">A visual roadmap from foundations to production and domain agent systems.</desc>
+  <rect width="1200" height="620" fill="#0f172a"/>
+  <text x="60" y="70" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" fill="#f8fafc">Agent Engineering Course Map</text>
+  <text x="60" y="108" font-family="Inter, Arial, sans-serif" font-size="18" fill="#cbd5e1">From chatbot demos to production-aware agent systems</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="60" y="160" width="220" height="110" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="82" y="195" font-size="20" font-weight="700" fill="#f8fafc">Part 1</text>
+    <text x="82" y="225" font-size="24" font-weight="700" fill="#38bdf8">Foundations</text>
+    <text x="82" y="252" font-size="15" fill="#cbd5e1">Agent loop, role, scope</text>
+    <rect x="340" y="160" width="220" height="110" rx="14" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+    <text x="362" y="195" font-size="20" font-weight="700" fill="#f8fafc">Part 2</text>
+    <text x="362" y="225" font-size="24" font-weight="700" fill="#22c55e">Context</text>
+    <text x="362" y="252" font-size="15" fill="#cbd5e1">RAG, memory, retrieval</text>
+    <rect x="620" y="160" width="220" height="110" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="642" y="195" font-size="20" font-weight="700" fill="#f8fafc">Part 3</text>
+    <text x="642" y="225" font-size="24" font-weight="700" fill="#f59e0b">Control</text>
+    <text x="642" y="252" font-size="15" fill="#cbd5e1">Workflow, graph, approval</text>
+    <rect x="900" y="160" width="220" height="110" rx="14" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+    <text x="922" y="195" font-size="20" font-weight="700" fill="#f8fafc">Part 4</text>
+    <text x="922" y="225" font-size="24" font-weight="700" fill="#ef4444">Production</text>
+    <text x="922" y="252" font-size="15" fill="#cbd5e1">Eval, safety, observability</text>
+    <path d="M280 215 H340" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M560 215 H620" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <path d="M840 215 H900" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="150" y="350" width="900" height="135" rx="18" fill="#111827" stroke="#a78bfa" stroke-width="2"/>
+    <text x="190" y="390" font-size="26" font-weight="700" fill="#a78bfa">Part 5: Domain Systems And Capstone</text>
+    <text x="190" y="430" font-size="18" fill="#e5e7eb">Healthcare agents • Finance agents • Enterprise workflows • Agent colony capstone</text>
+    <text x="190" y="464" font-size="16" fill="#94a3b8">The final project combines tools, memory, workflow, multi-agent coordination, evaluation, and human approval.</text>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
