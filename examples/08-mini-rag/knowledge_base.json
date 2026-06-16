@@ -1,0 +1,27 @@
+[
+  {
+    "id": "agent-loop",
+    "title": "Minimal Agent Loop",
+    "text": "A minimal agent loop receives a task, builds context, decides whether a tool is needed, executes the allowed action, observes the result, and produces a bounded answer."
+  },
+  {
+    "id": "tool-approval",
+    "title": "Tool Approval Policy",
+    "text": "High-risk tool calls should require human approval before execution. Approval requests should include the tool name, arguments, reason, risk level, expected effect, and rollback plan."
+  },
+  {
+    "id": "memory-policy",
+    "title": "Memory Policy",
+    "text": "Agent memory should have explicit write, retrieve, update, delete, and audit rules. Sensitive data should not be stored by default."
+  },
+  {
+    "id": "rag-eval",
+    "title": "RAG Evaluation",
+    "text": "RAG evaluation should measure retrieval quality separately from answer quality. A good eval set includes direct lookup, synthesis, no-answer, and adversarial questions."
+  },
+  {
+    "id": "production-safety",
+    "title": "Production Safety",
+    "text": "Production agents need observability, regression tests, cost limits, prompt-injection defenses, and human approval gates for high-impact actions."
+  }
+]

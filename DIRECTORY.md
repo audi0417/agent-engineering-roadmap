@@ -61,6 +61,14 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [05 Multi-Agent Workflow](examples/05-multi-agent-workflow/README.md) | Coordinate multiple agents in a workflow. |
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Build a colony-style multi-agent system. |
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Run regression checks against agent behavior. |
+| [08 Mini RAG](examples/08-mini-rag/README.md) | Inspect retrieval, grounded answers, and RAG evals. |
+
+## Scripts And CI
+
+| File | Description |
+|---|---|
+| [Verify Examples](scripts/verify_examples.py) | Runs all dependency-free examples and showcases |
+| [Verify Examples Workflow](.github/workflows/verify-examples.yml) | GitHub Actions check for runnable course examples |
 
 ---
 

@@ -30,7 +30,7 @@ You do not need to know every agent framework before starting. Frameworks come a
 | Track | Best for | Path |
 |---|---|---|
 | Beginner Builder | New to agents | Modules 00-05, Labs 00-05, Examples 01-04 |
-| Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-07 |
+| Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-08 |
 | Domain Builder | Healthcare, finance, enterprise | Modules 00-12, domain tracks, capstone |
 | Production Lead | Responsible for deployment | Modules 08-09, evaluation harness, safety templates |
 
@@ -73,7 +73,8 @@ For each module:
 3. Run the closest example.
 4. Complete the lab.
 5. Answer the assessment questions.
-6. Add one improvement to the example before moving on.
+6. Run `python scripts/verify_examples.py`.
+7. Add one improvement to the example before moving on.
 
 ## Graduation Criteria
 

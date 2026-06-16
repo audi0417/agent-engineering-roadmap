@@ -21,6 +21,17 @@
 | Inspectability | Intermediate artifacts are visible | Everything is hidden in model calls |
 | Safety | Risky actions are bounded | Tools are unrestricted |
 | Extensibility | Clear next modification | Hard to adapt |
+| Verification | Included in `scripts/verify_examples.py` or documented why not | No repeatable check |
+
+## RAG Evaluation Rubric
+
+| Dimension | Excellent | Needs Work |
+|---|---|---|
+| Retrieval | Expected evidence is explicitly checked | Only final answer is judged |
+| No-answer | Missing-evidence cases are included | Agent always tries to answer |
+| Faithfulness | Answer must use retrieved evidence | Answer can add unsupported claims |
+| Coverage | Includes lookup, synthesis, ambiguous, and adversarial cases | Only happy-path lookup questions |
+| Inspectability | Retrieved document IDs and scores are visible | Retrieval is hidden |
 
 ## Production Readiness Rubric
 

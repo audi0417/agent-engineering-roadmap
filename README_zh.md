@@ -167,6 +167,8 @@ python showcases/healthcare-agent-colony/main.py
 
 ```bash
 python examples/07-evaluation-harness/main.py
+python examples/08-mini-rag/main.py
+python scripts/verify_examples.py
 ```
 
 ---
@@ -178,6 +180,25 @@ python examples/07-evaluation-harness/main.py
 | [Enterprise Support Agent](showcases/enterprise-support-agent/README.md) | Ticket routing、risk classification、approval gates |
 | [Finance Research Agent](showcases/finance-research-agent/README.md) | Research support、assumptions、risk boundaries |
 | [Healthcare Agent Colony](showcases/healthcare-agent-colony/README.md) | Safety boundaries、escalation、避免醫療建議 |
+
+## 可執行範例
+
+| Example | 展示重點 | 不需要 API key |
+|---|---|---|
+| [01 Single Agent](examples/01-single-agent/README.md) | Role、task boundary、structured output | Yes |
+| [02 Tool-Using Agent](examples/02-tool-using-agent/README.md) | Local tool call 與 validation | Yes |
+| [03 MCP-style Agent](examples/03-mcp-agent/README.md) | Client/server tool boundary | Yes |
+| [04 Memory Agent](examples/04-memory-agent/README.md) | Memory write/retrieve policy | Yes |
+| [05 Multi-Agent Workflow](examples/05-multi-agent-workflow/README.md) | Planner、researcher、writer、reviewer | Yes |
+| [06 Agent Colony](examples/06-agent-colony/README.md) | Supervisor、domain agent、evaluator | Yes |
+| [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
+| [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval、grounded answer、RAG eval | Yes |
+
+一次驗證所有免依賴範例：
+
+```bash
+python scripts/verify_examples.py
+```
 
 ---
 

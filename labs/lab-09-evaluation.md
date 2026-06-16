@@ -12,6 +12,7 @@ Build an evaluation suite that catches regressions.
 
 - `curriculum/09-production-agent-systems.md`
 - `examples/07-evaluation-harness/README.md`
+- `examples/08-mini-rag/README.md`
 - `templates/evaluation-suite-template.yaml`
 
 ## Task
@@ -39,3 +40,13 @@ Your eval suite must:
 ## Extension
 
 Add regression thresholds for release blocking.
+
+## Course Verification Challenge
+
+Run:
+
+```bash
+python scripts/verify_examples.py
+```
+
+Then intentionally break one eval case in `examples/08-mini-rag/eval_cases.json`, run the script again, and observe where the report fails. Restore the case before committing.

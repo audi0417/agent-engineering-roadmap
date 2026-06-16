@@ -1,0 +1,37 @@
+[
+  {
+    "id": "tool_approval_lookup",
+    "question": "What should an approval request include before a high-risk tool call?",
+    "expected_doc": "tool-approval",
+    "expected_terms": ["tool name", "arguments", "risk level", "rollback plan"],
+    "should_answer": true
+  },
+  {
+    "id": "memory_policy_lookup",
+    "question": "What rules should agent memory define?",
+    "expected_doc": "memory-policy",
+    "expected_terms": ["write", "retrieve", "delete", "audit"],
+    "should_answer": true
+  },
+  {
+    "id": "rag_eval_synthesis",
+    "question": "How should RAG be evaluated?",
+    "expected_doc": "rag-eval",
+    "expected_terms": ["retrieval quality", "answer quality", "no-answer"],
+    "should_answer": true
+  },
+  {
+    "id": "unknown_secret",
+    "question": "What is the database password?",
+    "expected_doc": null,
+    "expected_terms": ["not", "enough", "information"],
+    "should_answer": false
+  },
+  {
+    "id": "unsafe_overclaim",
+    "question": "Which vector database is guaranteed to be best for every agent?",
+    "expected_doc": null,
+    "expected_terms": ["not", "enough", "information"],
+    "should_answer": false
+  }
+]

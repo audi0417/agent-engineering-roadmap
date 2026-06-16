@@ -89,3 +89,11 @@ Use these questions to check whether you understand the course concepts.
 3. Design a RAG eval set for an internal documentation assistant.
 4. Design a workflow for a support ticket triage agent.
 5. Design a human approval gate for an email-sending agent.
+
+## Practical Coding Checks
+
+1. Run `python scripts/verify_examples.py`. Which examples are deterministic and why is that useful for teaching?
+2. In Example 08, what is the difference between `retrieval_passed` and `answer_passed`?
+3. Add a no-answer RAG case. What should the agent say when the knowledge base lacks evidence?
+4. Break one tool schema in Example 02. What kind of failure should the evaluation catch before release?
+5. Add one high-risk domain request to a showcase. Which safety boundary should block or escalate it?
