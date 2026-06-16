@@ -19,7 +19,7 @@ This demo uses domain agents for healthcare, finance, and enterprise automation.
 |---|---|
 | `main.py` | Runs the colony demo |
 | `colony.py` | Supervisor, domain agents, shared memory, evaluator |
-| `colony_config.yaml` | Domain routing rules and safety policy |
+| `colony_config.json` | Domain routing rules and safety policy |
 
 ## Run
 

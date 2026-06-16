@@ -8,16 +8,13 @@ Run:
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
-import yaml
-from dotenv import load_dotenv
-from openai import OpenAI
-
 
 BASE_DIR = Path(__file__).resolve().parent
-CONFIG_PATH = BASE_DIR / "agent_config.yaml"
+CONFIG_PATH = BASE_DIR / "agent_config.json"
 
 
 DEFAULT_NOTES = """
@@ -32,12 +29,12 @@ and not providing runnable code examples.
 
 
 def load_config() -> dict:
-    """Load agent configuration from YAML."""
+    """Load agent configuration from JSON."""
     if not CONFIG_PATH.exists():
         raise FileNotFoundError(f"Config file not found: {CONFIG_PATH}")
 
     with CONFIG_PATH.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return json.load(file)
 
 
 def build_system_prompt(config: dict) -> str:
@@ -67,17 +64,17 @@ Return the answer in Markdown using these sections:
 
 def run_agent(notes: str) -> str:
     """Run the single agent on user notes."""
-    load_dotenv()
+    load_env_file(BASE_DIR / ".env")
 
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        raise RuntimeError(
-            "OPENAI_API_KEY is missing. Copy .env.example to .env and add your API key."
-        )
+        return run_mock_agent(notes)
 
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
     config = load_config()
     system_prompt = build_system_prompt(config)
+
+    from openai import OpenAI
 
     client = OpenAI(api_key=api_key)
 
@@ -91,6 +88,45 @@ def run_agent(notes: str) -> str:
     )
 
     return response.choices[0].message.content or ""
+
+
+def load_env_file(path: Path) -> None:
+    """Load KEY=VALUE pairs without requiring python-dotenv."""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line or line.strip().startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def run_mock_agent(notes: str) -> str:
+    """Deterministic fallback so the example runs without API keys."""
+    lines = [line.strip("- ").strip() for line in notes.splitlines() if line.strip()]
+    key_points = lines[:4] or ["No concrete notes provided."]
+    risks = [line for line in lines if "risk" in line.lower() or "too" in line.lower()]
+
+    return f"""## Key Points
+{format_bullets(key_points)}
+
+## Action Items
+- Define the first runnable example.
+- Keep each agent task narrow and testable.
+- Add evaluation cases before expanding scope.
+
+## Risks or Uncertainties
+{format_bullets(risks or ["The roadmap may become too broad if examples are not kept focused."])}
+
+## Suggested Next Steps
+- Run this example with the default notes.
+- Replace the mock fallback with an OpenAI API key when ready.
+- Add three expected-output checks for your own notes.
+"""
+
+
+def format_bullets(items: list[str]) -> str:
+    return "\n".join(f"- {item}" for item in items)
 
 
 def main() -> None:

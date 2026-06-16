@@ -32,7 +32,7 @@ The agent produces:
 ├── README.md
 ├── README_zh.md
 ├── main.py
-├── agent_config.yaml
+├── agent_config.json
 ├── requirements.txt
 └── .env.example
 ```
@@ -41,16 +41,22 @@ The agent produces:
 
 ## Quick start
 
+Run the learning demo first. It works without an API key and uses a deterministic mock response:
+
 ```bash
 cd examples/01-single-agent
+python main.py
+```
+
+To call a real OpenAI model, install the optional dependency and add your API key to `.env`:
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 python main.py
 ```
-
-Add your API key to `.env` before running.
 
 ---
 

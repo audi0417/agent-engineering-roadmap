@@ -6,20 +6,19 @@ Run:
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
-
-import yaml
 
 from colony import run_colony
 
 
 BASE_DIR = Path(__file__).resolve().parent
-CONFIG_PATH = BASE_DIR / "colony_config.yaml"
+CONFIG_PATH = BASE_DIR / "colony_config.json"
 
 
 def load_config() -> dict:
     with CONFIG_PATH.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return json.load(file)
 
 
 def main() -> None:

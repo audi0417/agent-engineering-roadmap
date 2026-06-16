@@ -19,7 +19,7 @@ This demo keeps the agents deterministic so you can inspect the orchestration lo
 |---|---|
 | `main.py` | Runs the workflow |
 | `workflow.py` | Agent functions and orchestration loop |
-| `agent_config.yaml` | Roles, rubric, and retry settings |
+| `agent_config.json` | Roles, rubric, and retry settings |
 
 ## Run
 

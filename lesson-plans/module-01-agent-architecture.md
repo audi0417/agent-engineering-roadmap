@@ -63,7 +63,7 @@ Application Response
 
 ## 課堂練習
 
-學生要修改 Example 01 的 `agent_config.yaml`，讓 agent 變成一個窄任務 agent。
+學生要修改 Example 01 的 `agent_config.json`，讓 agent 變成一個窄任務 agent。
 
 ## 常見誤解
 

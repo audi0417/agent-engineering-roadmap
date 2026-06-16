@@ -62,7 +62,7 @@ The tool returns observations.
 ├── mcp_client.py
 ├── mcp_server.py
 ├── tools.py
-├── agent_config.yaml
+├── agent_config.json
 ├── requirements.txt
 └── .env.example
 ```
@@ -71,16 +71,22 @@ The tool returns observations.
 
 ## Quick start
 
+Run the local learning demo first. It works without an API key and exercises the MCP-style client/server boundary directly:
+
 ```bash
 cd examples/03-mcp-agent
+python main.py
+```
+
+To call a real OpenAI model, install the optional dependency and add your API key to `.env`:
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 python main.py
 ```
-
-Add your API key to `.env` before running.
 
 ---
 

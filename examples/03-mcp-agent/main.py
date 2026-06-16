@@ -10,10 +10,6 @@ import os
 from pathlib import Path
 from typing import Any
 
-import yaml
-from dotenv import load_dotenv
-from openai import OpenAI
-
 from mcp_client import MCPStyleClient
 from mcp_server import MCPStyleToolServer
 
@@ -23,9 +19,9 @@ DEFAULT_PROMPT = "Use available tools to explain what MCP-style separation means
 
 
 def load_config() -> dict[str, Any]:
-    config_path = BASE_DIR / "agent_config.yaml"
+    config_path = BASE_DIR / "agent_config.json"
     with config_path.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return json.load(file)
 
 
 def build_system_prompt(config: dict[str, Any]) -> str:
@@ -50,13 +46,15 @@ Use tool results as observations. Do not invent server results.
 
 
 def run_agent(user_input: str) -> str:
-    load_dotenv(BASE_DIR / ".env")
+    load_env_file(BASE_DIR / ".env")
 
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is missing. Copy .env.example to .env and add your API key.")
+        return run_mock_agent(user_input)
 
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    from openai import OpenAI
+
     client = OpenAI(api_key=api_key)
     config = load_config()
     system_prompt = build_system_prompt(config)
@@ -107,6 +105,47 @@ def run_agent(user_input: str) -> str:
         return final_response.choices[0].message.content or ""
 
     return assistant_message.content or ""
+
+
+def load_env_file(path: Path) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line or line.strip().startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def run_mock_agent(user_input: str) -> str:
+    """Deterministic MCP-style path for API-key-free demos."""
+    tool_server = MCPStyleToolServer()
+    mcp_client = MCPStyleClient(tool_server)
+    tools = [tool["function"]["name"] for tool in mcp_client.list_tools()]
+    boundary = mcp_client.call_tool("explain_server_boundary", {})
+    search = mcp_client.call_tool("search_knowledge_base", {"query": "mcp"})
+
+    return f"""Mock mode: OPENAI_API_KEY not set, so the local MCP-style client/server path was used.
+
+User task:
+{user_input}
+
+Available server tools:
+{format_bullets(tools)}
+
+Tool observation: explain_server_boundary
+{json.dumps(boundary["result"], indent=2, ensure_ascii=False)}
+
+Tool observation: search_knowledge_base
+{json.dumps(search["result"], indent=2, ensure_ascii=False)}
+
+Final answer:
+MCP-style separation means the agent talks to a client, the client talks to a server, and the server owns the tools. This keeps permissions, auditing, and tool implementation outside the agent runtime.
+"""
+
+
+def format_bullets(items: list[str]) -> str:
+    return "\n".join(f"- {item}" for item in items)
 
 
 def main() -> None:

@@ -7,12 +7,9 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from pathlib import Path
 from typing import Any
-
-import yaml
-from dotenv import load_dotenv
-from openai import OpenAI
 
 from tools import TOOL_REGISTRY, TOOL_SCHEMAS, ToolError
 
@@ -22,9 +19,9 @@ DEFAULT_PROMPT = "What is (128 * 42) / 7?"
 
 
 def load_config() -> dict[str, Any]:
-    config_path = BASE_DIR / "agent_config.yaml"
+    config_path = BASE_DIR / "agent_config.json"
     with config_path.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return json.load(file)
 
 
 def build_system_prompt(config: dict[str, Any]) -> str:
@@ -74,13 +71,15 @@ def execute_tool_call(tool_call: Any) -> dict[str, Any]:
 
 
 def run_agent(user_input: str) -> str:
-    load_dotenv(BASE_DIR / ".env")
+    load_env_file(BASE_DIR / ".env")
 
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        raise RuntimeError("OPENAI_API_KEY is missing. Copy .env.example to .env and add your API key.")
+        return run_mock_agent(user_input)
 
     model = os.getenv("OPENAI_MODEL", "gpt-4.1-mini")
+    from openai import OpenAI
+
     client = OpenAI(api_key=api_key)
     config = load_config()
     system_prompt = build_system_prompt(config)
@@ -120,6 +119,42 @@ def run_agent(user_input: str) -> str:
         return final_response.choices[0].message.content or ""
 
     return assistant_message.content or ""
+
+
+def load_env_file(path: Path) -> None:
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line or line.strip().startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
+
+
+def run_mock_agent(user_input: str) -> str:
+    """Deterministic local mode that demonstrates tool use without an API key."""
+    expression = extract_expression(user_input) or "(128 * 42) / 7"
+    tool_result = TOOL_REGISTRY["calculator"](expression=expression)
+    return f"""Mock mode: OPENAI_API_KEY not set, so the local tool path was used.
+
+Tool called: calculator
+Arguments: {{"expression": "{expression}"}}
+Result: {tool_result["result"]}
+
+Final answer:
+The expression `{expression}` evaluates to `{tool_result["result"]}`. In the real API mode, the model decides whether to call this tool; in mock mode, the example calls it deterministically so the demo always runs.
+"""
+
+
+def extract_expression(text: str) -> str | None:
+    candidates = re.findall(r"[\d\s+\-*/().%]+", text)
+    for candidate in sorted(candidates, key=len, reverse=True):
+        expression = candidate.strip()
+        has_number = any(char.isdigit() for char in expression)
+        has_operator = any(char in "+-*/%" for char in expression)
+        if has_number and has_operator:
+            return expression
+    return None
 
 
 def main() -> None:

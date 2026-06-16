@@ -43,7 +43,7 @@ Agent → MCP Client → Tool Server → Tool Result
 ├── mcp_client.py
 ├── mcp_server.py
 ├── tools.py
-├── agent_config.yaml
+├── agent_config.json
 ├── requirements.txt
 └── .env.example
 ```
@@ -52,16 +52,22 @@ Agent → MCP Client → Tool Server → Tool Result
 
 ## 快速開始
 
+先跑本地教學版。這個版本不需要 API key，會直接演示 MCP-style client/server boundary：
+
 ```bash
 cd examples/03-mcp-agent
+python main.py
+```
+
+如果你要呼叫真正的 OpenAI model，再安裝 optional dependency，並在 `.env` 裡加入你的 API key：
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 python main.py
 ```
-
-執行前，請先在 `.env` 裡加入你的 API key。
 
 ---
 

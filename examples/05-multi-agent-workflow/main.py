@@ -6,20 +6,19 @@ Run:
 
 from __future__ import annotations
 
+import json
 from pathlib import Path
-
-import yaml
 
 from workflow import run_workflow
 
 
 BASE_DIR = Path(__file__).resolve().parent
-CONFIG_PATH = BASE_DIR / "agent_config.yaml"
+CONFIG_PATH = BASE_DIR / "agent_config.json"
 
 
 def load_config() -> dict:
     with CONFIG_PATH.open("r", encoding="utf-8") as file:
-        return yaml.safe_load(file)
+        return json.load(file)
 
 
 def main() -> None:

@@ -32,7 +32,7 @@ Agent 會產生：
 ├── README.md
 ├── README_zh.md
 ├── main.py
-├── agent_config.yaml
+├── agent_config.json
 ├── requirements.txt
 └── .env.example
 ```
@@ -41,16 +41,22 @@ Agent 會產生：
 
 ## 快速開始
 
+先跑教學版。這個版本不需要 API key，會用 deterministic mock response 讓你先看懂 agent flow：
+
 ```bash
 cd examples/01-single-agent
+python main.py
+```
+
+如果你要呼叫真正的 OpenAI model，再安裝 optional dependency，並在 `.env` 裡加入你的 API key：
+
+```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env
 python main.py
 ```
-
-執行前，請先在 `.env` 裡加入你的 API key。
 
 ---
 
@@ -85,11 +91,11 @@ python main.py
 ```text
 使用者輸入筆記
    ↓
-讀取 agent_config.yaml
+讀取 agent_config.json
    ↓
 建立 system prompt
    ↓
-呼叫 LLM
+沒有 API key 時使用 mock response；有 API key 時呼叫 LLM
    ↓
 輸出 Markdown 摘要
 ```

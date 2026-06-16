@@ -19,7 +19,7 @@ In this folder, memory is just a local JSON file. It is not a vector database ye
 |---|---|
 | `main.py` | Runs the memory agent demo |
 | `memory_store.py` | Local JSON memory store and retrieval logic |
-| `agent_config.yaml` | Memory policy and response settings |
+| `agent_config.json` | Memory policy and response settings |
 | `memory.json` | Created automatically when you run the demo |
 
 ## Run
