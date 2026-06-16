@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a broken link, failing command, incorrect example, or documentation issue.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is broken?
+      description: Describe the issue and where it appears.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Include commands, links, or files if relevant.
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: false
+

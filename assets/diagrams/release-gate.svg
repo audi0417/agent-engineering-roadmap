@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Agent Release Gate</title>
+  <desc id="desc">Release gate made of regression, safety, adversarial, golden trace, benchmark, and deployment checks.</desc>
+  <rect width="1120" height="520" fill="#f8fafc"/>
+  <text x="48" y="64" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#102033">Agent Release Gate</text>
+  <text x="48" y="96" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5c6b7a">A release should pass answer checks, trace checks, safety checks, and operating checks.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">
+    <rect x="58" y="150" width="186" height="80" rx="8" fill="#e0f2fe" stroke="#0ea5e9"/>
+    <text x="104" y="196" fill="#0f172a">Regression</text>
+    <rect x="58" y="270" width="186" height="80" rx="8" fill="#fee2e2" stroke="#ef4444"/>
+    <text x="126" y="316" fill="#0f172a">Safety</text>
+    <rect x="302" y="150" width="186" height="80" rx="8" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="344" y="196" fill="#0f172a">Adversarial</text>
+    <rect x="302" y="270" width="186" height="80" rx="8" fill="#dcfce7" stroke="#16a34a"/>
+    <text x="344" y="316" fill="#0f172a">Golden trace</text>
+    <rect x="546" y="150" width="186" height="80" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+    <text x="592" y="196" fill="#0f172a">Benchmark</text>
+    <rect x="546" y="270" width="186" height="80" rx="8" fill="#ffffff" stroke="#94a3b8"/>
+    <text x="596" y="316" fill="#0f172a">Ops review</text>
+    <rect x="832" y="205" width="210" height="92" rx="8" fill="#0f172a" stroke="#0f172a"/>
+    <text x="886" y="246" fill="#ffffff">Release</text>
+    <text x="898" y="270" fill="#ffffff">or block</text>
+  </g>
+  <g stroke="#64748b" stroke-width="3" fill="none" marker-end="url(#arrow)">
+    <path d="M244 190h58"/>
+    <path d="M244 310h58"/>
+    <path d="M488 190h58"/>
+    <path d="M488 310h58"/>
+    <path d="M732 190l100 42"/>
+    <path d="M732 310l100-42"/>
+  </g>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
+

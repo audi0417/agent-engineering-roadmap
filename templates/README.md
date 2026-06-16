@@ -13,6 +13,9 @@ Start with these files:
 | `evaluation-suite-template.yaml` | Creating regression tests and scoring rubrics |
 | `safety-gate-template.md` | Adding approval and refusal rules |
 | `mcp-server-template.py` | Sketching a minimal MCP-style tool server |
+| `agent-registry-template.md` | Registering agent owner, scope, tools, data, evals, and operations |
+| `risk-assessment-template.md` | Classifying risk before launch |
+| `deployment-review-template.md` | Reviewing production readiness before release |
 
 ## Suggested order
 
@@ -21,5 +24,6 @@ Start with these files:
 3. Add memory policy only after the task needs memory.
 4. Write at least 10 evaluation cases.
 5. Build a minimal example and run the eval suite before adding more tools.
+6. Register production agents with owner, risk tier, scopes, and release gate.
 
 The important point: do not start with a giant prompt. Start with the task contract.

@@ -132,6 +132,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Study Group Kit](study-groups/README.md) | 4-week, 8-week, and workshop formats for cohorts |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
+| [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification and project hygiene |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
 | [Capstone](projects/capstone-agent-colony.md) | Final project for building a production-aware colony |
 | [Capstone Starter](capstone-starter/README.md) | Runnable starter scaffold for the final project |
@@ -181,6 +182,16 @@ python examples/08-mini-rag/main.py
 python benchmarks/benchmark_runner.py
 python scripts/verify_examples.py
 ```
+
+## Production readiness artifacts
+
+| Artifact | Use |
+|---|---|
+| [Agent Registry Template](templates/agent-registry-template.md) | Register owner, scopes, tools, data, evals, and operations |
+| [Risk Assessment Template](templates/risk-assessment-template.md) | Classify agent risk before launch |
+| [Deployment Review Template](templates/deployment-review-template.md) | Check release gates and operational readiness |
+| [Release Checklist](release/RELEASE_CHECKLIST.md) | Prepare a public course release |
+| [v1.0 Readiness](release/V1_READINESS.md) | Track stable release readiness |
 
 ---
 

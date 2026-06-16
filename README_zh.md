@@ -132,6 +132,7 @@ flowchart LR
 | [Study Group Kit](study-groups/README_zh.md) | 4 週、8 週與 workshop 讀書會格式 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
+| [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification 與 project hygiene |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
 | [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
 | [Capstone Starter](capstone-starter/README.md) | 可執行的 final project starter scaffold |
@@ -181,6 +182,16 @@ python examples/08-mini-rag/main.py
 python benchmarks/benchmark_runner.py
 python scripts/verify_examples.py
 ```
+
+## Production Readiness Artifacts
+
+| Artifact | 用途 |
+|---|---|
+| [Agent Registry Template](templates/agent-registry-template.md) | 登記 owner、scopes、tools、data、evals、operations |
+| [Risk Assessment Template](templates/risk-assessment-template.md) | Launch 前分類 Agent risk |
+| [Deployment Review Template](templates/deployment-review-template.md) | 檢查 release gates 與 operational readiness |
+| [Release Checklist](release/RELEASE_CHECKLIST.md) | 準備公開課程 release |
+| [v1.0 Readiness](release/V1_READINESS.md) | 追蹤 stable release readiness |
 
 ---
 

@@ -15,6 +15,10 @@ Use these diagrams in README files, slides, workshops, or classroom material.
 | [Workflow Orchestration](diagrams/workflow-orchestration.svg) | Explain planner, executor, reviewer, and retry |
 | [Agent Colony](diagrams/agent-colony.svg) | Explain supervisor and specialist agents |
 | [Production Stack](diagrams/production-stack.svg) | Explain production evaluation and safety layers |
+| [Memory Governance](diagrams/memory-governance.svg) | Explain classification, redaction, merge, audit, decay, and delete |
+| [Permission Model](diagrams/permission-model.svg) | Explain agent identity, scoped permissions, authorization, and audit |
+| [Incident Response](diagrams/incident-response.svg) | Explain detect, contain, trace review, hotfix, release, and postmortem |
+| [Release Gate](diagrams/release-gate.svg) | Explain regression, safety, adversarial, trace, benchmark, and ops checks |
 
 ## Design Notes
 

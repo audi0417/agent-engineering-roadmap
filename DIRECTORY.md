@@ -58,6 +58,10 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Workflow Orchestration](assets/diagrams/workflow-orchestration.svg) | Planner, executor, reviewer, retry |
 | [Agent Colony](assets/diagrams/agent-colony.svg) | Supervisor and specialists |
 | [Production Stack](assets/diagrams/production-stack.svg) | Production evaluation and safety |
+| [Memory Governance](assets/diagrams/memory-governance.svg) | Memory classification, redaction, audit, and deletion |
+| [Permission Model](assets/diagrams/permission-model.svg) | Agent identity, scopes, authorization, and audit |
+| [Incident Response](assets/diagrams/incident-response.svg) | Detection, containment, trace review, hotfix, and postmortem |
+| [Release Gate](assets/diagrams/release-gate.svg) | Regression, safety, adversarial, trace, benchmark, and ops checks |
 
 ---
 
@@ -139,6 +143,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Launch Readiness](launch-kit/launch-readiness.md) | Public launch readiness checklist |
 | [Social Posts](launch-kit/social-posts.md) | Ready-to-post launch copy |
 | [Good First Issues](launch-kit/good-first-issues.md) | First contributor task index |
+| [Changelog](CHANGELOG.md) | Release history and notable changes |
+| [Release Checklist](release/RELEASE_CHECKLIST.md) | Release verification checklist |
+| [v1.0 Readiness](release/V1_READINESS.md) | v1.0 readiness tracker |
 | [Social Card](assets/social/agent-engineering-roadmap-2026.svg) | Share image for social posts |
 
 ---
@@ -247,6 +254,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Evaluation Suite](templates/evaluation-suite-template.yaml) | Create regression cases and scoring dimensions |
 | [Safety Gate](templates/safety-gate-template.md) | Define approval, refusal, and logging rules |
 | [MCP Server Template](templates/mcp-server-template.py) | Minimal MCP-style tool registry |
+| [Agent Registry](templates/agent-registry-template.md) | Register agent owner, scopes, tools, data, evals, and operations |
+| [Risk Assessment](templates/risk-assessment-template.md) | Classify risk and required controls before launch |
+| [Deployment Review](templates/deployment-review-template.md) | Review release gate and operational readiness |
 
 ---
 

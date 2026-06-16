@@ -1,0 +1,27 @@
+name: Example improvement
+description: Suggest a fix or enhancement for a runnable example.
+title: "[Example]: "
+labels: ["example", "good first issue"]
+body:
+  - type: input
+    id: example
+    attributes:
+      label: Example path
+      placeholder: "examples/17-advanced-eval-harness"
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Improvement
+      description: What should change, and what learning value does it add?
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Suggested verification
+      description: What command or eval should prove the change works?
+    validations:
+      required: false
+

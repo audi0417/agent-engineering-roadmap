@@ -135,8 +135,26 @@ Before submitting a pull request, check:
 - [ ] Code examples can run with the documented steps.
 - [ ] `python scripts/verify_examples.py` passes if runnable examples are affected.
 - [ ] New lessons include a problem-first explanation, a concrete example, and an eval or safety check.
+- [ ] New production patterns include an owner, risk, observability, and release-gate consideration when relevant.
 - [ ] No secrets or private notes are included.
 - [ ] The contribution improves learning value.
+
+## Pull Requests
+
+Use the PR template in `.github/PULL_REQUEST_TEMPLATE.md`.
+
+For runnable examples, include the command you ran and the expected pass/fail signal.
+
+For curriculum changes, explain the learner outcome and the closest runnable example or checklist.
+
+For production governance content, connect the change to at least one of:
+
+- risk assessment
+- permission scope
+- memory governance
+- observability
+- incident response
+- release gate
 
 ---
 
