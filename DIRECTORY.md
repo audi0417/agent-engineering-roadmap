@@ -245,6 +245,14 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | Finance Agent Colony | [Finance Agent Colony](finance/finance-agent-colony.md) |
 | Quantitative Research Agent | [Quantitative Research Agent](finance/quantitative-research-agent.md) |
 
+## Domain Casebooks
+
+| Domain | File |
+|---|---|
+| Healthcare | [Healthcare Casebook](domain-casebooks/healthcare-casebook.md) |
+| Finance | [Finance Casebook](domain-casebooks/finance-casebook.md) |
+| Enterprise | [Enterprise Casebook](domain-casebooks/enterprise-casebook.md) |
+
 ---
 
 ## Papers

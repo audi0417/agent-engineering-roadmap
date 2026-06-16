@@ -120,6 +120,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
 | [Showcases](showcases/README.md) | Dependency-free demos for healthcare, finance, and enterprise workflows |
+| [Domain Casebooks](domain-casebooks/README.md) | Healthcare, finance, and enterprise case studies with eval cases |
 | [Labs](labs/README.md) | Guided exercises for each stage |
 | [Teaching Layer](teaching/README_zh.md) | Teaching audit, misconceptions, deliverables, and module blueprint |
 | [Lab Solution Guides](lab-solutions/README_zh.md) | Solution shapes and grading direction for hands-on labs |

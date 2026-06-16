@@ -27,6 +27,12 @@ Pick one:
 - personal learning coach
 - document operations assistant
 
+Use the domain casebooks for realistic scenarios:
+
+- [Healthcare Casebook](../domain-casebooks/healthcare-casebook.md)
+- [Finance Casebook](../domain-casebooks/finance-casebook.md)
+- [Enterprise Casebook](../domain-casebooks/enterprise-casebook.md)
+
 ## Required Components
 
 Your capstone must include:

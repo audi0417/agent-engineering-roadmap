@@ -20,3 +20,7 @@ See `sample_output.txt`.
 - workflow routing
 - approval gates
 - observability-friendly output
+
+## Casebook
+
+Use the [Enterprise Support Agent Casebook](../../domain-casebooks/enterprise-casebook.md) to extend this showcase with more realistic eval cases.

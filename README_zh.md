@@ -120,6 +120,7 @@ flowchart LR
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
 | [Showcases](showcases/README.md) | Healthcare、Finance、Enterprise 的免依賴展示 demo |
+| [Domain Casebooks](domain-casebooks/README.md) | Healthcare、Finance、Enterprise 案例與 eval cases |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
 | [Teaching Layer](teaching/README_zh.md) | 教學 audit、常見誤解、交付成果與 module blueprint |
 | [Lab Solution Guides](lab-solutions/README_zh.md) | Labs 的解題骨架與評分方向 |

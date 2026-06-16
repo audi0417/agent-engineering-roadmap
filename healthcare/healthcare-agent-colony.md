@@ -33,3 +33,11 @@ Follow-up Recommendation
 ## Safety Notes
 
 Healthcare agents should provide decision support, not autonomous medical diagnosis or treatment.
+
+## Casebook
+
+Study the domain cases:
+
+- [Healthcare Agent Casebook](../domain-casebooks/healthcare-casebook.md)
+
+The casebook includes general education, persistent symptom, urgent symptom, privacy, and escalation examples.
