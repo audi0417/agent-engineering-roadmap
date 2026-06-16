@@ -33,6 +33,7 @@
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
   <a href="showcases/README.md">Showcases</a> ·
+  <a href="benchmarks/README_zh.md">Benchmarks</a> ·
   <a href="labs/README.md">Labs</a> ·
   <a href="teaching/README_zh.md">Teaching</a> ·
   <a href="templates/README.md">Templates</a> ·
@@ -121,12 +122,14 @@ flowchart LR
 | [Visual Assets](assets/README.md) | 可放進教學與投影片的 SVG diagrams |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level 學習里程碑 |
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
+| [Benchmarks](benchmarks/README_zh.md) | Tool use、RAG、workflow、security、observability 的輕量檢查 |
 | [Showcases](showcases/README.md) | Healthcare、Finance、Enterprise 的免依賴展示 demo |
 | [Domain Casebooks](domain-casebooks/README.md) | Healthcare、Finance、Enterprise 案例與 eval cases |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
 | [Teaching Layer](teaching/README_zh.md) | 教學 audit、常見誤解、交付成果與 module blueprint |
 | [Lab Solution Guides](lab-solutions/README_zh.md) | Labs 的解題骨架與評分方向 |
 | [Lesson Plans](lesson-plans/README.md) | 每個 module 可直接上課的教案 |
+| [Study Group Kit](study-groups/README_zh.md) | 4 週、8 週與 workshop 讀書會格式 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
@@ -175,6 +178,7 @@ python showcases/healthcare-agent-colony/main.py
 ```bash
 python examples/07-evaluation-harness/main.py
 python examples/08-mini-rag/main.py
+python benchmarks/benchmark_runner.py
 python scripts/verify_examples.py
 ```
 
@@ -279,7 +283,9 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 學習地圖
 ├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例
+├── benchmarks/       # 輕量行為檢查
 ├── security/         # Prompt injection 與 Agent security labs
+├── study-groups/     # Cohort 與 workshop 引導套件
 ├── showcases/        # 可分享 demo 與 sample outputs
 ├── labs/             # 引導式練習
 ├── lesson-plans/     # 可直接上課的教案
@@ -362,6 +368,7 @@ Research Agent
 - [x] 加入 Evaluation and Safety Templates
 - [x] 加入完整 Course Syllabus
 - [x] 加入 Observable Agent 與 Prompt Injection Defense 範例
+- [x] 加入 Benchmark Runner 與讀書會套件
 - [x] 加入 Guided Labs
 - [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog

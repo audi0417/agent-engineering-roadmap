@@ -74,6 +74,14 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 |---|---|
 | [Prompt Injection Lab](security/prompt-injection-lab.md) | RAG and tool-result injection defense practice |
 
+## Benchmarks
+
+| File | Topic |
+|---|---|
+| [Benchmarks](benchmarks/README.md) | Lightweight behavior checks |
+| [Benchmarks zh](benchmarks/README_zh.md) | 輕量行為檢查 |
+| [Benchmark Runner](benchmarks/benchmark_runner.py) | Dependency-free benchmark script |
+
 ## Scripts And CI
 
 | File | Description |
@@ -146,6 +154,8 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | File | Topic |
 |---|---|
 | [Teaching README](teaching/README_zh.md) | How to teach and study this course |
+| [Study Group Kit](study-groups/README.md) | Cohort and workshop facilitation kit |
+| [Study Group Kit zh](study-groups/README_zh.md) | 讀書會與 workshop 引導套件 |
 | [Hung-Yi Lee Style Audit](teaching/hung-yi-lee-style-audit_zh.md) | Teaching-quality audit and gaps |
 | [Module Teaching Blueprint](teaching/module-teaching-blueprint_zh.md) | Standard teaching structure for every module |
 | [Misconception Map](teaching/misconception-map_zh.md) | Common wrong intuitions and correction checks |

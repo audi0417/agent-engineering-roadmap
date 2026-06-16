@@ -33,6 +33,7 @@
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·
   <a href="showcases/README.md">Showcases</a> ·
+  <a href="benchmarks/README.md">Benchmarks</a> ·
   <a href="labs/README.md">Labs</a> ·
   <a href="teaching/README_zh.md">Teaching</a> ·
   <a href="templates/README.md">Templates</a> ·
@@ -121,12 +122,14 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Visual Assets](assets/README.md) | SVG diagrams for teaching and slides |
 | [Roadmap](roadmap/level-0-ai-llm-fundamentals.md) | Level-by-level learning milestones |
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
+| [Benchmarks](benchmarks/README.md) | Lightweight checks for tool use, RAG, workflow, security, and observability |
 | [Showcases](showcases/README.md) | Dependency-free demos for healthcare, finance, and enterprise workflows |
 | [Domain Casebooks](domain-casebooks/README.md) | Healthcare, finance, and enterprise case studies with eval cases |
 | [Labs](labs/README.md) | Guided exercises for each stage |
 | [Teaching Layer](teaching/README_zh.md) | Teaching audit, misconceptions, deliverables, and module blueprint |
 | [Lab Solution Guides](lab-solutions/README_zh.md) | Solution shapes and grading direction for hands-on labs |
 | [Lesson Plans](lesson-plans/README.md) | Instructor-ready teaching plans for each module |
+| [Study Group Kit](study-groups/README.md) | 4-week, 8-week, and workshop formats for cohorts |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
@@ -175,6 +178,7 @@ Then run the evaluation harness:
 ```bash
 python examples/07-evaluation-harness/main.py
 python examples/08-mini-rag/main.py
+python benchmarks/benchmark_runner.py
 python scripts/verify_examples.py
 ```
 
@@ -279,7 +283,9 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 learning path
 ├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples
+├── benchmarks/       # Lightweight behavior checks
 ├── security/         # Prompt injection and agent security labs
+├── study-groups/     # Cohort and workshop facilitation kit
 ├── showcases/        # Shareable demos with sample outputs
 ├── labs/             # Guided exercises
 ├── lesson-plans/     # Instructor-ready lesson plans
@@ -362,6 +368,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add evaluation and safety templates
 - [x] Add full course syllabus
 - [x] Add observable agent and prompt injection defense examples
+- [x] Add benchmark runner and study group kit
 - [x] Add guided labs
 - [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog
