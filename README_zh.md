@@ -212,6 +212,7 @@ python scripts/verify_examples.py
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools、resources、prompts、auth、elicitation | Yes |
 | [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Memory redaction、merge、decay、deletion、audit | Yes |
 | [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Agent identity、scopes、access review、audit | Yes |
+| [17 Advanced Eval Harness](examples/17-advanced-eval-harness/README.md) | Regression、safety、adversarial、golden trace release gate | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：
@@ -376,6 +377,7 @@ Research Agent
 - [x] 加入 Benchmark Runner 與讀書會套件
 - [x] 加入 Cost、Durable Runtime、Modern MCP Gateway 模組
 - [x] 加入 Memory Governance、Identity Permission、Incident Response 模組
+- [x] 加入 Advanced Eval、Product UX、Enterprise Operating Model 模組
 - [x] 加入 Guided Labs
 - [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog

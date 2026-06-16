@@ -33,6 +33,9 @@ It is designed to help learners move from basic agent concepts to production-rea
 | 18 | Agent Memory Governance | Govern memory writes, redaction, merge, decay, and deletion |
 | 19 | Agent Identity And Permission | Treat agents as scoped identities with owners and access reviews |
 | 21 | Agent Incident Response | Respond to unsafe or unexpected agent behavior with traces and evals |
+| 22 | Advanced Agent Evaluation | Build regression, safety, adversarial, and golden trace release gates |
+| 24 | Agent Product UX | Design approval, visibility, evidence, recovery, and trust patterns |
+| 25 | Enterprise Agent Operating Model | Register, review, monitor, and retire agents safely |
 
 ---
 
@@ -121,6 +124,9 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 18 | `18-agent-memory-governance.md` | `examples/15-memory-governance-agent` | memory policy review | redaction and deletion tests |
 | 19 | `19-agent-identity-permission.md` | `examples/16-agent-permission-system` | access review | permission denial tests |
 | 21 | `21-agent-incident-response.md` | `incident-response/agent-incident-playbook.md` | incident drill | hotfix eval |
+| 22 | `22-advanced-agent-evaluation.md` | `examples/17-advanced-eval-harness` | release gate review | golden trace and adversarial eval |
+| 24 | `24-agent-product-ux.md` | `product-ux/agent-product-ux-checklist.md` | UX review | approval and recovery checklist |
+| 25 | `25-enterprise-agent-operating-model.md` | `operating-model/enterprise-agent-operating-checklist.md` | registry review | operating checklist |
 
 ---
 

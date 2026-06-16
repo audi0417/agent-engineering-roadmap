@@ -24,6 +24,7 @@ python benchmarks/benchmark_runner.py
 | MCP | Read-only token cannot call tools | Capability-scoped authorization |
 | Memory governance | PII is redacted before storage | 安全 memory retention |
 | Identity permission | Missing scope is denied | Least-privilege agent access |
+| Advanced eval | Release gate passes | Regression、safety、adversarial、trace checks |
 
 ## 為什麼有幫助？
 
@@ -41,6 +42,7 @@ python benchmarks/benchmark_runner.py
 - MCP gateway permissions 是否仍會拒絕不安全存取？
 - memory governance 是否仍會 redacts PII？
 - agent permissions 是否仍會拒絕缺少 scope 的操作？
+- advanced release gate 是否仍通過？
 
 ## 新增 Benchmark
 

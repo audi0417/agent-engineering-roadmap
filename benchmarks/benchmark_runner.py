@@ -250,6 +250,22 @@ def check_agent_permission_denial() -> dict[str, Any]:
     }
 
 
+def check_advanced_eval_release_gate() -> dict[str, Any]:
+    advanced = import_from_path(
+        "advanced_eval_module",
+        ROOT / "examples/17-advanced-eval-harness/advanced_eval.py",
+    )
+    report = advanced.run_suite(ROOT / "examples/17-advanced-eval-harness/eval_cases.json")
+    passed = report["release_gate_passed"] and report["passed"] == report["total"]
+    return {
+        "name": "advanced_eval_release_gate",
+        "category": "advanced-eval",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": f"score: {report['passed']}/{report['total']} by_type: {report['by_type']}",
+    }
+
+
 CHECKS: list[Callable[[], dict[str, Any]]] = [
     check_tool_use,
     check_rag_grounding,
@@ -261,6 +277,7 @@ CHECKS: list[Callable[[], dict[str, Any]]] = [
     check_mcp_gateway_auth,
     check_memory_governance,
     check_agent_permission_denial,
+    check_advanced_eval_release_gate,
 ]
 
 

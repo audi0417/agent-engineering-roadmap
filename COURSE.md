@@ -32,7 +32,7 @@ You do not need to know every agent framework before starting. Frameworks come a
 | Beginner Builder | New to agents | Modules 00-05, Labs 00-05, Examples 01-04 |
 | Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-09 |
 | Domain Builder | Healthcare, finance, enterprise | Modules 00-12, domain tracks, capstone |
-| Production Lead | Responsible for deployment | Modules 08-21, evaluation harness, observability, security, runtime, MCP governance, incident response |
+| Production Lead | Responsible for deployment | Modules 08-25, evaluation harness, observability, security, runtime, MCP governance, incident response, operating model |
 
 ## Course Map
 
@@ -65,6 +65,9 @@ Part 4: Production
   18 Agent Memory Governance
   19 Agent Identity And Permission
   21 Agent Incident Response
+  22 Advanced Agent Evaluation
+  24 Agent Product UX
+  25 Enterprise Agent Operating Model
 
 Part 5: Domain Systems
   10 Healthcare Agents
@@ -104,6 +107,9 @@ You have completed the course when you can:
 - govern memory redaction, retention, merge, decay, and deletion
 - assign agent identities, scopes, owners, and access reviews
 - run trace-driven incident response and postmortems
+- build release gates with regression, safety, adversarial, and golden trace evals
+- design agent UX for approval, evidence, recovery, and trust
+- operate agents with registry, owners, risk tiers, reviews, and retirement
 - explain production risks such as prompt injection, data leakage, runaway cost, and unsafe tool use
 - complete the capstone project
 

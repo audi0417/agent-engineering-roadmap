@@ -31,6 +31,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | 18 Agent Memory Governance | [English](curriculum/18-agent-memory-governance.md) | [繁體中文](curriculum/18-agent-memory-governance_zh.md) |
 | 19 Agent Identity And Permission | [English](curriculum/19-agent-identity-permission.md) | [繁體中文](curriculum/19-agent-identity-permission_zh.md) |
 | 21 Agent Incident Response | [English](curriculum/21-agent-incident-response.md) | [繁體中文](curriculum/21-agent-incident-response_zh.md) |
+| 22 Advanced Agent Evaluation | [English](curriculum/22-advanced-agent-evaluation.md) | [繁體中文](curriculum/22-advanced-agent-evaluation_zh.md) |
+| 24 Agent Product UX | [English](curriculum/24-agent-product-ux.md) | [繁體中文](curriculum/24-agent-product-ux_zh.md) |
+| 25 Enterprise Agent Operating Model | [English](curriculum/25-enterprise-agent-operating-model.md) | [繁體中文](curriculum/25-enterprise-agent-operating-model_zh.md) |
 
 ---
 
@@ -78,12 +81,20 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Model tools, resources, prompts, authorization, and elicitation. |
 | [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Redact, merge, decay, and delete agent memories. |
 | [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Enforce agent identity, scopes, and access reviews. |
+| [17 Advanced Eval Harness](examples/17-advanced-eval-harness/README.md) | Run regression, safety, adversarial, and golden trace release gates. |
 
 ## Incident Response
 
 | File | Topic |
 |---|---|
 | [Agent Incident Playbook](incident-response/agent-incident-playbook.md) | Trace-driven containment, hotfix, and postmortem workflow |
+
+## Product And Operating Model
+
+| File | Topic |
+|---|---|
+| [Agent Product UX Checklist](product-ux/agent-product-ux-checklist.md) | Approval, visibility, evidence, control, and recovery UX |
+| [Enterprise Agent Operating Checklist](operating-model/enterprise-agent-operating-checklist.md) | Registry, owner, risk tier, review, and retirement workflow |
 
 ## Security
 

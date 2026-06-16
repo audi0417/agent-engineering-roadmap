@@ -33,6 +33,9 @@
 | 18 | Agent Memory Governance | 治理 memory writes、redaction、merge、decay、deletion |
 | 19 | Agent Identity And Permission | 把 Agent 當成有 owner 和 access review 的 scoped identity |
 | 21 | Agent Incident Response | 用 traces 與 evals 處理不安全或非預期 Agent 行為 |
+| 22 | Advanced Agent Evaluation | 建立 regression、safety、adversarial、golden trace release gates |
+| 24 | Agent Product UX | 設計 approval、visibility、evidence、recovery、trust patterns |
+| 25 | Enterprise Agent Operating Model | 安全地 registry、review、monitor、retire agents |
 
 ---
 
@@ -121,6 +124,9 @@ Domain Applications
 | 18 | `18-agent-memory-governance_zh.md` | `examples/15-memory-governance-agent` | memory policy review | redaction and deletion tests |
 | 19 | `19-agent-identity-permission_zh.md` | `examples/16-agent-permission-system` | access review | permission denial tests |
 | 21 | `21-agent-incident-response_zh.md` | `incident-response/agent-incident-playbook.md` | incident drill | hotfix eval |
+| 22 | `22-advanced-agent-evaluation_zh.md` | `examples/17-advanced-eval-harness` | release gate review | golden trace and adversarial eval |
+| 24 | `24-agent-product-ux_zh.md` | `product-ux/agent-product-ux-checklist.md` | UX review | approval and recovery checklist |
+| 25 | `25-enterprise-agent-operating-model_zh.md` | `operating-model/enterprise-agent-operating-checklist.md` | registry review | operating checklist |
 
 ---
 

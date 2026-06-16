@@ -32,7 +32,7 @@ Agent 不是比較長 prompt 的 Chatbot。Agent 其實是一個任務系統，�
 | Beginner Builder | 剛開始學 Agent | Modules 00-05, Labs 00-05, Examples 01-04 |
 | Agent Engineer | 要做真實 workflow | Modules 00-09, Labs 00-09, Examples 01-09 |
 | Domain Builder | 做 healthcare、finance、enterprise | Modules 00-12, domain tracks, capstone |
-| Production Lead | 負責部署與治理 | Modules 08-21, evaluation harness, observability, security, runtime, MCP governance, incident response |
+| Production Lead | 負責部署與治理 | Modules 08-25, evaluation harness, observability, security, runtime, MCP governance, incident response, operating model |
 
 ## 課程地圖
 
@@ -65,6 +65,9 @@ Part 4: Production
   18 Agent Memory Governance
   19 Agent Identity And Permission
   21 Agent Incident Response
+  22 Advanced Agent Evaluation
+  24 Agent Product UX
+  25 Enterprise Agent Operating Model
 
 Part 5: Domain Systems
   10 Healthcare Agents
@@ -104,6 +107,9 @@ Part 5: Domain Systems
 - 治理 memory redaction、retention、merge、decay、deletion
 - 分配 agent identities、scopes、owners、access reviews
 - 執行 trace-driven incident response 與 postmortems
+- 建立 regression、safety、adversarial、golden trace release gates
+- 設計 approval、evidence、recovery、trust 導向的 Agent UX
+- 用 registry、owners、risk tiers、reviews、retirement 營運 Agent
 - 說明 prompt injection、data leakage、runaway cost、unsafe tool use 等 production 風險
 - 完成 capstone project
 

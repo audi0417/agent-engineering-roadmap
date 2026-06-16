@@ -212,6 +212,7 @@ python scripts/verify_examples.py
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools, resources, prompts, auth, elicitation | Yes |
 | [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Memory redaction, merge, decay, deletion, audit | Yes |
 | [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Agent identity, scopes, access review, audit | Yes |
+| [17 Advanced Eval Harness](examples/17-advanced-eval-harness/README.md) | Regression, safety, adversarial, golden trace release gate | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo and regression eval | Yes |
 
 Run every dependency-free example with:
@@ -376,6 +377,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add benchmark runner and study group kit
 - [x] Add cost, durable runtime, and modern MCP gateway modules
 - [x] Add memory governance, identity permission, and incident response modules
+- [x] Add advanced eval, product UX, and enterprise operating model modules
 - [x] Add guided labs
 - [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog
