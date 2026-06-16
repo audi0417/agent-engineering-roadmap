@@ -82,8 +82,14 @@ Goal
 Why it matters
 Mental model
 Core concepts
+Deep Dive
+Black-box view
+Naive failure
+Mechanism
 Architecture diagram
 Hands-on exercise
+Runnable or design checkpoint
+Evaluation cases
 Checklist
 Common mistakes
 Outcome
@@ -127,6 +133,8 @@ Before submitting a pull request, check:
 - [ ] The file is placed in the correct folder.
 - [ ] English and Chinese versions are linked when applicable.
 - [ ] Code examples can run with the documented steps.
+- [ ] `python scripts/verify_examples.py` passes if runnable examples are affected.
+- [ ] New lessons include a problem-first explanation, a concrete example, and an eval or safety check.
 - [ ] No secrets or private notes are included.
 - [ ] The contribution improves learning value.
 

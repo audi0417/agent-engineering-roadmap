@@ -54,10 +54,19 @@ roadmap
 
 ## Launch Checklist
 
-- [ ] Enable GitHub Pages from Actions
-- [ ] Add repository topics
+- [x] Enable GitHub Pages from Actions
+- [x] Add repository topics list
+- [x] Add runnable example verification workflow
+- [x] Add launch-ready course homepage
+- [x] Add three domain casebooks
+- [x] Add lab solution guides
+- [x] Add capstone starter
 - [ ] Pin the repository on GitHub profile
 - [ ] Share the launch post
 - [ ] Add three screenshots or diagrams to the post
 - [ ] Ask early users to open content gap issues
 - [ ] Create 5 good-first-issue tasks
+
+## Current Readiness
+
+See [Launch Readiness](launch-readiness.md).

@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/github/stars/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Stars" />
   <img src="https://img.shields.io/github/forks/audi0417/agent-engineering-roadmap?style=for-the-badge&logo=github" alt="GitHub Forks" />
   <img src="https://img.shields.io/github/last-commit/audi0417/agent-engineering-roadmap?style=for-the-badge" alt="Last Commit" />
+  <a href="https://github.com/audi0417/agent-engineering-roadmap/actions/workflows/verify-examples.yml"><img src="https://img.shields.io/github/actions/workflow/status/audi0417/agent-engineering-roadmap/verify-examples.yml?branch=main&style=for-the-badge&label=examples" alt="Runnable examples status" /></a>
 </p>
 
 <p align="center">
@@ -18,7 +19,7 @@
   <img src="https://img.shields.io/badge/Memory-Systems-10B981?style=flat-square" alt="Memory Systems" />
   <img src="https://img.shields.io/badge/Multi--Agent-Workflow-F59E0B?style=flat-square" alt="Multi-Agent Workflow" />
   <img src="https://img.shields.io/badge/Agent-Colony-EF4444?style=flat-square" alt="Agent Colony" />
-  <img src="https://img.shields.io/badge/Status-V0.1-informational?style=flat-square" alt="Status" />
+  <img src="https://img.shields.io/badge/Status-Launch--Ready-success?style=flat-square" alt="Status" />
 </p>
 
 <p align="center">
@@ -27,6 +28,7 @@
 
 <p align="center">
   <a href="README.md">English</a> ·
+  <a href="https://audi0417.github.io/agent-engineering-roadmap/">Website</a> ·
   <a href="COURSE_zh.md">Course</a> ·
   <a href="roadmap/level-0-ai-llm-fundamentals.md">Roadmap</a> ·
   <a href="examples/01-single-agent/README.md">Examples</a> ·

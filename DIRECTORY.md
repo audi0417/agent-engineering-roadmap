@@ -90,6 +90,7 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 |---|---|
 | [Docs Site](docs/index.html) | Static GitHub Pages landing page |
 | [Launch Kit](launch-kit/README.md) | Launch copy, topics, and checklist |
+| [Launch Readiness](launch-kit/launch-readiness.md) | Public launch readiness checklist |
 | [Social Card](assets/social/agent-engineering-roadmap-2026.svg) | Share image for social posts |
 
 ---
