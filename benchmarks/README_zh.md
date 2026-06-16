@@ -22,6 +22,8 @@ python benchmarks/benchmark_runner.py
 | Cost-latency | Model route respects budget | 依成本與延遲 route task |
 | Runtime | Checkpoint resume completes | Durable long-running workflows |
 | MCP | Read-only token cannot call tools | Capability-scoped authorization |
+| Memory governance | PII is redacted before storage | 安全 memory retention |
+| Identity permission | Missing scope is denied | Least-privilege agent access |
 
 ## 為什麼有幫助？
 
@@ -37,6 +39,8 @@ python benchmarks/benchmark_runner.py
 - cost-aware routing 是否仍選到預期模型？
 - durable workflow 是否仍能 resume？
 - MCP gateway permissions 是否仍會拒絕不安全存取？
+- memory governance 是否仍會 redacts PII？
+- agent permissions 是否仍會拒絕缺少 scope 的操作？
 
 ## 新增 Benchmark
 

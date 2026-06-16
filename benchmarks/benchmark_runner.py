@@ -202,6 +202,54 @@ def check_mcp_gateway_auth() -> dict[str, Any]:
     }
 
 
+def check_memory_governance() -> dict[str, Any]:
+    memory = import_from_path(
+        "memory_governance_module",
+        ROOT / "examples/15-memory-governance-agent/memory_governance.py",
+    )
+    store = memory.GovernedMemoryStore()
+    record = store.write(
+        "contact",
+        "User email is learner@example.com and phone is 555-123-4567.",
+        "benchmark",
+    )
+    serialized = json.dumps(store.export())
+    passed = (
+        "[redacted-email]" in record.value
+        and "[redacted-phone]" in record.value
+        and "learner@example.com" not in serialized
+    )
+    return {
+        "name": "memory_redacts_pii_before_storage",
+        "category": "memory-governance",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": f"record: {record}",
+    }
+
+
+def check_agent_permission_denial() -> dict[str, Any]:
+    permissions = import_from_path(
+        "agent_permission_system_module",
+        ROOT / "examples/16-agent-permission-system/permission_system.py",
+    )
+    system = permissions.PermissionSystem()
+    try:
+        system.authorize("researcher", "read:tickets", "inspect customer ticket")
+        passed = False
+        detail = "researcher unexpectedly accessed tickets"
+    except permissions.PermissionDenied as exc:
+        passed = "lacks scope" in str(exc)
+        detail = str(exc)
+    return {
+        "name": "agent_permission_denies_missing_scope",
+        "category": "identity-permission",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": detail,
+    }
+
+
 CHECKS: list[Callable[[], dict[str, Any]]] = [
     check_tool_use,
     check_rag_grounding,
@@ -211,6 +259,8 @@ CHECKS: list[Callable[[], dict[str, Any]]] = [
     check_cost_routing,
     check_durable_resume,
     check_mcp_gateway_auth,
+    check_memory_governance,
+    check_agent_permission_denial,
 ]
 
 

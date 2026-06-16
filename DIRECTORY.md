@@ -28,6 +28,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | 15 Agent Cost And Latency Engineering | [English](curriculum/15-agent-cost-latency-engineering.md) | [繁體中文](curriculum/15-agent-cost-latency-engineering_zh.md) |
 | 16 Durable Agent Runtime | [English](curriculum/16-durable-agent-runtime.md) | [繁體中文](curriculum/16-durable-agent-runtime_zh.md) |
 | 17 MCP Modernization | [English](curriculum/17-mcp-modernization.md) | [繁體中文](curriculum/17-mcp-modernization_zh.md) |
+| 18 Agent Memory Governance | [English](curriculum/18-agent-memory-governance.md) | [繁體中文](curriculum/18-agent-memory-governance_zh.md) |
+| 19 Agent Identity And Permission | [English](curriculum/19-agent-identity-permission.md) | [繁體中文](curriculum/19-agent-identity-permission_zh.md) |
+| 21 Agent Incident Response | [English](curriculum/21-agent-incident-response.md) | [繁體中文](curriculum/21-agent-incident-response_zh.md) |
 
 ---
 
@@ -73,6 +76,14 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Route tasks by quality, cost, and latency constraints. |
 | [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint and resume long-running workflows. |
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Model tools, resources, prompts, authorization, and elicitation. |
+| [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Redact, merge, decay, and delete agent memories. |
+| [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Enforce agent identity, scopes, and access reviews. |
+
+## Incident Response
+
+| File | Topic |
+|---|---|
+| [Agent Incident Playbook](incident-response/agent-incident-playbook.md) | Trace-driven containment, hotfix, and postmortem workflow |
 
 ## Security
 

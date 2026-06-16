@@ -1,0 +1,27 @@
+[
+  {
+    "name": "redacts_pii_memory",
+    "writes": [
+      {
+        "key": "contact",
+        "value": "User email is learner@example.com and phone is 555-123-4567.",
+        "source": "chat"
+      }
+    ],
+    "must_include": ["[redacted-email]", "[redacted-phone]", "pii"],
+    "must_not_include": ["learner@example.com", "555-123-4567"]
+  },
+  {
+    "name": "deletes_session_pii",
+    "writes": [
+      {
+        "key": "contact",
+        "value": "User email is learner@example.com.",
+        "source": "chat"
+      }
+    ],
+    "delete": ["contact"],
+    "must_include": ["delete"],
+    "must_not_include": ["learner@example.com"]
+  }
+]

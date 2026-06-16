@@ -30,6 +30,9 @@ It is designed to help learners move from basic agent concepts to production-rea
 | 15 | Agent Cost And Latency Engineering | Route tasks by budget, latency, and quality needs |
 | 16 | Durable Agent Runtime | Checkpoint, resume, and recover long-running workflows |
 | 17 | MCP Modernization | Use tools, resources, prompts, authorization, and elicitation |
+| 18 | Agent Memory Governance | Govern memory writes, redaction, merge, decay, and deletion |
+| 19 | Agent Identity And Permission | Treat agents as scoped identities with owners and access reviews |
+| 21 | Agent Incident Response | Respond to unsafe or unexpected agent behavior with traces and evals |
 
 ---
 
@@ -115,6 +118,9 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 15 | `15-agent-cost-latency-engineering.md` | `examples/12-cost-aware-agent` | routing budget review | cost and latency checks |
 | 16 | `16-durable-agent-runtime.md` | `examples/13-durable-workflow-agent` | checkpoint review | resume test |
 | 17 | `17-mcp-modernization.md` | `examples/14-modern-mcp-gateway` | gateway policy review | authorization and elicitation tests |
+| 18 | `18-agent-memory-governance.md` | `examples/15-memory-governance-agent` | memory policy review | redaction and deletion tests |
+| 19 | `19-agent-identity-permission.md` | `examples/16-agent-permission-system` | access review | permission denial tests |
+| 21 | `21-agent-incident-response.md` | `incident-response/agent-incident-playbook.md` | incident drill | hotfix eval |
 
 ---
 

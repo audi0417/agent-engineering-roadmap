@@ -22,6 +22,8 @@ python benchmarks/benchmark_runner.py
 | Cost-latency | Model route respects budget | Cost and latency-aware task routing |
 | Runtime | Checkpoint resume completes | Durable long-running workflows |
 | MCP | Read-only token cannot call tools | Capability-scoped authorization |
+| Memory governance | PII is redacted before storage | Safe memory retention |
+| Identity permission | Missing scope is denied | Least-privilege agent access |
 
 ## Why This Helps
 
@@ -37,6 +39,8 @@ This benchmark gives contributors a quick signal:
 - Did cost-aware routing still choose the expected model?
 - Did durable workflows still resume?
 - Did MCP gateway permissions still deny unsafe access?
+- Did memory governance still redact PII?
+- Did agent permissions still deny missing scopes?
 
 ## Add A Benchmark
 

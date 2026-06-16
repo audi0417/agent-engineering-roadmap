@@ -30,6 +30,9 @@
 | 15 | Agent Cost And Latency Engineering | 依 budget、latency、quality needs 做 task routing |
 | 16 | Durable Agent Runtime | Checkpoint、resume、recover long-running workflows |
 | 17 | MCP Modernization | 使用 tools、resources、prompts、authorization、elicitation |
+| 18 | Agent Memory Governance | 治理 memory writes、redaction、merge、decay、deletion |
+| 19 | Agent Identity And Permission | 把 Agent 當成有 owner 和 access review 的 scoped identity |
+| 21 | Agent Incident Response | 用 traces 與 evals 處理不安全或非預期 Agent 行為 |
 
 ---
 
@@ -115,6 +118,9 @@ Domain Applications
 | 15 | `15-agent-cost-latency-engineering_zh.md` | `examples/12-cost-aware-agent` | routing budget review | cost and latency checks |
 | 16 | `16-durable-agent-runtime_zh.md` | `examples/13-durable-workflow-agent` | checkpoint review | resume test |
 | 17 | `17-mcp-modernization_zh.md` | `examples/14-modern-mcp-gateway` | gateway policy review | authorization and elicitation tests |
+| 18 | `18-agent-memory-governance_zh.md` | `examples/15-memory-governance-agent` | memory policy review | redaction and deletion tests |
+| 19 | `19-agent-identity-permission_zh.md` | `examples/16-agent-permission-system` | access review | permission denial tests |
+| 21 | `21-agent-incident-response_zh.md` | `incident-response/agent-incident-playbook.md` | incident drill | hotfix eval |
 
 ---
 

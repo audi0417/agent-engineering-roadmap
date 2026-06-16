@@ -210,6 +210,8 @@ python scripts/verify_examples.py
 | [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Model routing, budget, latency, fallback eval | Yes |
 | [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint, resume, durable workflow eval | Yes |
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools, resources, prompts, auth, elicitation | Yes |
+| [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Memory redaction, merge, decay, deletion, audit | Yes |
+| [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Agent identity, scopes, access review, audit | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo and regression eval | Yes |
 
 Run every dependency-free example with:
@@ -373,6 +375,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add observable agent and prompt injection defense examples
 - [x] Add benchmark runner and study group kit
 - [x] Add cost, durable runtime, and modern MCP gateway modules
+- [x] Add memory governance, identity permission, and incident response modules
 - [x] Add guided labs
 - [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog

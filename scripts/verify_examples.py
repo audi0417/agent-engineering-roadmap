@@ -39,6 +39,8 @@ COMMANDS = [
     ["python", "examples/12-cost-aware-agent/main.py"],
     ["python", "examples/13-durable-workflow-agent/main.py"],
     ["python", "examples/14-modern-mcp-gateway/main.py"],
+    ["python", "examples/15-memory-governance-agent/main.py"],
+    ["python", "examples/16-agent-permission-system/main.py"],
     ["python", "benchmarks/benchmark_runner.py"],
     ["python", "capstone-starter/run_eval.py"],
     ["python", "showcases/enterprise-support-agent/main.py"],

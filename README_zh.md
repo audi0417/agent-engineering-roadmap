@@ -210,6 +210,8 @@ python scripts/verify_examples.py
 | [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Model routing、budget、latency、fallback eval | Yes |
 | [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint、resume、durable workflow eval | Yes |
 | [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools、resources、prompts、auth、elicitation | Yes |
+| [15 Memory Governance Agent](examples/15-memory-governance-agent/README.md) | Memory redaction、merge、decay、deletion、audit | Yes |
+| [16 Agent Permission System](examples/16-agent-permission-system/README.md) | Agent identity、scopes、access review、audit | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：
@@ -373,6 +375,7 @@ Research Agent
 - [x] 加入 Observable Agent 與 Prompt Injection Defense 範例
 - [x] 加入 Benchmark Runner 與讀書會套件
 - [x] 加入 Cost、Durable Runtime、Modern MCP Gateway 模組
+- [x] 加入 Memory Governance、Identity Permission、Incident Response 模組
 - [x] 加入 Guided Labs
 - [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog

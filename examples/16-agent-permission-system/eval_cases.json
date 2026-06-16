@@ -1,0 +1,24 @@
+[
+  {
+    "name": "researcher_can_read_docs",
+    "agent_id": "researcher",
+    "scope": "read:docs",
+    "action": "summarize policy",
+    "expected": "allowed"
+  },
+  {
+    "name": "researcher_cannot_read_tickets",
+    "agent_id": "researcher",
+    "scope": "read:tickets",
+    "action": "inspect customer ticket",
+    "expected": "denied"
+  },
+  {
+    "name": "ops_agent_can_request_approval",
+    "agent_id": "ops_agent",
+    "scope": "request:approval",
+    "action": "prepare production change approval",
+    "expected": "allowed"
+  }
+]
+
