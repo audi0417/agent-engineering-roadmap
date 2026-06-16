@@ -132,6 +132,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Study Group Kit](study-groups/README.md) | 4-week, 8-week, and workshop formats for cohorts |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
+| [Papers](papers/README.md) | Research papers, reading roadmap, and engineering notes |
 | [Open Source Projects](resources/open-source-agent-projects.md) | Curated ecosystem map for frameworks, MCP, RAG, evals, observability, and ops |
 | [Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | Choose agent frameworks by engineering tradeoff |
 | [Open Source Reading Guide](resources/how-to-read-open-source-agent-repos.md) | Learn how to study real agent repositories |

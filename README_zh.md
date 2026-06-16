@@ -132,6 +132,7 @@ flowchart LR
 | [Study Group Kit](study-groups/README_zh.md) | 4 週、8 週與 workshop 讀書會格式 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
+| [Papers](papers/README_zh.md) | Agent 論文閱讀路線、大廠論文與工程導讀 |
 | [Open Source Projects](resources/open-source-agent-projects.md) | Frameworks、MCP、RAG、evals、observability、ops 的開源生態導覽 |
 | [Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | 用工程取捨選 agent framework |
 | [Open Source Reading Guide](resources/how-to-read-open-source-agent-repos.md) | 學會閱讀真實 agent 開源專案的架構 |

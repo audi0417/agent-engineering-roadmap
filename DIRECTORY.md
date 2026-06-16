@@ -322,6 +322,10 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 |---|---|
 | [Papers](papers/README.md) | Recent papers related to Agent Engineering |
 | [Papers zh](papers/README_zh.md) | 論文閱讀清單繁中版 |
+| [Paper Reading Roadmap](papers/paper-reading-roadmap.md) | Papers mapped to course modules and examples |
+| [Paper Reading Roadmap zh](papers/paper-reading-roadmap_zh.md) | 依課程章節整理的繁中論文閱讀路線 |
+| [Paper Notes](papers/paper-notes/README.md) | Short engineering notes for key papers |
+| [Paper Notes zh](papers/paper-notes/README_zh.md) | 繁中重點論文工程導讀 |
 
 ---
 

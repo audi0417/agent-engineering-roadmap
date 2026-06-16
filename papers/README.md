@@ -2,52 +2,84 @@
 
 [繁體中文](README_zh.md)
 
-This folder collects recent and important papers related to Agent Engineering.
+This folder connects the hands-on Agent Engineering Roadmap with research papers from major labs, universities, and open research communities.
 
-The goal is to help learners connect hands-on agent development with current research.
+The goal is not to collect every paper. The goal is to help learners understand the research lineage behind tools, memory, workflow, multi-agent systems, evaluation, safety, and production agents.
 
----
+## PDF Policy
 
-## Topics
+This repository links to official paper pages and PDF URLs, but does not commit PDF files.
 
-- AI Agents
-- Tool Use
-- Model Context Protocol
-- Agent Memory
-- Multi-Agent Systems
-- Agent Evaluation
-- Production Safety
+Reasons:
 
----
+- paper licenses differ across arXiv, ACM, ACL, OpenReview, company sites, and conference proceedings
+- external official links are easier to keep current
+- original course notes are more useful than copied PDFs
+
+When adding a paper, include the title, year, organization, official link, PDF link when available, related modules, and an original engineering summary.
+
+## Start Here
+
+| File | Purpose |
+|---|---|
+| [Paper Reading Roadmap](paper-reading-roadmap.md) | Chapter-by-chapter paper map |
+| [Paper Notes](paper-notes/README.md) | Short engineering notes for key papers |
+| [Paper Reading Roadmap zh](paper-reading-roadmap_zh.md) | 繁體中文論文閱讀路線 |
+| [Paper Notes zh](paper-notes/README_zh.md) | 繁體中文重點論文導讀 |
 
 ## Recommended Papers
 
-| Topic | Paper | Year | Why it matters |
-|---|---|---|---|
-| MCP | Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions | 2025 | Provides a research-oriented overview of MCP, its lifecycle, adoption, and security/privacy risks. |
-| Multi-Agent Systems | LLMs Working in Harmony: A Survey on the Technological Aspects of Building Effective LLM-Based Multi Agent Systems | 2025 | Surveys architecture, memory, planning, and frameworks for LLM-based multi-agent systems. |
-| Agent Memory | How Memory Management Impacts LLM Agents: An Empirical Study of Experience-Following Behavior | 2025 | Shows how memory addition and deletion strategies affect long-term agent behavior and error propagation. |
-| Multi-Agent Collaboration | Multi-Agent Collaboration Mechanisms: A Survey of LLMs | 2025 | Organizes collaboration mechanisms by actors, types, structures, strategies, and coordination protocols. |
+| Topic | Paper | Year | Organization | Why it matters |
+|---|---|---:|---|---|
+| Browser agent | [WebGPT: Browser-assisted question-answering with human feedback](https://arxiv.org/abs/2112.09332) | 2021 | OpenAI | Early reference for browsing agents, citation collection, and human feedback. |
+| Reasoning and acting | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | 2022 | Google Research / Princeton | Foundation for interleaving reasoning traces and actions. |
+| Safety training | [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) | 2022 | Anthropic | Important background for safety principles, critique, revision, and AI feedback. |
+| Tool use | [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) | 2023 | Meta AI | Shows how language models can learn when and how to call APIs. |
+| Reflection | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | 2023 | Princeton / Northeastern | Connects feedback, episodic memory, and better future agent behavior. |
+| Self-improvement | [Self-Refine: Iterative Refinement with Self-Feedback](https://arxiv.org/abs/2303.17651) | 2023 | Allen AI / CMU / UW / others | Background for reviewer agents and iterative output improvement. |
+| Agent memory | [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) | 2023 | Stanford / Google | Classic observation, memory, reflection, and planning architecture. |
+| Planning | [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) | 2023 | Princeton / Google DeepMind | Introduces search over reasoning paths for harder planning tasks. |
+| Lifelong agent | [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) | 2023 | NVIDIA / Caltech / UT Austin / Stanford / ASU | Skill library, automatic curriculum, environment feedback, and self-verification. |
+| RAG foundation | [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) | 2020 | Meta AI / UCL / NYU / FAIR | Core paper for parametric plus non-parametric memory. |
+| Long context | [Lost in the Middle: How Language Models Use Long Contexts](https://arxiv.org/abs/2307.03172) | 2023 | Stanford / UC Berkeley / Samaya AI | Shows why long context is not the same as reliable retrieval or memory. |
+| Multi-agent framework | [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) | 2023 | Microsoft Research | Connects multi-agent conversation patterns, tools, humans, and framework design. |
+| Multi-agent software | [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924) | 2023 | Tsinghua / OpenBMB | Role-based multi-agent software development workflow. |
+| Agent benchmark | [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) | 2023 | Tsinghua / Ohio State / UC Berkeley | Evaluates LLMs as agents across interactive environments. |
+| Agent survey | [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432) | 2023 | Renmin University / others | Broad taxonomy for LLM-based autonomous agents. |
+| RAG eval | [RAGAS: Automated Evaluation of Retrieval Augmented Generation](https://arxiv.org/abs/2309.15217) | 2023 | Exploding Gradients / CardiffNLP | Practical reference for RAG evaluation dimensions. |
+| Software agents | [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) | 2024 | Princeton | Shows why the interface between agent and computer matters. |
+| Prompt injection | [Prompt Injection attack against LLM-integrated Applications](https://arxiv.org/abs/2306.05499) | 2023 | Nanyang Technological University / Zhejiang University / others | Useful for security modules and tool-result injection threat modeling. |
+| Deceptive behavior | [Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training](https://arxiv.org/abs/2401.05566) | 2024 | Anthropic / collaborators | Shows why safety testing should include hidden-trigger and persistence risks. |
+| LLM-as-judge | [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](https://arxiv.org/abs/2306.05685) | 2023 | LMSYS / UC Berkeley | Foundation for using model judges while understanding bias and limits. |
 
----
+## Reading Order
 
-## How to Read Papers for Agent Engineering
-
-When reading a paper, focus on engineering implications:
-
-1. What system problem does this paper address?
-2. What agent component does it improve?
-3. Does it affect planning, tools, memory, workflow, evaluation, or safety?
-4. Can the idea become a hands-on example?
-5. What are the limitations?
-
----
+1. ReAct
+2. Toolformer
+3. WebGPT
+4. RAG
+5. Lost in the Middle
+6. Generative Agents
+7. Reflexion
+8. Self-Refine
+9. Tree of Thoughts
+10. Voyager
+11. AutoGen
+12. AgentBench
+13. RAGAS
+14. SWE-agent
+15. Prompt Injection
+16. Constitutional AI
+17. Sleeper Agents
 
 ## Paper Note Template
 
 ```text
 Title:
 Year:
+Organization:
+Official link:
+PDF link:
 Topic:
 Problem:
 Key idea:
@@ -55,22 +87,17 @@ System component:
 Engineering takeaway:
 Possible implementation:
 Limitations:
-Related roadmap level:
+Related roadmap modules:
+Related examples:
 ```
 
----
+## Contribution Rule
 
-## Suggested Reading Order
+When adding a new paper:
 
-1. Multi-Agent Collaboration Mechanisms
-2. LLMs Working in Harmony
-3. How Memory Management Impacts LLM Agents
-4. Model Context Protocol Landscape and Security
-
----
-
-## Notes
-
-This folder should only include public paper references and original summaries.
-
-Do not include private source notes or copied content.
+- link to the official paper page
+- link to the official PDF only when available
+- write your own summary
+- explain the engineering implication
+- connect it to at least one course module or example
+- do not copy abstracts, figures, or PDF contents into this repository
