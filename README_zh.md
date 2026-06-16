@@ -201,6 +201,8 @@ python scripts/verify_examples.py
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval、grounded answer、RAG eval | Yes |
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Graph transitions、approval gate、production eval | Yes |
+| [10 Observable Agent](examples/10-observable-agent/README.md) | Trace events、guardrail logs、可 replay debugging | Yes |
+| [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Untrusted retrieval filtering 與 security eval | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：
@@ -277,6 +279,7 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 學習地圖
 ├── curriculum/       # 完整課程章節
 ├── examples/         # 實作範例
+├── security/         # Prompt injection 與 Agent security labs
 ├── showcases/        # 可分享 demo 與 sample outputs
 ├── labs/             # 引導式練習
 ├── lesson-plans/     # 可直接上課的教案
@@ -358,6 +361,7 @@ Research Agent
 - [x] 加入 Agent Colony Demo
 - [x] 加入 Evaluation and Safety Templates
 - [x] 加入完整 Course Syllabus
+- [x] 加入 Observable Agent 與 Prompt Injection Defense 範例
 - [x] 加入 Guided Labs
 - [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog

@@ -23,6 +23,8 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | 10 Domain Agent: Healthcare | [English](curriculum/10-domain-agent-healthcare.md) | [繁體中文](curriculum/10-domain-agent-healthcare_zh.md) |
 | 11 Domain Agent: Finance | [English](curriculum/11-domain-agent-finance.md) | [繁體中文](curriculum/11-domain-agent-finance_zh.md) |
 | 12 Agent Frameworks Comparison | [English](curriculum/12-agent-frameworks-comparison.md) | [繁體中文](curriculum/12-agent-frameworks-comparison_zh.md) |
+| 13 Agent Observability | [English](curriculum/13-agent-observability.md) | [繁體中文](curriculum/13-agent-observability_zh.md) |
+| 14 Agent Security | [English](curriculum/14-agent-security.md) | [繁體中文](curriculum/14-agent-security_zh.md) |
 
 ---
 
@@ -63,6 +65,14 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Run regression checks against agent behavior. |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Inspect retrieval, grounded answers, and RAG evals. |
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Test graph transitions and human approval gates. |
+| [10 Observable Agent](examples/10-observable-agent/README.md) | Inspect traces, guardrails, and replayable agent runs. |
+| [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Block unsafe instructions in retrieved content. |
+
+## Security
+
+| File | Topic |
+|---|---|
+| [Prompt Injection Lab](security/prompt-injection-lab.md) | RAG and tool-result injection defense practice |
 
 ## Scripts And CI
 

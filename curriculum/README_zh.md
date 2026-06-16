@@ -25,6 +25,8 @@
 | 10 | Domain Agent: Healthcare | 建立具備安全邊界的 Healthcare Agent Workflow |
 | 11 | Domain Agent: Finance | 建立具備風險控管的 Finance Research Agent |
 | 12 | Agent Frameworks Comparison | 比較常見 Agent Framework 以及適用時機 |
+| 13 | Agent Observability | Trace、replay、debug production agent runs |
+| 14 | Agent Security | 防守 prompt injection、不安全工具與 memory leakage |
 
 ---
 
@@ -105,6 +107,8 @@ Domain Applications
 | 10 | `10-domain-agent-healthcare_zh.md` | `examples/06-agent-colony` | domain safety plan | production rubric |
 | 11 | `11-domain-agent-finance_zh.md` | `examples/06-agent-colony` | domain risk plan | production rubric |
 | 12 | `12-agent-frameworks-comparison_zh.md` | `capstone-starter` | `labs/lab-10-capstone-prep.md` | architecture review |
+| 13 | `13-agent-observability_zh.md` | `examples/10-observable-agent` | trace review | incident replay |
+| 14 | `14-agent-security_zh.md` | `examples/11-prompt-injection-defense` | `security/prompt-injection-lab.md` | security eval cases |
 
 ---
 

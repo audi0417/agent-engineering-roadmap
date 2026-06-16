@@ -30,9 +30,9 @@ You do not need to know every agent framework before starting. Frameworks come a
 | Track | Best for | Path |
 |---|---|---|
 | Beginner Builder | New to agents | Modules 00-05, Labs 00-05, Examples 01-04 |
-| Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-08 |
+| Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-09 |
 | Domain Builder | Healthcare, finance, enterprise | Modules 00-12, domain tracks, capstone |
-| Production Lead | Responsible for deployment | Modules 08-09, evaluation harness, safety templates |
+| Production Lead | Responsible for deployment | Modules 08-14, evaluation harness, observability, security templates |
 
 ## Course Map
 
@@ -57,6 +57,8 @@ Part 3: Control
 Part 4: Production
   09 Production Agent Systems
   12 Agent Frameworks Comparison
+  13 Agent Observability
+  14 Agent Security
 
 Part 5: Domain Systems
   10 Healthcare Agents
@@ -88,6 +90,8 @@ You have completed the course when you can:
 - orchestrate planner, executor, reviewer, and evaluator stages
 - coordinate multiple agents without losing control
 - run an evaluation suite before shipping changes
+- inspect agent traces and explain failures from evidence
+- defend against prompt injection in retrieved content and tool results
 - explain production risks such as prompt injection, data leakage, runaway cost, and unsafe tool use
 - complete the capstone project
 
@@ -99,6 +103,7 @@ You have completed the course when you can:
 | `assets/` | Visual diagrams and teaching images |
 | `roadmap/` | Level-by-level learning milestones |
 | `examples/` | Runnable minimal implementations |
+| `security/` | Prompt injection and agent security labs |
 | `showcases/` | First-run demos with sample outputs |
 | `labs/` | Guided hands-on exercises |
 | `teaching/` | Teaching audit, misconceptions, deliverables, and module blueprint |

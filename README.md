@@ -201,6 +201,8 @@ python scripts/verify_examples.py
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval, grounded answer, RAG eval | Yes |
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Graph transitions, approval gate, production eval | Yes |
+| [10 Observable Agent](examples/10-observable-agent/README.md) | Trace events, guardrail logs, replayable debugging | Yes |
+| [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Untrusted retrieval filtering and security eval | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo and regression eval | Yes |
 
 Run every dependency-free example with:
@@ -277,6 +279,7 @@ agent-engineering-roadmap/
 ├── roadmap/          # Level 0-8 learning path
 ├── curriculum/       # Full course chapters
 ├── examples/         # Hands-on examples
+├── security/         # Prompt injection and agent security labs
 ├── showcases/        # Shareable demos with sample outputs
 ├── labs/             # Guided exercises
 ├── lesson-plans/     # Instructor-ready lesson plans
@@ -358,6 +361,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add agent colony demo
 - [x] Add evaluation and safety templates
 - [x] Add full course syllabus
+- [x] Add observable agent and prompt injection defense examples
 - [x] Add guided labs
 - [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog

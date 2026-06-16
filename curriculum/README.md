@@ -25,6 +25,8 @@ It is designed to help learners move from basic agent concepts to production-rea
 | 10 | Domain Agent: Healthcare | Build healthcare-oriented agent workflows with safety boundaries |
 | 11 | Domain Agent: Finance | Build finance research and analysis agents with risk controls |
 | 12 | Agent Frameworks Comparison | Compare common agent frameworks and when to use each |
+| 13 | Agent Observability | Trace, replay, and debug production agent runs |
+| 14 | Agent Security | Defend against prompt injection, unsafe tools, and memory leakage |
 
 ---
 
@@ -105,6 +107,8 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 10 | `10-domain-agent-healthcare.md` | `examples/06-agent-colony` | domain safety plan | production rubric |
 | 11 | `11-domain-agent-finance.md` | `examples/06-agent-colony` | domain risk plan | production rubric |
 | 12 | `12-agent-frameworks-comparison.md` | `capstone-starter` | `labs/lab-10-capstone-prep.md` | architecture review |
+| 13 | `13-agent-observability.md` | `examples/10-observable-agent` | trace review | incident replay |
+| 14 | `14-agent-security.md` | `examples/11-prompt-injection-defense` | `security/prompt-injection-lab.md` | security eval cases |
 
 ---
 
