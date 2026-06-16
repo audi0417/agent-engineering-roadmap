@@ -133,9 +133,12 @@ flowchart LR
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
 | [Open Source Projects](resources/open-source-agent-projects.md) | Frameworks、MCP、RAG、evals、observability、ops 的開源生態導覽 |
+| [Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | 用工程取捨選 agent framework |
+| [Open Source Reading Guide](resources/how-to-read-open-source-agent-repos.md) | 學會閱讀真實 agent 開源專案的架構 |
 | [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification 與 project hygiene |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
 | [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
+| [Portfolio Projects](projects/portfolio-projects.md) | 可展示在 GitHub 的專案題庫、交付成果與評分標準 |
 | [Capstone Starter](capstone-starter/README.md) | 可執行的 final project starter scaffold |
 | [Glossary](glossary/agent-engineering-glossary_zh.md) | 核心術語與定義 |
 

@@ -15,6 +15,12 @@ Suggested order:
 3. Read one external open-source project to see how the idea appears in a real ecosystem.
 4. Compare the project design against this course's checklists: tools, memory, workflow, evals, observability, safety, and governance.
 
+Companion guides:
+
+- [Agent Framework Selection Matrix](agent-framework-selection-matrix.md) helps you choose what to study or use.
+- [How To Read Open Source Agent Repositories](how-to-read-open-source-agent-repos.md) gives a repeatable reading method.
+- [Portfolio Projects](../projects/portfolio-projects.md) turns these projects into buildable GitHub demos.
+
 ## Agent Frameworks And Runtimes
 
 | Project | Best for | Study with |
@@ -155,4 +161,3 @@ If you add a new external project to this list, include:
 - one caution or limitation
 
 Do not copy code or documentation from the external project into this repository.
-
