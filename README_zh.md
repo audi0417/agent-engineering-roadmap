@@ -32,6 +32,7 @@
   <a href="examples/01-single-agent/README.md">Examples</a> ·
   <a href="showcases/README.md">Showcases</a> ·
   <a href="labs/README.md">Labs</a> ·
+  <a href="teaching/README_zh.md">Teaching</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
@@ -120,11 +121,14 @@ flowchart LR
 | [Examples](examples/01-single-agent/README.md) | 可執行最小實作 |
 | [Showcases](showcases/README.md) | Healthcare、Finance、Enterprise 的免依賴展示 demo |
 | [Labs](labs/README.md) | 每個階段的引導式練習 |
+| [Teaching Layer](teaching/README_zh.md) | 教學 audit、常見誤解、交付成果與 module blueprint |
+| [Lab Solution Guides](lab-solutions/README_zh.md) | Labs 的解題骨架與評分方向 |
 | [Lesson Plans](lesson-plans/README.md) | 每個 module 可直接上課的教案 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
 | [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
+| [Capstone Starter](capstone-starter/README.md) | 可執行的 final project starter scaffold |
 | [Glossary](glossary/agent-engineering-glossary_zh.md) | 核心術語與定義 |
 
 ---
@@ -193,6 +197,7 @@ python scripts/verify_examples.py
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Supervisor、domain agent、evaluator | Yes |
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval、grounded answer、RAG eval | Yes |
+| [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：
 

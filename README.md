@@ -32,6 +32,7 @@
   <a href="examples/01-single-agent/README.md">Examples</a> ·
   <a href="showcases/README.md">Showcases</a> ·
   <a href="labs/README.md">Labs</a> ·
+  <a href="teaching/README_zh.md">Teaching</a> ·
   <a href="templates/README.md">Templates</a> ·
   <a href="architecture/colony-architecture.md">Architecture</a> ·
   <a href="healthcare/healthcare-agent-colony.md">Healthcare</a> ·
@@ -120,11 +121,14 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Examples](examples/01-single-agent/README.md) | Runnable minimal implementations |
 | [Showcases](showcases/README.md) | Dependency-free demos for healthcare, finance, and enterprise workflows |
 | [Labs](labs/README.md) | Guided exercises for each stage |
+| [Teaching Layer](teaching/README_zh.md) | Teaching audit, misconceptions, deliverables, and module blueprint |
+| [Lab Solution Guides](lab-solutions/README_zh.md) | Solution shapes and grading direction for hands-on labs |
 | [Lesson Plans](lesson-plans/README.md) | Instructor-ready teaching plans for each module |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
 | [Capstone](projects/capstone-agent-colony.md) | Final project for building a production-aware colony |
+| [Capstone Starter](capstone-starter/README.md) | Runnable starter scaffold for the final project |
 | [Glossary](glossary/agent-engineering-glossary.md) | Core terms and definitions |
 
 ---
@@ -193,6 +197,7 @@ python scripts/verify_examples.py
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Supervisor, domain agent, evaluator | Yes |
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval, grounded answer, RAG eval | Yes |
+| [Capstone Starter](capstone-starter/README.md) | Starter colony demo and regression eval | Yes |
 
 Run every dependency-free example with:
 

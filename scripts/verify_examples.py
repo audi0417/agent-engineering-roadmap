@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 COMMANDS = [
-    ["python", "-m", "compileall", "examples", "showcases", "templates"],
+    ["python", "-m", "compileall", "examples", "showcases", "templates", "capstone-starter"],
     ["python", "examples/01-single-agent/main.py"],
     ["python", "examples/02-tool-using-agent/main.py"],
     ["python", "examples/03-mcp-agent/main.py"],
@@ -24,6 +24,7 @@ COMMANDS = [
     ["python", "examples/06-agent-colony/main.py"],
     ["python", "examples/07-evaluation-harness/main.py"],
     ["python", "examples/08-mini-rag/main.py"],
+    ["python", "capstone-starter/run_eval.py"],
     ["python", "showcases/enterprise-support-agent/main.py"],
     ["python", "showcases/finance-research-agent/main.py"],
     ["python", "showcases/healthcare-agent-colony/main.py"],

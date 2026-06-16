@@ -27,6 +27,12 @@ Each lab has:
 | 09 | Evaluation | A regression eval suite |
 | 10 | Capstone Prep | A production readiness review |
 
+## Solution Guides
+
+Use [Lab Solution Guides](../lab-solutions/README_zh.md) after attempting the lab.
+
+The guide does not give one fixed answer. It tells you what artifact should exist, what failure modes to check, and how to know whether your solution is good enough.
+
 ## How To Use
 
 Do not only read the labs. Run the matching examples and modify one thing.

@@ -101,11 +101,14 @@ Part 5: Domain Systems
 | `examples/` | 可執行最小實作 |
 | `showcases/` | 第一次進 repo 就能跑的展示 demo |
 | `labs/` | 引導式實作練習 |
+| `teaching/` | 教學 audit、常見誤解、交付成果與 module blueprint |
+| `lab-solutions/` | Labs 的解題骨架與預期 artifact |
 | `lesson-plans/` | 每堂 90 分鐘、可直接上課的教案 |
 | `patterns/` | 可重用架構模式 |
 | `templates/` | 專案模板、安全模板、評估模板 |
 | `assessments/` | 題庫與複習問題 |
 | `projects/` | Capstone 與作品集專案 |
+| `capstone-starter/` | 可執行的 final project starter scaffold |
 | `glossary/` | Agent Engineering 術語 |
 
 ## 教學原則

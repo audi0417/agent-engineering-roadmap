@@ -96,7 +96,7 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 01 | `01-agent-architecture.md` | `examples/01-single-agent` | `labs/lab-01-single-agent.md` | `assessments/rubrics.md` |
 | 02 | `02-tool-calling.md` | `examples/02-tool-using-agent` | `labs/lab-02-tool-calling.md` | `assessments/quiz-bank.md` |
 | 03 | `03-memory-systems.md` | `examples/04-memory-agent` | `labs/lab-03-memory.md` | `templates/memory-policy-template.md` |
-| 04 | `04-rag-and-embeddings.md` | - | `labs/lab-04-rag.md` | retrieval eval cases |
+| 04 | `04-rag-and-embeddings.md` | `examples/08-mini-rag` | `labs/lab-04-rag.md` | retrieval eval cases |
 | 05 | `05-workflow-orchestration.md` | `examples/05-multi-agent-workflow` | `labs/lab-05-workflow.md` | workflow review rubric |
 | 06 | `06-graph-based-agents.md` | - | `labs/lab-06-graph-agent.md` | graph design review |
 | 07 | `07-multi-agent-systems.md` | `examples/06-agent-colony` | `labs/lab-07-multi-agent.md` | routing tests |
@@ -104,7 +104,7 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 09 | `09-production-agent-systems.md` | `examples/07-evaluation-harness` | `labs/lab-09-evaluation.md` | regression suite |
 | 10 | `10-domain-agent-healthcare.md` | `examples/06-agent-colony` | domain safety plan | production rubric |
 | 11 | `11-domain-agent-finance.md` | `examples/06-agent-colony` | domain risk plan | production rubric |
-| 12 | `12-agent-frameworks-comparison.md` | framework spike | `labs/lab-10-capstone-prep.md` | architecture review |
+| 12 | `12-agent-frameworks-comparison.md` | `capstone-starter` | `labs/lab-10-capstone-prep.md` | architecture review |
 
 ---
 

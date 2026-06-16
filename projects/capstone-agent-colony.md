@@ -6,6 +6,17 @@ Build a small but complete agent colony for one real domain.
 
 This is the final project for the course. The goal is not to build the biggest agent system. The goal is to build a system that is useful, inspectable, evaluated, and bounded.
 
+## Starter Scaffold
+
+Start from:
+
+```bash
+python capstone-starter/run_demo.py
+python capstone-starter/run_eval.py
+```
+
+Then replace the starter domain logic with your own domain, tools, safety policy, and eval cases.
+
 ## Choose One Domain
 
 Pick one:

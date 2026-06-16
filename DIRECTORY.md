@@ -109,6 +109,17 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Lab 08](labs/lab-08-human-in-the-loop.md) | Human-in-the-loop |
 | [Lab 09](labs/lab-09-evaluation.md) | Evaluation |
 | [Lab 10](labs/lab-10-capstone-prep.md) | Capstone prep |
+| [Lab Solution Guides](lab-solutions/README_zh.md) | Solution shapes and expected artifacts |
+
+## Teaching Layer
+
+| File | Topic |
+|---|---|
+| [Teaching README](teaching/README_zh.md) | How to teach and study this course |
+| [Hung-Yi Lee Style Audit](teaching/hung-yi-lee-style-audit_zh.md) | Teaching-quality audit and gaps |
+| [Module Teaching Blueprint](teaching/module-teaching-blueprint_zh.md) | Standard teaching structure for every module |
+| [Misconception Map](teaching/misconception-map_zh.md) | Common wrong intuitions and correction checks |
+| [Student Deliverables](teaching/student-deliverables_zh.md) | Required artifacts for each module |
 
 ---
 
@@ -194,6 +205,7 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | File | Topic |
 |---|---|
 | [Capstone Agent Colony](projects/capstone-agent-colony.md) | Final course project |
+| [Capstone Starter](capstone-starter/README.md) | Runnable starter scaffold for final project |
 | [Portfolio Projects](projects/portfolio-projects.md) | Suggested project ideas |
 
 ---

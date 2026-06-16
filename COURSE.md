@@ -101,11 +101,14 @@ You have completed the course when you can:
 | `examples/` | Runnable minimal implementations |
 | `showcases/` | First-run demos with sample outputs |
 | `labs/` | Guided hands-on exercises |
+| `teaching/` | Teaching audit, misconceptions, deliverables, and module blueprint |
+| `lab-solutions/` | Solution guides and expected artifact shapes |
 | `lesson-plans/` | Instructor-ready 90-minute teaching plans |
 | `patterns/` | Reusable architecture patterns |
 | `templates/` | Project templates and safety/eval documents |
 | `assessments/` | Quiz bank and review questions |
 | `projects/` | Capstone and portfolio projects |
+| `capstone-starter/` | Runnable starter scaffold for the final project |
 | `glossary/` | Agent engineering terms |
 
 ## Teaching Principle
