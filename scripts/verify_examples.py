@@ -36,6 +36,9 @@ COMMANDS = [
     ["python", "examples/09-graph-approval-agent/main.py"],
     ["python", "examples/10-observable-agent/main.py"],
     ["python", "examples/11-prompt-injection-defense/main.py"],
+    ["python", "examples/12-cost-aware-agent/main.py"],
+    ["python", "examples/13-durable-workflow-agent/main.py"],
+    ["python", "examples/14-modern-mcp-gateway/main.py"],
     ["python", "benchmarks/benchmark_runner.py"],
     ["python", "capstone-starter/run_eval.py"],
     ["python", "showcases/enterprise-support-agent/main.py"],
@@ -47,6 +50,7 @@ GENERATED_FILES = [
     ROOT / "examples/04-memory-agent/memory.json",
     ROOT / "examples/10-observable-agent/trace.jsonl",
     ROOT / "examples/10-observable-agent/benchmark-trace.jsonl",
+    ROOT / "examples/13-durable-workflow-agent/checkpoint.json",
 ]
 
 

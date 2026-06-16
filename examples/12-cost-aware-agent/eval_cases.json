@@ -1,0 +1,15 @@
+[
+  {
+    "name": "cheap_summary_route",
+    "task": "Summarize this ticket.",
+    "budget": {"max_latency_ms": 500, "max_cost": 0.02},
+    "expected_model": "fast-small"
+  },
+  {
+    "name": "balanced_analysis_route",
+    "task": "Analyze the failure and plan a remediation.",
+    "budget": {"max_latency_ms": 900, "max_cost": 0.08},
+    "expected_model": "balanced-medium"
+  }
+]
+

@@ -124,12 +124,93 @@ def check_observability() -> dict[str, Any]:
     }
 
 
+def check_cost_routing() -> dict[str, Any]:
+    cost_agent = import_from_path(
+        "cost_aware_agent_module",
+        ROOT / "examples/12-cost-aware-agent/cost_agent.py",
+    )
+    output = cost_agent.answer(
+        "Analyze the failure and plan a remediation.",
+        {"max_latency_ms": 900, "max_cost": 0.08},
+    )
+    route = output["route"]
+    passed = route["selected_model"] == "balanced-medium" and not route["fallback"]
+    return {
+        "name": "cost_aware_model_route",
+        "category": "cost-latency",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": f"route: {route}",
+    }
+
+
+def check_durable_resume() -> dict[str, Any]:
+    durable = import_from_path(
+        "durable_workflow_agent_module",
+        ROOT / "examples/13-durable-workflow-agent/durable_agent.py",
+    )
+    checkpoint_path = ROOT / "examples/13-durable-workflow-agent/benchmark-checkpoint.json"
+    if checkpoint_path.exists():
+        checkpoint_path.unlink()
+    durable.run_until_checkpoint(
+        "Investigate a billing access ticket without changing production data.",
+        checkpoint_path,
+        stop_after_steps=2,
+    )
+    state = durable.run_until_checkpoint(
+        "Investigate a billing access ticket without changing production data.",
+        checkpoint_path,
+    )
+    if checkpoint_path.exists():
+        checkpoint_path.unlink()
+    passed = state.completed and "review" in state.artifacts
+    return {
+        "name": "durable_checkpoint_resume",
+        "category": "runtime",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": durable.summarize(state),
+    }
+
+
+def check_mcp_gateway_auth() -> dict[str, Any]:
+    gateway_module = import_from_path(
+        "modern_mcp_gateway_module",
+        ROOT / "examples/14-modern-mcp-gateway/mcp_gateway.py",
+    )
+    gateway = gateway_module.ModernMCPGateway()
+    try:
+        gateway.call_tool(
+            gateway_module.Request(
+                "readonly-token",
+                "call:tools",
+                "risk_score",
+                {"task": "Delete production records."},
+            )
+        )
+        passed = False
+        detail = "readonly token unexpectedly called tool"
+    except gateway_module.GatewayError as exc:
+        passed = "Unauthorized capability" in str(exc)
+        detail = str(exc)
+    return {
+        "name": "mcp_gateway_denies_readonly_tool_call",
+        "category": "mcp",
+        "passed": passed,
+        "score": 1 if passed else 0,
+        "detail": detail,
+    }
+
+
 CHECKS: list[Callable[[], dict[str, Any]]] = [
     check_tool_use,
     check_rag_grounding,
     check_graph_approval,
     check_injection_defense,
     check_observability,
+    check_cost_routing,
+    check_durable_resume,
+    check_mcp_gateway_auth,
 ]
 
 

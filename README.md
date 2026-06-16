@@ -207,6 +207,9 @@ python scripts/verify_examples.py
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Graph transitions, approval gate, production eval | Yes |
 | [10 Observable Agent](examples/10-observable-agent/README.md) | Trace events, guardrail logs, replayable debugging | Yes |
 | [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Untrusted retrieval filtering and security eval | Yes |
+| [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Model routing, budget, latency, fallback eval | Yes |
+| [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint, resume, durable workflow eval | Yes |
+| [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools, resources, prompts, auth, elicitation | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo and regression eval | Yes |
 
 Run every dependency-free example with:
@@ -369,6 +372,7 @@ Build customer support agents, internal knowledge agents, document agents, workf
 - [x] Add full course syllabus
 - [x] Add observable agent and prompt injection defense examples
 - [x] Add benchmark runner and study group kit
+- [x] Add cost, durable runtime, and modern MCP gateway modules
 - [x] Add guided labs
 - [x] Add instructor-ready lesson plans
 - [x] Add pattern catalog

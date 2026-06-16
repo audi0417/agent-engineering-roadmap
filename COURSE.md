@@ -32,7 +32,7 @@ You do not need to know every agent framework before starting. Frameworks come a
 | Beginner Builder | New to agents | Modules 00-05, Labs 00-05, Examples 01-04 |
 | Agent Engineer | Building real workflows | Modules 00-09, Labs 00-09, Examples 01-09 |
 | Domain Builder | Healthcare, finance, enterprise | Modules 00-12, domain tracks, capstone |
-| Production Lead | Responsible for deployment | Modules 08-14, evaluation harness, observability, security templates |
+| Production Lead | Responsible for deployment | Modules 08-17, evaluation harness, observability, security, runtime, MCP governance |
 
 ## Course Map
 
@@ -59,6 +59,9 @@ Part 4: Production
   12 Agent Frameworks Comparison
   13 Agent Observability
   14 Agent Security
+  15 Agent Cost And Latency Engineering
+  16 Durable Agent Runtime
+  17 MCP Modernization
 
 Part 5: Domain Systems
   10 Healthcare Agents
@@ -92,6 +95,9 @@ You have completed the course when you can:
 - run an evaluation suite before shipping changes
 - inspect agent traces and explain failures from evidence
 - defend against prompt injection in retrieved content and tool results
+- route agent work by cost, latency, and quality constraints
+- design checkpoint and resume behavior for long-running workflows
+- separate MCP tools, resources, prompts, authorization, and elicitation
 - explain production risks such as prompt injection, data leakage, runaway cost, and unsafe tool use
 - complete the capstone project
 

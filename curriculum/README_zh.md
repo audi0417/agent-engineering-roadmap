@@ -27,6 +27,9 @@
 | 12 | Agent Frameworks Comparison | 比較常見 Agent Framework 以及適用時機 |
 | 13 | Agent Observability | Trace、replay、debug production agent runs |
 | 14 | Agent Security | 防守 prompt injection、不安全工具與 memory leakage |
+| 15 | Agent Cost And Latency Engineering | 依 budget、latency、quality needs 做 task routing |
+| 16 | Durable Agent Runtime | Checkpoint、resume、recover long-running workflows |
+| 17 | MCP Modernization | 使用 tools、resources、prompts、authorization、elicitation |
 
 ---
 
@@ -109,6 +112,9 @@ Domain Applications
 | 12 | `12-agent-frameworks-comparison_zh.md` | `capstone-starter` | `labs/lab-10-capstone-prep.md` | architecture review |
 | 13 | `13-agent-observability_zh.md` | `examples/10-observable-agent` | trace review | incident replay |
 | 14 | `14-agent-security_zh.md` | `examples/11-prompt-injection-defense` | `security/prompt-injection-lab.md` | security eval cases |
+| 15 | `15-agent-cost-latency-engineering_zh.md` | `examples/12-cost-aware-agent` | routing budget review | cost and latency checks |
+| 16 | `16-durable-agent-runtime_zh.md` | `examples/13-durable-workflow-agent` | checkpoint review | resume test |
+| 17 | `17-mcp-modernization_zh.md` | `examples/14-modern-mcp-gateway` | gateway policy review | authorization and elicitation tests |
 
 ---
 

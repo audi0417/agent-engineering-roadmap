@@ -207,6 +207,9 @@ python scripts/verify_examples.py
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Graph transitions、approval gate、production eval | Yes |
 | [10 Observable Agent](examples/10-observable-agent/README.md) | Trace events、guardrail logs、可 replay debugging | Yes |
 | [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Untrusted retrieval filtering 與 security eval | Yes |
+| [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Model routing、budget、latency、fallback eval | Yes |
+| [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint、resume、durable workflow eval | Yes |
+| [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Tools、resources、prompts、auth、elicitation | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：
@@ -369,6 +372,7 @@ Research Agent
 - [x] 加入完整 Course Syllabus
 - [x] 加入 Observable Agent 與 Prompt Injection Defense 範例
 - [x] 加入 Benchmark Runner 與讀書會套件
+- [x] 加入 Cost、Durable Runtime、Modern MCP Gateway 模組
 - [x] 加入 Guided Labs
 - [x] 加入 Instructor-ready Lesson Plans
 - [x] 加入 Pattern Catalog

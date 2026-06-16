@@ -25,6 +25,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | 12 Agent Frameworks Comparison | [English](curriculum/12-agent-frameworks-comparison.md) | [繁體中文](curriculum/12-agent-frameworks-comparison_zh.md) |
 | 13 Agent Observability | [English](curriculum/13-agent-observability.md) | [繁體中文](curriculum/13-agent-observability_zh.md) |
 | 14 Agent Security | [English](curriculum/14-agent-security.md) | [繁體中文](curriculum/14-agent-security_zh.md) |
+| 15 Agent Cost And Latency Engineering | [English](curriculum/15-agent-cost-latency-engineering.md) | [繁體中文](curriculum/15-agent-cost-latency-engineering_zh.md) |
+| 16 Durable Agent Runtime | [English](curriculum/16-durable-agent-runtime.md) | [繁體中文](curriculum/16-durable-agent-runtime_zh.md) |
+| 17 MCP Modernization | [English](curriculum/17-mcp-modernization.md) | [繁體中文](curriculum/17-mcp-modernization_zh.md) |
 
 ---
 
@@ -67,6 +70,9 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Test graph transitions and human approval gates. |
 | [10 Observable Agent](examples/10-observable-agent/README.md) | Inspect traces, guardrails, and replayable agent runs. |
 | [11 Prompt Injection Defense](examples/11-prompt-injection-defense/README.md) | Block unsafe instructions in retrieved content. |
+| [12 Cost-Aware Agent](examples/12-cost-aware-agent/README.md) | Route tasks by quality, cost, and latency constraints. |
+| [13 Durable Workflow Agent](examples/13-durable-workflow-agent/README.md) | Checkpoint and resume long-running workflows. |
+| [14 Modern MCP Gateway](examples/14-modern-mcp-gateway/README.md) | Model tools, resources, prompts, authorization, and elicitation. |
 
 ## Security
 

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "learner_can_list_tools",
+    "operation": "list",
+    "token": "learner-token",
+    "expected": "risk_score"
+  },
+  {
+    "name": "readonly_cannot_call_tool",
+    "operation": "tool",
+    "token": "readonly-token",
+    "target_name": "risk_score",
+    "arguments": {"task": "Delete production records."},
+    "expected": "Unauthorized capability"
+  },
+  {
+    "name": "missing_tool_argument_elicits",
+    "operation": "tool",
+    "token": "learner-token",
+    "target_name": "risk_score",
+    "arguments": {"task": ""},
+    "expected": "elicitation_required"
+  }
+]

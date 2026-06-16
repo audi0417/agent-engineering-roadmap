@@ -27,6 +27,9 @@ It is designed to help learners move from basic agent concepts to production-rea
 | 12 | Agent Frameworks Comparison | Compare common agent frameworks and when to use each |
 | 13 | Agent Observability | Trace, replay, and debug production agent runs |
 | 14 | Agent Security | Defend against prompt injection, unsafe tools, and memory leakage |
+| 15 | Agent Cost And Latency Engineering | Route tasks by budget, latency, and quality needs |
+| 16 | Durable Agent Runtime | Checkpoint, resume, and recover long-running workflows |
+| 17 | MCP Modernization | Use tools, resources, prompts, authorization, and elicitation |
 
 ---
 
@@ -109,6 +112,9 @@ The curriculum now includes concept chapters, runnable examples, guided labs, pa
 | 12 | `12-agent-frameworks-comparison.md` | `capstone-starter` | `labs/lab-10-capstone-prep.md` | architecture review |
 | 13 | `13-agent-observability.md` | `examples/10-observable-agent` | trace review | incident replay |
 | 14 | `14-agent-security.md` | `examples/11-prompt-injection-defense` | `security/prompt-injection-lab.md` | security eval cases |
+| 15 | `15-agent-cost-latency-engineering.md` | `examples/12-cost-aware-agent` | routing budget review | cost and latency checks |
+| 16 | `16-durable-agent-runtime.md` | `examples/13-durable-workflow-agent` | checkpoint review | resume test |
+| 17 | `17-mcp-modernization.md` | `examples/14-modern-mcp-gateway` | gateway policy review | authorization and elicitation tests |
 
 ---
 

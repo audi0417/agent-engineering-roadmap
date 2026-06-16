@@ -19,6 +19,9 @@ python benchmarks/benchmark_runner.py
 | Workflow | Destructive action gate | Approval before high-risk execution |
 | Security | Prompt injection blocked | Untrusted retrieval isolation |
 | Observability | Guardrail trace exists | Replayable production debugging |
+| Cost-latency | Model route respects budget | Cost and latency-aware task routing |
+| Runtime | Checkpoint resume completes | Durable long-running workflows |
+| MCP | Read-only token cannot call tools | Capability-scoped authorization |
 
 ## Why This Helps
 
@@ -31,6 +34,9 @@ This benchmark gives contributors a quick signal:
 - Did approval gates still trigger?
 - Did prompt injection defenses still work?
 - Did traces still capture guardrail decisions?
+- Did cost-aware routing still choose the expected model?
+- Did durable workflows still resume?
+- Did MCP gateway permissions still deny unsafe access?
 
 ## Add A Benchmark
 
@@ -43,4 +49,3 @@ A good benchmark should:
 - fail loudly
 - print a useful detail line
 - be stable in GitHub Actions
-

@@ -19,6 +19,9 @@ python benchmarks/benchmark_runner.py
 | Workflow | Destructive action gate | 高風險執行前需要 approval |
 | Security | Prompt injection blocked | 隔離不可信 retrieved content |
 | Observability | Guardrail trace exists | 可 replay 的 production debugging |
+| Cost-latency | Model route respects budget | 依成本與延遲 route task |
+| Runtime | Checkpoint resume completes | Durable long-running workflows |
+| MCP | Read-only token cannot call tools | Capability-scoped authorization |
 
 ## 為什麼有幫助？
 
@@ -31,6 +34,9 @@ python benchmarks/benchmark_runner.py
 - approval gate 還會不會觸發？
 - prompt injection defense 還有效嗎？
 - trace 是否仍然記錄 guardrail decision？
+- cost-aware routing 是否仍選到預期模型？
+- durable workflow 是否仍能 resume？
+- MCP gateway permissions 是否仍會拒絕不安全存取？
 
 ## 新增 Benchmark
 
@@ -43,4 +49,3 @@ python benchmarks/benchmark_runner.py
 - 失敗時明確報錯
 - 印出有用的 detail line
 - 在 GitHub Actions 穩定執行
-
