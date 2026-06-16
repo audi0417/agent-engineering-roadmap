@@ -8,6 +8,8 @@ Agent Engineering Roadmap is an open-source course for building production-aware
 
 ## Launch Post
 
+Use the ready-to-post variants in [Social Posts](social-posts.md).
+
 ```text
 I built an open-source Agent Engineering Roadmap for people moving from chatbot demos to production-aware agent systems.
 
@@ -45,6 +47,8 @@ course
 roadmap
 ```
 
+These topics have been applied to the GitHub repository.
+
 ## Assets
 
 - `assets/social/agent-engineering-roadmap-2026.svg`
@@ -65,7 +69,9 @@ roadmap
 - [ ] Share the launch post
 - [ ] Add three screenshots or diagrams to the post
 - [ ] Ask early users to open content gap issues
-- [ ] Create 5 good-first-issue tasks
+- [x] Create 5 good-first-issue tasks
+
+See [Good First Issues](good-first-issues.md) for the first contributor tasks.
 
 ## Current Readiness
 
