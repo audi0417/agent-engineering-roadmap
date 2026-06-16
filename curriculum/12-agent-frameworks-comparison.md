@@ -109,6 +109,82 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: Frameworks Are Amplifiers, Not Answers
+
+It is natural to ask, "Should I use LangGraph, CrewAI, AutoGen, the OpenAI Agents SDK, or plain Python?" The question is reasonable, but the order is often wrong.
+
+If you have not defined the task, tools, memory, workflow, evals, and safety boundaries, choosing a framework first is premature.
+
+A framework amplifies your design. If your boundaries are clear, it helps manage complexity. If your boundaries are unclear, it packages the confusion.
+
+### Black-box View
+
+```text
+Input: project requirements, complexity, team constraints
+Output: framework choice and architecture decision
+Objective: choose the simplest tool that supports the required control surface
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Choose the most popular framework first.
+
+Failure:
+- simple task becomes over-engineered
+- business logic tightly coupled to framework
+- eval and safety are postponed
+- migration becomes hard
+```
+
+### Decision Process
+
+Ask:
+
+1. Is the workflow linear or graph-shaped?
+2. Do you need tool calling or only structured output?
+3. Do you need long-term memory?
+4. Do you need multiple agents or one controlled workflow?
+5. Do you need production tracing, evals, or deployment support?
+6. What stack can the team maintain?
+
+### Decision Table
+
+| Need | Good Fit |
+|---|---|
+| Minimal teaching example | Plain Python |
+| Graph workflow and controllable state | LangGraph-style architecture |
+| Agent SDK and tool integration | OpenAI Agents SDK-style architecture |
+| Multi-agent conversation experiments | AutoGen/CrewAI-style architecture |
+| RAG-heavy app | LlamaIndex/LangChain-style retrieval stack |
+| Production monitoring | Add observability regardless of framework |
+
+### Architecture Rule
+
+Keep these outside the framework when possible:
+
+```text
+agent spec
+tool policy
+memory policy
+eval cases
+safety gate
+```
+
+If these survive a framework migration, you are learning agent engineering rather than only a framework API.
+
+### Capstone Checkpoint
+
+```bash
+python capstone-starter/run_demo.py
+python capstone-starter/run_eval.py
+```
+
+Start with plain Python behavior, then add framework complexity only when the system needs it.
+
+---
+
 ## Outcome
 
 After this module, you should be able to choose agent frameworks based on engineering needs rather than popularity.

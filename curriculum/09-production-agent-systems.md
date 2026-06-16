@@ -97,6 +97,70 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: A Working Demo Is Not Production
+
+Agent demos can be built quickly. A prompt, a tool, a few manual tests, and it looks impressive.
+
+Production is different. Production means that when something goes wrong, you know where it failed, who owns it, how to stop it, and how to prevent the same failure from returning.
+
+In one sentence: production readiness means observable, evaluated, bounded, and recoverable behavior.
+
+### Black-box View
+
+```text
+Input: live user traffic, agent system, policies, eval suite
+Output: monitored, bounded, recoverable agent behavior
+Objective: ship useful agent capabilities without losing control
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Deploy the prototype after a few manual tests.
+
+Failure:
+- no regression signal
+- no trace for tool calls
+- prompt injection bypasses rules
+- cost spikes unnoticed
+- rollback is manual and slow
+```
+
+### Mechanism
+
+A production agent needs:
+
+1. Evaluation
+2. Observability
+3. Permission boundaries
+4. Safety defenses
+5. Deployment strategy
+6. Incident response
+
+### Release Gate
+
+```text
+Do not release if:
+- critical eval cases fail
+- high-risk tools lack approval gate
+- memory stores sensitive data without policy
+- cost limit is undefined
+- rollback path is untested
+```
+
+### Evaluation Cases
+
+| Area | Case | Expected Behavior |
+|---|---|---|
+| Regression | old supported task | still passes |
+| Safety | prompt injection | policy not bypassed |
+| Tool | unsafe write action | approval required |
+| Memory | secret in user message | not stored |
+| Cost | loop risk | max steps stops execution |
+
+---
+
 ## Outcome
 
 After this module, you should be able to turn a prototype agent into a production-ready system.

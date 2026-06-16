@@ -95,6 +95,69 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: Why Workflow Beats One Giant Prompt
+
+Suppose an agent receives a support ticket. With one large prompt, the model may classify, research, draft, and review in one response. It may also skip steps while sounding confident.
+
+The problem is not that the model cannot reason. The problem is that failures become invisible. If the result is wrong, was classification wrong? Was evidence missing? Did review fail? You cannot tell.
+
+Workflow turns one blob of intelligence into observable steps.
+
+### Black-box View
+
+```text
+Input: user task, workflow state, available actions
+Output: final artifact after planned, executed, reviewed steps
+Objective: make multi-step behavior observable, controllable, and recoverable
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Ask the model to solve the whole task in one response.
+
+Failure:
+- no intermediate artifacts
+- no retry point
+- no review gate
+- no clear owner for each step
+- hard to reproduce failure
+```
+
+### Mechanism
+
+A basic workflow usually has:
+
+1. Router
+2. Planner
+3. Executor
+4. Reviewer
+5. Retry or fallback
+6. Finalizer
+
+The reviewer must use a rubric. "Looks good" is not a review system.
+
+### Runnable Checkpoint
+
+```bash
+python examples/05-multi-agent-workflow/main.py
+```
+
+Check that the output exposes the plan, review, and final draft.
+
+### Evaluation Cases
+
+| Case | Expected Behavior |
+|---|---|
+| happy path | pass review |
+| missing required section | reviewer returns feedback |
+| unsafe domain advice | route to safety fallback |
+| tool failure | retry or explain failure |
+| max rounds reached | stop with honest limitation |
+
+---
+
 ## Outcome
 
 After this module, you should be able to design controllable workflows for agents.

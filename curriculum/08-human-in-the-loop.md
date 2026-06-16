@@ -94,6 +94,72 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: Human-in-the-loop Is Safety Design
+
+Many agent builders treat full autonomy as the goal. That sounds exciting, but it is not always the right goal.
+
+If an agent summarizes a ticket, autonomy is fine. If it deletes production records, sends external emails, changes permissions, or gives high-impact advice, full autonomy becomes dangerous.
+
+Human-in-the-loop is not a sign that the agent is weak. It is a control layer for high-impact decisions.
+
+### Black-box View
+
+```text
+Input: proposed action, risk level, context, policy
+Output: approved action, rejected action, escalation, or refusal
+Objective: keep high-impact decisions under human control
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Let the agent execute every tool call once it decides the action is useful.
+
+Failure:
+- irreversible actions happen without review
+- no audit trail
+- unclear responsibility
+- human sees the mistake only after damage is done
+```
+
+### Mechanism
+
+A human approval gate needs:
+
+1. Risk classifier
+2. Approval request schema
+3. Reviewer role
+4. Timeout behavior
+5. Audit log
+6. Refusal policy
+
+### Approval Request Schema
+
+```json
+{
+  "action": "delete_customer_records",
+  "arguments": {"account_id": "1842"},
+  "risk_level": "critical",
+  "reason": "User requested deletion",
+  "expected_effect": "Production customer records will be deleted",
+  "rollback_plan": "Restore from backup if available",
+  "reviewer_role": "security_and_data_ops"
+}
+```
+
+### Evaluation Cases
+
+| Case | Expected Behavior |
+|---|---|
+| read-only summary | no approval needed |
+| send email | approval required |
+| delete production data | critical approval or refusal |
+| medical treatment instruction | refusal/escalation |
+| missing approval context | ask for required fields |
+
+---
+
 ## Outcome
 
 After this module, you should be able to design agent workflows with human oversight.

@@ -96,6 +96,67 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: Multi-Agent Is Not "More Models Equals Smarter"
+
+The tempting idea is simple: if one agent is useful, five agents must be better. Add a planner, researcher, writer, reviewer, and critic. It looks impressive.
+
+But activity is not coordination. Without roles, handoffs, shared state rules, and final authority, multiple agents can duplicate work, disagree silently, or produce an answer nobody owns.
+
+In one sentence: multi-agent design is about coordination contracts, not agent count.
+
+### Black-box View
+
+```text
+Input: user task, agent roles, shared state
+Output: integrated result after specialist contributions and review
+Objective: use specialization without losing control
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Ask several agents to discuss and produce an answer.
+
+Failure:
+- duplicated work
+- inconsistent assumptions
+- no final owner
+- conflict unresolved
+- shared memory polluted
+```
+
+### Mechanism
+
+A reliable multi-agent system defines:
+
+1. Supervisor
+2. Specialist roles
+3. Artifact contract
+4. Shared state
+5. Conflict policy
+6. Reviewer or evaluator
+
+### Runnable Checkpoint
+
+```bash
+python examples/06-agent-colony/main.py
+```
+
+Check routing, shared memory, evaluator output, and domain boundary.
+
+### Evaluation Cases
+
+| Case | Expected Behavior |
+|---|---|
+| finance task | route to finance specialist |
+| healthcare task | route to healthcare specialist |
+| unknown task | ask clarification or route to general |
+| conflicting specialists | supervisor resolves with reason |
+| high-risk domain | add disclaimer and human review gate |
+
+---
+
 ## Outcome
 
 After this module, you should be able to design a clear multi-agent workflow.

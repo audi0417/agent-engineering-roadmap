@@ -98,6 +98,67 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: What Does a Graph Add?
+
+If a task is a straight line, a graph may be overkill. A summarizer can be input → summarize → output. Adding graph machinery there only adds noise.
+
+Graphs become useful when the agent needs branches, retries, approvals, tool-error paths, or multiple terminal states. A graph makes "where do we go next?" explicit.
+
+### Black-box View
+
+```text
+Input: current state, event, transition rules
+Output: next state and updated artifact
+Objective: make branching agent behavior explicit and testable
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Keep current step in plain text and ask the model what to do next.
+
+Failure:
+- hidden state
+- inconsistent transitions
+- missing failure path
+- hard to test edge cases
+```
+
+### Mechanism
+
+Graph-based agents use:
+
+1. State
+2. Node
+3. Edge
+4. Condition
+5. Terminal state
+6. Error state
+
+Design the happy path and at least two failure paths before adding more nodes.
+
+### Design Checkpoint
+
+```text
+START → classify → retrieve → answer → review → END
+
+retrieve fail → ask clarification
+review fail → revise or stop
+```
+
+### Evaluation Cases
+
+| Case | Expected Transition |
+|---|---|
+| complete input | classify → execute → review → end |
+| missing context | classify → ask_clarification |
+| unsafe action | classify → approval_or_refusal |
+| tool error | execute → retry_or_fallback |
+| review fail | review → revise |
+
+---
+
 ## Outcome
 
 After this module, you should be able to design graph-based agent workflows.

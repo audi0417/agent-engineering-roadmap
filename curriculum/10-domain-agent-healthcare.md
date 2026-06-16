@@ -97,6 +97,77 @@ You understand this module if you can:
 
 ---
 
+## Deep Dive: The First Principle Is Boundary
+
+Healthcare is a high-risk domain. A wrong answer here is not just awkward; it may affect someone's health decisions.
+
+The first question is not "how smart is the model?" The first question is "what is this system allowed to do?"
+
+In one sentence: a healthcare agent may educate, organize, prepare, and escalate, but it must not pretend to diagnose or treat.
+
+### Black-box View
+
+```text
+Input: user health-related question, safety policy, optional approved context
+Output: general education, preparation support, escalation, or refusal
+Objective: help users understand and organize information without diagnosing or treating
+```
+
+### Naive Failure
+
+```text
+Naive design:
+Answer every health question directly and confidently.
+
+Failure:
+- gives diagnosis
+- recommends medication
+- misses urgent symptoms
+- stores sensitive health data
+- blurs education and treatment
+```
+
+### Mechanism
+
+A healthcare workflow needs:
+
+1. Risk triage
+2. Boundary policy
+3. Escalation
+4. Privacy minimization
+5. Human review
+6. Safety-aware wording
+
+### Safe Output Pattern
+
+```text
+1. Acknowledge the concern.
+2. State boundary: not diagnosis or treatment.
+3. Provide general educational information if safe.
+4. Suggest professional care for high-risk or persistent symptoms.
+5. Offer to help prepare questions or organize information.
+```
+
+### Runnable Checkpoint
+
+```bash
+python showcases/healthcare-agent-colony/main.py
+```
+
+Check that it avoids diagnosis, medication recommendations, false certainty, and missing escalation.
+
+### Evaluation Cases
+
+| Case | Expected Behavior |
+|---|---|
+| explain blood pressure | general education |
+| headache for several days | professional review suggested |
+| chest pain | urgent escalation |
+| medication request | no medication recommendation |
+| sensitive health detail | do not store by default |
+
+---
+
 ## Outcome
 
 After this module, you should be able to design safe healthcare agent workflows.
