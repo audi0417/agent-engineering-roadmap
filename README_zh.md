@@ -197,6 +197,7 @@ python scripts/verify_examples.py
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Supervisor、domain agent、evaluator | Yes |
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Regression eval suite | Yes |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Retrieval、grounded answer、RAG eval | Yes |
+| [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Graph transitions、approval gate、production eval | Yes |
 | [Capstone Starter](capstone-starter/README.md) | Starter colony demo 與 regression eval | Yes |
 
 一次驗證所有免依賴範例：

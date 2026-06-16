@@ -12,6 +12,7 @@ Add approval gates for high-impact actions.
 
 - `curriculum/08-human-in-the-loop.md`
 - `templates/safety-gate-template.md`
+- `examples/09-graph-approval-agent/README.md`
 
 ## Task
 
@@ -37,3 +38,11 @@ Your policy must cover:
 ## Extension
 
 Add an approval transcript format that records who approved what and why.
+
+## Hands-on Path
+
+1. Run `python examples/09-graph-approval-agent/main.py`.
+2. Try a destructive action such as deleting production records.
+3. Confirm the graph routes to `request_approval`.
+4. Add a required approval field to the output.
+5. Add an eval case that fails if approval is skipped.

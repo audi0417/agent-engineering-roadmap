@@ -13,6 +13,7 @@ Build an evaluation suite that catches regressions.
 - `curriculum/09-production-agent-systems.md`
 - `examples/07-evaluation-harness/README.md`
 - `examples/08-mini-rag/README.md`
+- `examples/09-graph-approval-agent/README.md`
 - `templates/evaluation-suite-template.yaml`
 
 ## Task
@@ -50,3 +51,5 @@ python scripts/verify_examples.py
 ```
 
 Then intentionally break one eval case in `examples/08-mini-rag/eval_cases.json`, run the script again, and observe where the report fails. Restore the case before committing.
+
+Repeat the same exercise with `examples/09-graph-approval-agent/eval_cases.json`. Notice that this eval checks path correctness, not only final answer text.

@@ -11,6 +11,7 @@ Model an agent workflow as a state machine.
 ## Read First
 
 - `curriculum/06-graph-based-agents.md`
+- `examples/09-graph-approval-agent/README.md`
 
 ## Task
 
@@ -39,3 +40,11 @@ Your graph must include:
 ## Extension
 
 Implement the graph as a Python dictionary or with a graph orchestration framework.
+
+## Hands-on Path
+
+1. Run `python examples/09-graph-approval-agent/main.py`.
+2. Add one new risk category to `graph_agent.py`.
+3. Add one eval case that should route to `request_approval`.
+4. Run `python examples/09-graph-approval-agent/main.py` again.
+5. Explain whether your change affected path correctness or final output only.

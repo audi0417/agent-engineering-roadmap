@@ -24,6 +24,7 @@ COMMANDS = [
     ["python", "examples/06-agent-colony/main.py"],
     ["python", "examples/07-evaluation-harness/main.py"],
     ["python", "examples/08-mini-rag/main.py"],
+    ["python", "examples/09-graph-approval-agent/main.py"],
     ["python", "capstone-starter/run_eval.py"],
     ["python", "showcases/enterprise-support-agent/main.py"],
     ["python", "showcases/finance-research-agent/main.py"],

@@ -62,6 +62,7 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [06 Agent Colony](examples/06-agent-colony/README.md) | Build a colony-style multi-agent system. |
 | [07 Evaluation Harness](examples/07-evaluation-harness/README.md) | Run regression checks against agent behavior. |
 | [08 Mini RAG](examples/08-mini-rag/README.md) | Inspect retrieval, grounded answers, and RAG evals. |
+| [09 Graph Approval Agent](examples/09-graph-approval-agent/README.md) | Test graph transitions and human approval gates. |
 
 ## Scripts And CI
 
