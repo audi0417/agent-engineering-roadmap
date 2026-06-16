@@ -112,6 +112,22 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Lab 10](labs/lab-10-capstone-prep.md) | Capstone prep |
 | [Lab Solution Guides](lab-solutions/README_zh.md) | Solution shapes and expected artifacts |
 
+## Lab Solution Guides
+
+| Lab | Guide |
+|---|---|
+| 00 | [Agent Spec](lab-solutions/lab-00-agent-spec/README.md) |
+| 01 | [Single Agent](lab-solutions/lab-01-single-agent/README.md) |
+| 02 | [Tool Calling](lab-solutions/lab-02-tool-calling/README.md) |
+| 03 | [Memory](lab-solutions/lab-03-memory/README.md) |
+| 04 | [RAG](lab-solutions/lab-04-rag/README.md) |
+| 05 | [Workflow](lab-solutions/lab-05-workflow/README.md) |
+| 06 | [Graph Agent](lab-solutions/lab-06-graph-agent/README.md) |
+| 07 | [Multi-Agent](lab-solutions/lab-07-multi-agent/README.md) |
+| 08 | [Human-in-the-loop](lab-solutions/lab-08-human-in-the-loop/README.md) |
+| 09 | [Evaluation](lab-solutions/lab-09-evaluation/README.md) |
+| 10 | [Capstone Prep](lab-solutions/lab-10-capstone-prep/README.md) |
+
 ## Teaching Layer
 
 | File | Topic |

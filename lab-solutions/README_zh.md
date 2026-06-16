@@ -17,19 +17,19 @@
 
 ## Lab Solution Index
 
-| Lab | Expected Artifact | Key Check |
-|---|---|---|
-| 00 Agent Spec | `agent_spec.md` | Goal 是否窄、output 是否可驗證 |
-| 01 Single Agent | config + eval inputs | Agent 是否拒絕超出範圍任務 |
-| 02 Tool Calling | tool policy + wrapper | Unknown tool / unsafe args 是否被拒絕 |
-| 03 Memory | memory policy + tests | Sensitive data 是否不會寫入 |
-| 04 RAG | KB + eval cases | No-answer case 是否不 hallucinate |
-| 05 Workflow | workflow states + retry | Review fail 是否有路徑 |
-| 06 Graph Agent | state diagram | 每個 transition 是否有條件 |
-| 07 Multi-Agent | routing table | Supervisor 是否能解釋 routing |
-| 08 Human Approval | approval spec | High-risk action 是否需要 approval |
-| 09 Evaluation | regression suite | 分數下降是否能 block release |
-| 10 Capstone Prep | project proposal | Scope 是否能在 2-4 週完成 |
+| Lab | Solution Guide | Expected Artifact | Key Check |
+|---|---|---|---|
+| 00 Agent Spec | [Guide](lab-00-agent-spec/README.md) | `agent_spec.md` | Goal 是否窄、output 是否可驗證 |
+| 01 Single Agent | [Guide](lab-01-single-agent/README.md) | config + eval inputs | Agent 是否拒絕超出範圍任務 |
+| 02 Tool Calling | [Guide](lab-02-tool-calling/README.md) | tool policy + wrapper | Unknown tool / unsafe args 是否被拒絕 |
+| 03 Memory | [Guide](lab-03-memory/README.md) | memory policy + tests | Sensitive data 是否不會寫入 |
+| 04 RAG | [Guide](lab-04-rag/README.md) | KB + eval cases | No-answer case 是否不 hallucinate |
+| 05 Workflow | [Guide](lab-05-workflow/README.md) | workflow states + retry | Review fail 是否有路徑 |
+| 06 Graph Agent | [Guide](lab-06-graph-agent/README.md) | state diagram | 每個 transition 是否有條件 |
+| 07 Multi-Agent | [Guide](lab-07-multi-agent/README.md) | routing table | Supervisor 是否能解釋 routing |
+| 08 Human Approval | [Guide](lab-08-human-in-the-loop/README.md) | approval spec | High-risk action 是否需要 approval |
+| 09 Evaluation | [Guide](lab-09-evaluation/README.md) | regression suite | 分數下降是否能 block release |
+| 10 Capstone Prep | [Guide](lab-10-capstone-prep/README.md) | project proposal | Scope 是否能在 2-4 週完成 |
 
 ## Example: Lab 04 RAG Solution Shape
 
