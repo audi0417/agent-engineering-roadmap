@@ -18,6 +18,10 @@
 - Tools
 - Case studies
 
+## Curated Open Source Projects
+
+See [Open Source Agent Projects](open-source-agent-projects.md) for a categorized guide to agent frameworks, MCP projects, RAG tools, evaluation tools, observability systems, and deployment infrastructure.
+
 ## Frameworks to Explore
 
 - LangGraph

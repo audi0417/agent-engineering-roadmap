@@ -330,5 +330,6 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | File | Description |
 |---|---|
 | [Awesome Resources](resources/awesome-resources.md) | Curated learning resources |
+| [Open Source Agent Projects](resources/open-source-agent-projects.md) | Curated open-source agent ecosystem map |
 | [Content Design Principles](resources/content-design-principles.md) | Internal rules for original educational content |
 | [Content Design Principles zh](resources/content-design-principles_zh.md) | 原創內容設計原則繁中版 |

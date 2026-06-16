@@ -132,6 +132,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Study Group Kit](study-groups/README.md) | 4-week, 8-week, and workshop formats for cohorts |
 | [Patterns](patterns/README.md) | Reusable agent architecture patterns |
 | [Templates](templates/README.md) | Agent specs, memory policies, evals, and safety gates |
+| [Open Source Projects](resources/open-source-agent-projects.md) | Curated ecosystem map for frameworks, MCP, RAG, evals, observability, and ops |
 | [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification and project hygiene |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
 | [Capstone](projects/capstone-agent-colony.md) | Final project for building a production-aware colony |

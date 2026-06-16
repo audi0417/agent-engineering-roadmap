@@ -132,6 +132,7 @@ flowchart LR
 | [Study Group Kit](study-groups/README_zh.md) | 4 週、8 週與 workshop 讀書會格式 |
 | [Patterns](patterns/README_zh.md) | 可重用 agent architecture patterns |
 | [Templates](templates/README.md) | Agent spec、memory policy、eval、安全 gate |
+| [Open Source Projects](resources/open-source-agent-projects.md) | Frameworks、MCP、RAG、evals、observability、ops 的開源生態導覽 |
 | [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification 與 project hygiene |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
 | [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
