@@ -136,6 +136,7 @@ In one sentence: an agent is not magic. It is context, tools, memory, workflow, 
 | [Open Source Projects](resources/open-source-agent-projects.md) | Curated ecosystem map for frameworks, MCP, RAG, evals, observability, and ops |
 | [Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | Choose agent frameworks by engineering tradeoff |
 | [Open Source Reading Guide](resources/how-to-read-open-source-agent-repos.md) | Learn how to study real agent repositories |
+| [DeepEval And RAGAS](resources/eval-frameworks-deepeval-ragas.md) | Practical guide to LLM and RAG evaluation frameworks |
 | [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification and project hygiene |
 | [Assessments](assessments/quiz-bank.md) | Quiz bank and rubrics |
 | [Capstone](projects/capstone-agent-colony.md) | Final project for building a production-aware colony |

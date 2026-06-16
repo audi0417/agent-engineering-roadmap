@@ -24,6 +24,8 @@ See [Open Source Agent Projects](open-source-agent-projects.md) for a categorize
 
 Use [Agent Framework Selection Matrix](agent-framework-selection-matrix.md) to choose projects by engineering need, and [How To Read Open Source Agent Repositories](how-to-read-open-source-agent-repos.md) to extract architecture lessons from real repositories.
 
+Use [DeepEval And RAGAS Evaluation Frameworks](eval-frameworks-deepeval-ragas.md) when moving from local eval harnesses to practical LLM and RAG evaluation frameworks.
+
 ## Research Papers
 
 See [Papers](../papers/README.md) for a curated paper list, [Paper Reading Roadmap](../papers/paper-reading-roadmap.md) for module-by-module reading order, and [Paper Notes](../papers/paper-notes/README.md) for short engineering takeaways.

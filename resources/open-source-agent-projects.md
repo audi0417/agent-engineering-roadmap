@@ -19,6 +19,7 @@ Companion guides:
 
 - [Agent Framework Selection Matrix](agent-framework-selection-matrix.md) helps you choose what to study or use.
 - [How To Read Open Source Agent Repositories](how-to-read-open-source-agent-repos.md) gives a repeatable reading method.
+- [DeepEval And RAGAS Evaluation Frameworks](eval-frameworks-deepeval-ragas.md) explains practical eval frameworks.
 - [Portfolio Projects](../projects/portfolio-projects.md) turns these projects into buildable GitHub demos.
 
 ## Agent Frameworks And Runtimes
@@ -78,8 +79,8 @@ What to inspect:
 | Project | Best for | Study with |
 |---|---|---|
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | LLM evals, red teaming, and CI-based prompt/application testing | Modules 14, 22 |
-| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | LLM evaluation test cases and metrics | Modules 07, 22 |
-| [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | RAG evaluation metrics | Modules 04, 22 |
+| [confident-ai/deepeval](https://github.com/confident-ai/deepeval) | Pytest-style LLM app, agent, prompt, RAG, safety, and regression evals | Modules 07, 14, 22 |
+| [explodinggradients/ragas](https://github.com/explodinggradients/ragas) | RAG evaluation metrics, synthetic test data, grounding, and answer quality checks | Modules 04, 22 |
 | [guardrails-ai/guardrails](https://github.com/guardrails-ai/guardrails) | Output validation and structured guardrails | Modules 02, 14 |
 | [ProtectAI/rebuff](https://github.com/protectai/rebuff) | Prompt injection detection patterns | Modules 14, 21 |
 

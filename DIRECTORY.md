@@ -337,5 +337,6 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Open Source Agent Projects](resources/open-source-agent-projects.md) | Curated open-source agent ecosystem map |
 | [Agent Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | Choose frameworks by engineering tradeoff |
 | [How To Read Open Source Agent Repositories](resources/how-to-read-open-source-agent-repos.md) | Repository reading method for architecture learning |
+| [DeepEval And RAGAS Evaluation Frameworks](resources/eval-frameworks-deepeval-ragas.md) | Practical guide to LLM and RAG evaluation frameworks |
 | [Content Design Principles](resources/content-design-principles.md) | Internal rules for original educational content |
 | [Content Design Principles zh](resources/content-design-principles_zh.md) | 原創內容設計原則繁中版 |

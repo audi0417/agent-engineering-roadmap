@@ -136,6 +136,7 @@ flowchart LR
 | [Open Source Projects](resources/open-source-agent-projects.md) | Frameworks、MCP、RAG、evals、observability、ops 的開源生態導覽 |
 | [Framework Selection Matrix](resources/agent-framework-selection-matrix.md) | 用工程取捨選 agent framework |
 | [Open Source Reading Guide](resources/how-to-read-open-source-agent-repos.md) | 學會閱讀真實 agent 開源專案的架構 |
+| [DeepEval And RAGAS](resources/eval-frameworks-deepeval-ragas.md) | LLM 與 RAG evaluation frameworks 實用導讀 |
 | [Release Checklist](release/RELEASE_CHECKLIST.md) | v1 release verification 與 project hygiene |
 | [Assessments](assessments/quiz-bank.md) | 題庫與評分規準 |
 | [Capstone](projects/capstone-agent-colony.md) | 最終 production-aware colony 專案 |
