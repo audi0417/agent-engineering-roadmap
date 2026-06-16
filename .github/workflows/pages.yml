@@ -25,8 +25,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v6
         with:
           enablement: true
       - name: Copy static assets
@@ -34,8 +34,8 @@ jobs:
           mkdir -p docs/assets
           cp -R assets/diagrams docs/assets/diagrams
           cp -R assets/social docs/assets/social
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: docs
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
