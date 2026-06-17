@@ -7,9 +7,9 @@
 <p align="center">
   <a href="README_zh.md"><img src="https://img.shields.io/badge/Language-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87-red?style=for-the-badge" alt="Traditional Chinese" /></a>
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English" /></a>
-  <a href="https://github.com/audi0417/agent-engineering-roadmap"><img src="https://img.shields.io/badge/Open%20Source-GitHub-181717?style=for-the-badge&logo=github" alt="Open Source on GitHub" /></a>
-  <img src="https://img.shields.io/badge/Continuously-Updated-0EA5E9?style=for-the-badge" alt="Continuously Updated" />
-  <img src="https://img.shields.io/badge/Runnable-Examples-10B981?style=for-the-badge" alt="Runnable Examples" />
+  <img src="https://img.shields.io/github/stars/audi0417/agent-engineering-roadmap.svg?style=for-the-badge&logo=github" alt="GitHub Stars" />
+  <img src="https://img.shields.io/github/forks/audi0417/agent-engineering-roadmap.svg?style=for-the-badge&logo=github" alt="GitHub Forks" />
+  <img src="https://img.shields.io/github/last-commit/audi0417/agent-engineering-roadmap.svg?style=for-the-badge" alt="Last Commit" />
   <a href="https://github.com/audi0417/agent-engineering-roadmap/actions/workflows/verify-examples.yml"><img src="https://img.shields.io/github/actions/workflow/status/audi0417/agent-engineering-roadmap/verify-examples.yml?branch=main&style=for-the-badge&label=examples" alt="Runnable examples status" /></a>
 </p>
 
@@ -245,7 +245,7 @@ python scripts/verify_examples.py
 這份 README 使用熱門 GitHub 專案常見的輕量視覺小組件：
 
 - Local cover image：頂部 Hero Banner
-- `shields.io`：靜態 Language、Status 與主題徽章
+- `shields.io`：Stars、Forks、Language、Status 與主題徽章
 - Mermaid：架構圖與流程圖
 
 ---
