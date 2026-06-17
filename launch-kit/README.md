@@ -51,6 +51,7 @@ These topics have been applied to the GitHub repository.
 
 ## Assets
 
+- `assets/social/agent-engineering-roadmap-cover.png`
 - `assets/social/agent-engineering-roadmap-2026.svg`
 - `assets/diagrams/course-map.svg`
 - `assets/diagrams/agent-loop.svg`

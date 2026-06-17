@@ -1,7 +1,7 @@
 # Agent Engineering Roadmap
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:8B5CF6&height=180&section=header&text=Agent%20Engineering%20Roadmap&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=MCP%20%7C%20Memory%20%7C%20Multi-Agent%20%7C%20Agent%20Colony&descAlignY=55&descSize=18" alt="Agent Engineering Roadmap" />
+  <img src="assets/social/agent-engineering-roadmap-cover.png" alt="Agent Engineering Roadmap 專案封面" />
 </p>
 
 <p align="center">

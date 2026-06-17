@@ -51,6 +51,7 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | File | Description |
 |---|---|
 | [Visual Assets](assets/README.md) | Diagram index |
+| [Project Cover](assets/social/agent-engineering-roadmap-cover.png) | Clean social and README cover image |
 | [Course Map](assets/diagrams/course-map.svg) | Full course map |
 | [Agent Loop](assets/diagrams/agent-loop.svg) | Minimal agent loop |
 | [Tool And MCP Layer](assets/diagrams/tool-mcp-layer.svg) | Tool and MCP integration |

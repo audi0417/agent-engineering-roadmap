@@ -20,6 +20,13 @@ Use these diagrams in README files, slides, workshops, or classroom material.
 | [Incident Response](diagrams/incident-response.svg) | Explain detect, contain, trace review, hotfix, release, and postmortem |
 | [Release Gate](diagrams/release-gate.svg) | Explain regression, safety, adversarial, trace, benchmark, and ops checks |
 
+## Social Assets
+
+| Asset | Purpose |
+|---|---|
+| [Project Cover](social/agent-engineering-roadmap-cover.png) | Clean cover image for README, GitHub Pages previews, X, LinkedIn, and other social sharing |
+| [Social Card](social/agent-engineering-roadmap-2026.svg) | Legacy SVG social card |
+
 ## Design Notes
 
 These diagrams are intentionally simple. They are meant to help learners build a mental model before they read implementation details.
