@@ -10,6 +10,7 @@
   <img src="https://img.shields.io/github/stars/audi0417/agent-engineering-roadmap.svg?style=for-the-badge&logo=github" alt="GitHub Stars" />
   <img src="https://img.shields.io/github/forks/audi0417/agent-engineering-roadmap.svg?style=for-the-badge&logo=github" alt="GitHub Forks" />
   <img src="https://img.shields.io/github/last-commit/audi0417/agent-engineering-roadmap.svg?style=for-the-badge" alt="Last Commit" />
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/audi0417/agent-engineering-roadmap.svg?style=for-the-badge" alt="License" /></a>
   <a href="https://github.com/audi0417/agent-engineering-roadmap/actions/workflows/verify-examples.yml"><img src="https://img.shields.io/github/actions/workflow/status/audi0417/agent-engineering-roadmap/verify-examples.yml?branch=main&style=for-the-badge&label=examples" alt="Runnable examples status" /></a>
 </p>
 
@@ -417,4 +418,4 @@ Research Agent
 
 ## License
 
-尚未指定授權條款。若要允許他人重用本專案內容，請先選擇並加入正式 License。
+本專案採用 [MIT License](LICENSE) 授權。
