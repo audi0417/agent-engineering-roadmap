@@ -6,6 +6,7 @@ All notable changes to Agent Engineering Roadmap are documented here.
 
 ### Added
 
+- Issue-driven teaching refresh for 2026-06-30, including README quickstart, sample lab submissions, healthcare safety cases, graph approval evals, and finance no-advice capstone evals.
 - Full production-oriented curriculum from foundations through operating model.
 - Dependency-free runnable examples for agent loops, tools, MCP, memory, RAG, workflow, graph approval, observability, security, cost routing, durable runtime, MCP gateway, memory governance, permissions, and advanced evals.
 - Benchmark runner covering tool use, RAG, workflow, security, observability, cost, runtime, MCP, memory governance, permissions, and advanced eval gates.
@@ -22,4 +23,3 @@ All notable changes to Agent Engineering Roadmap are documented here.
 ## v1.0.0 Candidate
 
 The project is preparing for a v1.0.0 learning release once the final readiness checklist is complete.
-

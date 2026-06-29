@@ -23,7 +23,19 @@ class GraphState:
 
 def classify_risk(state: GraphState) -> GraphState:
     lowered = state.task.lower()
-    if any(term in lowered for term in ["delete", "production", "permission", "records"]):
+    if any(
+        term in lowered
+        for term in [
+            "delete",
+            "remove",
+            "production",
+            "permission",
+            "grant access",
+            "revoke access",
+            "records",
+            "customer data",
+        ]
+    ):
         state.risk = "critical"
     elif any(term in lowered for term in ["send", "email", "external", "customer"]):
         state.risk = "high"

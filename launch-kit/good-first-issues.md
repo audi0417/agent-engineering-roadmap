@@ -2,7 +2,9 @@
 
 These issues are intentionally small, concrete, and friendly to first-time contributors. They help the project grow beyond a static course into a community-maintained learning roadmap.
 
-## Open Tasks
+## Resolved Starter Tasks
+
+The first starter issues were resolved in the 2026-06-30 teaching refresh. They remain useful as examples of small, well-scoped contribution ideas.
 
 1. [Add sample learner submissions for Lab 00 and Lab 01](https://github.com/audi0417/agent-engineering-roadmap/issues/1)
    - Good for learners who want to show what a strong answer looks like before writing code.
@@ -26,10 +28,9 @@ These issues are intentionally small, concrete, and friendly to first-time contr
 
 ## Contributor Guidance
 
-Each first issue should stay narrow:
+Future first issues should stay narrow:
 
 - Change one folder or learning artifact where possible.
 - Add or update a short README section when behavior changes.
 - Run `python scripts/verify_examples.py` before opening a pull request when examples are affected.
 - Prefer realistic examples over generic placeholder text.
-

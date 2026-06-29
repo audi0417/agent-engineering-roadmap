@@ -51,6 +51,16 @@
 
 ---
 
+## 快速開始
+
+| 步驟 | 要做什麼 | 為什麼 |
+|---|---|---|
+| 1 | 執行 `python scripts/verify_examples.py` | 確認所有免依賴範例都能在本機跑起來 |
+| 2 | 閱讀 [Course](COURSE_zh.md) | 按照設計好的學習順序前進 |
+| 3 | 完成 [Capstone Starter](capstone-starter/README.md) | 把每章學到的東西組成可執行的 agent colony 專案 |
+
+---
+
 ```mermaid
 flowchart LR
     User((User)) --> Agent[AI Agent]

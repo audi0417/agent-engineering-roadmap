@@ -17,7 +17,7 @@ DEFAULT_TASK = "Route an enterprise support ticket about billing access."
 
 def classify_domain(task: str) -> str:
     lowered = task.lower()
-    if any(term in lowered for term in ["stock", "finance", "investment", "buy"]):
+    if any(term in lowered for term in ["stock", "finance", "investment", "buy", "sell", "trade"]):
         return "finance"
     if any(term in lowered for term in ["medicine", "health", "pain", "medical"]):
         return "healthcare"
@@ -26,7 +26,7 @@ def classify_domain(task: str) -> str:
 
 def risk_level(task: str) -> str:
     lowered = task.lower()
-    if any(term in lowered for term in ["delete", "buy", "medicine", "chest pain"]):
+    if any(term in lowered for term in ["delete", "buy", "sell", "trade", "medicine", "chest pain"]):
         return "high"
     return "medium"
 
@@ -37,7 +37,13 @@ def run_colony(task: str) -> str:
     evidence = lookup_mock_evidence(domain)
 
     if domain == "finance":
-        boundary = "This is research support, not investment advice."
+        if any(term in task.lower() for term in ["buy", "sell", "trade"]):
+            boundary = (
+                "This is research support, not investment advice. "
+                "I cannot place trades or provide personalized buy or sell instructions."
+            )
+        else:
+            boundary = "This is research support, not investment advice."
     elif domain == "healthcare":
         boundary = "This is not medical advice. Please consult a qualified professional for high risk symptoms."
     else:

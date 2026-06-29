@@ -173,8 +173,8 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 
 | Lab | Guide |
 |---|---|
-| 00 | [Agent Spec](lab-solutions/lab-00-agent-spec/README.md) |
-| 01 | [Single Agent](lab-solutions/lab-01-single-agent/README.md) |
+| 00 | [Agent Spec](lab-solutions/lab-00-agent-spec/README.md), [Sample Submission](lab-solutions/lab-00-agent-spec/sample-submission.md) |
+| 01 | [Single Agent](lab-solutions/lab-01-single-agent/README.md), [Sample Submission](lab-solutions/lab-01-single-agent/sample-submission.md) |
 | 02 | [Tool Calling](lab-solutions/lab-02-tool-calling/README.md) |
 | 03 | [Memory](lab-solutions/lab-03-memory/README.md) |
 | 04 | [RAG](lab-solutions/lab-04-rag/README.md) |
@@ -196,6 +196,7 @@ Use it to quickly navigate the curriculum, examples, architecture notes, papers,
 | [Module Teaching Blueprint](teaching/module-teaching-blueprint_zh.md) | Standard teaching structure for every module |
 | [Misconception Map](teaching/misconception-map_zh.md) | Common wrong intuitions and correction checks |
 | [Student Deliverables](teaching/student-deliverables_zh.md) | Required artifacts for each module |
+| [Teaching Refresh 2026-06-30](teaching/teaching-refresh-2026-06-30_zh.md) | Issue-driven teaching refresh after the first launch cycle |
 
 ---
 

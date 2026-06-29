@@ -19,8 +19,8 @@
 
 | Lab | Solution Guide | Expected Artifact | Key Check |
 |---|---|---|---|
-| 00 Agent Spec | [Guide](lab-00-agent-spec/README.md) | `agent_spec.md` | Goal 是否窄、output 是否可驗證 |
-| 01 Single Agent | [Guide](lab-01-single-agent/README.md) | config + eval inputs | Agent 是否拒絕超出範圍任務 |
+| 00 Agent Spec | [Guide](lab-00-agent-spec/README.md), [Sample](lab-00-agent-spec/sample-submission.md) | `agent_spec.md` | Goal 是否窄、output 是否可驗證 |
+| 01 Single Agent | [Guide](lab-01-single-agent/README.md), [Sample](lab-01-single-agent/sample-submission.md) | config + eval inputs | Agent 是否拒絕超出範圍任務 |
 | 02 Tool Calling | [Guide](lab-02-tool-calling/README.md) | tool policy + wrapper | Unknown tool / unsafe args 是否被拒絕 |
 | 03 Memory | [Guide](lab-03-memory/README.md) | memory policy + tests | Sensitive data 是否不會寫入 |
 | 04 RAG | [Guide](lab-04-rag/README.md) | KB + eval cases | No-answer case 是否不 hallucinate |

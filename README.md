@@ -51,6 +51,16 @@
 
 ---
 
+## Quickstart
+
+| Step | Do This | Why |
+|---|---|---|
+| 1 | Run `python scripts/verify_examples.py` | Confirm every dependency-free example works locally |
+| 2 | Study [Course](COURSE.md) | Follow the roadmap in the intended learning order |
+| 3 | Build [Capstone Starter](capstone-starter/README.md) | Turn the lessons into a runnable agent colony project |
+
+---
+
 ```mermaid
 flowchart LR
     User((User)) --> Agent[AI Agent]

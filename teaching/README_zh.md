@@ -30,6 +30,7 @@
 | `module-teaching-blueprint_zh.md` | 每個 module 應該具備的固定教學結構 |
 | `misconception-map_zh.md` | Agent Engineering 常見誤解與反例 |
 | `student-deliverables_zh.md` | 每章學生要交出的具體成果 |
+| `teaching-refresh-2026-06-30_zh.md` | 兩週後的 issue-driven 教材更新筆記 |
 
 ## How To Use
 
